@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HOME PAGE</title>
+    <!--CSS-->
+	<link rel="stylesheet" href="js/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css" type="text/css">
+    <link rel="stylesheet" href="js/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css" type="text/css">
+	<link href="css/bootstrap-4.4.1.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet" type="text/css">
+	<link href="css/style-home.css" rel="stylesheet" type="text/css">
+	<!--Bootstrap--> 
+	<script src="js/jquery-3.4.1.min.js"></script>
+	<script src="js/popper.min.js"></script> 
+	<script src="js/bootstrap-4.4.1.js"></script>
+	<script src="js/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>
+
+	
+  </head>
+  <body>
+	<!-- Loader -->
+	<div id="loader">
+		<video autoplay muted loop id="loader-video">
+		  <source src="imgs/pageloader/pageloader2.webm" type="video/webm">
+		  
+		</video>
+	  </div>
+	<!----------------- Header (Start) ----------------->
+	<div class="col-12 header d-none"></div>				
+	<!----------------- Header (End) ----------------->
+
+		<!----------------- NAVIGATIONS (Start) ----------------->
+		<div class="container glass-figma" id="nav-bg">
+            <div class="row">
+                
+                <div class="col-xl-3 d-none d-xl-flex nav-logo">
+                    <a href="Nguyen Hoang Vinh Phu_Home.html"><img src="imgs/logo/logo-white-pink.svg" alt="logo"></a>
+                </div>
+                <div class="col-xl-6 d-none d-xl-block nav-content">
+                    <ul>
+                        <li><a href="Nguyen Hoang Vinh Phu_Home.html">HOME</a></li>
+                    
+                        <li class="dropdown">
+                            <a id="store-btn-drop" href="#">STORE <img src="imgs/icon/Chevron down.svg"></a>
+                            <ul class="dropdown-menu">
+                              <li><a href="Tran Ngoc Bao Tran_Product.html">Jpop</a></li>
+                              <li><a href="Tran Ngoc Bao Tran_Product.html">Pop Rock</a></li>
+                              <li><a href="Tran Ngoc Bao Tran_Product.html">Alternative Rock</a></li>
+                              <li><a href="Tran Ngoc Bao Tran_Product.html">Punk Rock</a></li>
+                              <li><a href="Tran Ngoc Bao Tran_Product.html">Idol-Dance Pop</a></li>
+                              <li><a href="Tran Ngoc Bao Tran_Product.html">Metal</a></li>
+                              <li><a href="Tran Ngoc Bao Tran_Product.html">EDM-Electro-Techno</a></li>
+    
+    
+                            </ul>
+                          </li>
+                        <li><a href="Nguyen Hoang Vinh Phu_AboutUs.html">ABOUT US</a></li>
+                        <li><a href="Tran Ngoc Bao Tran_Contact.html">CONTACT</a></li>
+                    </ul>
+                </div><!-- nav-content -->
+                <div class="col-xl-3 d-none d-xl-block nav-icon">
+                    <ul>
+                        <li><a href="#" data-toggle="collapse" data-target="#search-dropdown"><img src="imgs/icon/Search.svg" alt="search"></a></li>
+                        <li><a href="#"><img src="imgs/icon/User.svg" alt="user" loading=></a></li>
+                        <li><a href="Nguyen Dao Khanh Linh_Cart.html"><img src="imgs/icon/Shopping cart.svg" alt="cart"></a></li>
+                    </ul>
+                    <div id="search-dropdown" class="collapse">
+                        <div class="search-flex glass-figma-pink">
+                        <input type="text" placeholder="Search...">
+                        <button type="submit"><img src="imgs/icon/Search.svg" alt="search"></button>
+                        </div><!-- search-flex -->
+                    </div><!-- search-dropdown -->
+                </div><!-- nav-icon -->
+                <div class="col-3 col-sm-3 col-md-2 col-lg-2 d-xl-none" id="mobile-menu">
+                    <a id="menubtn"><img src="imgs/icon/Menu.svg" alt="menu"></a>
+                </div>
+                <div class="offset-1 offset-md-2 col-4 d-xl-none" id="mobile-logo">
+                    <a href="Nguyen Hoang Vinh Phu_Home.html"><img src="imgs/logo/logo-white-pink.svg" alt="logo"></a>
+                </div><!-- mobile-logo -->
+                <div class="col-3 col-md-2 offset-1 offset-md-2 d-xl-none" id="mobile-cart">
+                    <a href="Nguyen Dao Khanh Linh_Cart.html"><img src="imgs/icon/Shopping cart-mobile.svg" alt="cart-mobile"></a>
+                </div><!-- mobile-cart -->
+            </div><!-- .row -->
+        </div><!-- .container -->
+        <!-----Thanh trượt MENU Mobile----->
+        <nav id="menu">
+            <a id="closebtn"><img src="imgs/icon/X-pink.svg" alt="X"></a>
+            <a id="user-btn" class="glass-figma-pink"><img src="imgs/icon/User.svg" alt="user"></a>
+            <form class="form-mobile-menu glass-figma-pink">
+                <input type="text" placeholder="Search...">
+                <button type="submit"><img src="imgs/icon/Search.svg" alt="search"></button>
+            </form>
+            <ul>
+                <li><a href="Nguyen Hoang Vinh Phu_Home.html">HOME</a></li>
+                <li><a href="Tran Ngoc Bao Tran_Product.html" data-toggle="collapse" data-target="#product-mobile-content">STORE <img class="arrow-icon" src="imgs/icon/Chevron down-pink.svg"></a></li>
+                <div id="product-mobile-content" class="collapse">
+                    <ul id="product-mobile-sublist">
+                        <li><a href="Tran Ngoc Bao Tran_Product.html">JPOP</a></li>
+                        <li><a href="Tran Ngoc Bao Tran_Product.html">POP ROCK</a></li>
+                        <li><a href="Tran Ngoc Bao Tran_Product.html">ALTERNATIVE ROCK</a></li>
+                        <li><a href="Tran Ngoc Bao Tran_Product.html">PUNK ROCK</a></li>
+                        <li><a href="Tran Ngoc Bao Tran_Product.html">IDOL-DANCE POP</a></li>
+                        <li><a href="Tran Ngoc Bao Tran_Product.html">METAL</a></li>
+                        <li><a href="Tran Ngoc Bao Tran_Product.html">EDM-ELECTRO-TECHNO</a></li>
+                    </ul><!----product-mobile-sublist----->
+                </div><!-- product-mobile-content -->
+                <li><a href="Nguyen Hoang Vinh Phu_AboutUs.html">ABOUT US</a></li>
+                <li><a href="Tran Ngoc Bao Tran_Contact.html">CONTACT</a></li>
+                <li><a href="#">NEWS</a></li>
+                <li><a href="Tran Ngoc Bao Tran_Contact.html">FAQ</a></li>
+            </ul>
+        </nav><!-- #menu -->
+	<!----------------- NAVIGATIONS (END) ----------------->
+	
+	<!----Bắt đầu code từ đây, LƯU Ý là code phần nào thì Note lại START-END để dễ nhìn nha mấy đứa, CSS cũng thế nhe----->
+
+	<!-----BANNER (START)----->
+	<div class="container-fluid" id="home-banner">
+		<div id="banner-carousel" class="carousel slide carousel-fade" data-ride="carousel">
+			<ul class="carousel-indicators">
+			  <li data-target="#banner-carousel" data-slide-to="0" class="active"></li>
+			  <li data-target="#banner-carousel" data-slide-to="1"></li>
+			  <li data-target="#banner-carousel" data-slide-to="2"></li>
+			  <li data-target="#banner-carousel" data-slide-to="3"></li>
+			</ul>
+			<div class="carousel-inner">
+			 
+				<div class="carousel-item active">
+					<video autoplay loop muted playsinline class="hero-banner">
+						<source src="imgs/Home/Banner/meshgradient.webm" type="video/webm">
+					</video>
+						
+					<div class="carousel-caption" id="hero-caption">
+						<div class="flip-text">
+						   <h1>WELCOME TO EKOH</h1>
+						</div><!----flip-text---->						
+					<div id="disk-infinite">
+						<img src="imgs/CD-IMG/IRISOUT.png" alt="disk">
+						<img src="imgs/CD-IMG/JANEDOE.png" alt="disk">
+						<img src="imgs/CD-IMG/Suzume.png" alt="disk">
+						<img src="imgs/CD-IMG/renai-circulation.png" alt="disk">
+						<img src="imgs/CD-IMG/Kaguya.png" alt="disk">
+						<img src="imgs/CD-IMG/kawaiied2.png" alt="disk">
+						<img src="imgs/CD-IMG/EKOH.png" alt="disk">
+						<img src="imgs/CD-IMG/TheBook2.png" alt="disk">
+						<img src="imgs/CD-IMG/Duvet.png" alt="disk">
+						<img src="imgs/CD-IMG/Forget It.png" alt="disk">
+						<!-- Duplicate for seamless loop -->
+						<img src="imgs/CD-IMG/IRISOUT.png" alt="disk">
+						<img src="imgs/CD-IMG/JANEDOE.png" alt="disk">
+						<img src="imgs/CD-IMG/Suzume.png" alt="disk">
+						<img src="imgs/CD-IMG/renai-circulation.png" alt="disk">
+						<img src="imgs/CD-IMG/Kaguya.png" alt="disk">
+						<img src="imgs/CD-IMG/kawaiied2.png" alt="disk">
+						<img src="imgs/CD-IMG/EKOH.png" alt="disk">
+						<img src="imgs/CD-IMG/TheBook2.png" alt="disk">
+						<img src="imgs/CD-IMG/Duvet.png" alt="disk">
+						<img src="imgs/CD-IMG/Forget It.png" alt="disk">
+					</div><!----disk-infinite---->
+					</div><!----carousel-caption---->
+				</div><!----carousel-item---->
+				<!----carousel-item---->
+				<div class="carousel-item">
+					<img src="imgs/Home/Banner/Suzume-banner2.jpg" alt="banner2">
+					<div class="carousel-caption" id="suzume-caption">
+				
+						<div class="suzume-heading">
+							<h1>RADWIMPS COLLECTION</h1>
+						</div>
+				
+						<div class="suzume-btn">
+							<p>Explore Now</p>
+						</div><!----suzume-btn---->
+					</div><!----carousel-caption---->
+				</div><!----carousel-item---->
+				<!----carousel-item---->
+				<div class="carousel-item">
+					<img src="imgs/Home/Banner/gachiakuta-banner3.png" alt="banner1">
+					<div class="carousel-caption" id="gachia-caption">
+						<div class="gachia-cd">
+							<h1>GACHIAKUTA</h1>
+							<img src="imgs/CD-IMG/Gachiakuta-nonfilter.png" alt="gachiakuta-cd">
+							<h2>OP/EP</h2>
+							<h3>COMING SOON!</h3>
+						</div><!----gachia-cd---->
+					</div><!----carousel-caption---->
+				</div><!----carousel-item---->
+				<!----carousel-item---->
+				<div class="carousel-item">
+					<img src="imgs/Home/Banner/Jane-doe.jpg" alt="banner3">
+					<div class="carousel-caption" id="janedoe-caption">
+						<h3>Jane Doe</h3>
+						<p>Kenshi Yonezu</p>
+						<div class="janedoe-btn">
+							<h4>Explore</h4>
+						</div><!----janedoe-btn---->
+					</div><!----carousel-caption---->
+				</div><!----carousel-item---->
+
+			</div><!----carousel-inner---->
+			<a class="carousel-control-prev banner-indicator-prev glass-figma" href="#banner-carousel" data-slide="prev">
+			  <img src="imgs/icon/Chevron left-white.svg" alt="back">
+			</a>
+			<a class="carousel-control-next banner-indicator-next glass-figma" href="#banner-carousel" data-slide="next">
+			  <img src="imgs/icon/Chevron right-white.svg" alt="next">
+			</a>
+		  </div>
+	</div><!-- home-banner -->
+	<!-----BANNER (END)----->
+
+	<!-----RATING (START)------>
+	<div class="container-fluid" id="rating-bg">
+		<div class="container" id="home-no1rating">
+			<img src="imgs/Home/Banner/BG-Hero3.png" alt="rating-bg">
+			<div id="no1rating-platform">
+				<img src="imgs/Home/Background/platform.png" alt="platform">
+			</div><!-- no1rating-platform -->
+			<div id="kenshi">
+				<h3>Kenshi</h3>
+				<h1>Yonezu</h1>
+				<div class="kenshi-tags d-none d-md-flex">
+				<span>Artist</span>
+				<span>Composer</span>
+				<span>Vocalist</span>
+				</div><!----kenshi-tags---->
+			</div><!----kenshi----->
+			<div id="iris-dvd">
+				<img src="imgs/02. Compact Disks/03 Compact Disk.png" alt="disk">
+			</div>
+			<div class="iris-out1">
+				<h1>IRIS OUT</h1>
+			</div><!----iris-out1---->
+			<div class="iris-out2">
+				<h1>IRIS OUT</h1>
+			</div><!----iris-out2---->
+			<div class="iris-out3">
+				<h1>IRIS OUT</h1>
+			</div><!----iris-out2---->
+			<div id="cd-iris">
+				<img src="imgs/CD-IMG/IRISOUT.png" alt="irisout">
+			</div><!----cd-iris---->
+			<div id="no1rating-caption">
+				<h1>#1. Weekly</h1>
+				<div class="caption-content">
+					<img src="imgs/icon/Corner left-up-gradient.svg" alt="leftup">
+					<span>75K Unit Sold</span>
+				</div><!----no1rating-caption----->
+				<div class="caption-content">
+					<img src="imgs/icon/Star-gradient.svg" alt="star">
+					<span>Top 1 Trending</span>
+				</div><!----no1rating-caption----->
+				<div class="caption-content">
+					<img src="imgs/icon/Check-gradient.svg" alt="check">
+					<span>4.000.000 Streamed</span>
+				</div><!----no1rating-caption----->
+			</div> <!---no1rating-heading--->
+		</div><!----#home-no1rating----->
+		<div class="weekly-section container">
+			<div class="weekly-bg">
+				<img src="imgs/Home/Background/Weekly-gradientbg.png" alt="Background">
+			</div><!----weekly-bg---->
+			<div class="container" id="home-weeklyrating">
+				<div class="weekly-heading">
+					<h1>Catalog</h1>
+				</div><!-- weekly-heading -->
+				<div class="weekly-seemore d-none">
+					<a href="#">See More <img src="imgs/icon/Arrow right-gradient.svg" alt="arrow"></a>
+				</div><!-- weekly-seemore -->
+
+				<div class="weekly-tabs">
+					<ul class="nav nav-tabs" id="product-pill">
+						<li class="nav-item">
+						  <a class="nav-link active" data-toggle="tab" href="#best-seller">Best Seller</a>
+						</li>
+						<li class="nav-item">
+						  <a class="nav-link" data-toggle="tab" href="#j-pop">J-Pop</a>
+						</li>
+						<li class="nav-item">
+						  <a class="nav-link" data-toggle="tab" href="#alternative-rock">Alternative Rock</a>
+						</li>
+						<li class="nav-item d-none d-lg-block">
+							<a class="nav-link" data-toggle="tab" href="#idol-dance">Idol-Dance Pop</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" data-toggle="tab" href="#moe-kuyn">Moe Moe Kyun Kyun</a>
+						</li>
+						<li class="mobile-seemore d-lg-none">
+							<a href="Tran Ngoc Bao Tran_Product.html">See More</a>
+						</li>
+					  </ul>
+
+					  <div class="weekly-seemore d-none d-lg-flex">
+						<a href="Tran Ngoc Bao Tran_Product.html">See More <img src="imgs/icon/Arrow right-gradient.svg" alt="arrow"></a>
+					</div><!-- weekly-seemore -->
+				</div>
+				
+
+				  <div class="tab-content">
+					<div class="tab-pane active" id="best-seller">
+						<div class="row d-none d-lg-flex"></div><!-- .row -->
+						<div class="owl-carousel owl-theme col-12 d-lg-none" id="best-seller-mobilebg"></div>
+					</div>
+					<div class="tab-pane fade" id="j-pop">
+						<div class="row d-none d-lg-flex"></div>
+						<div class="owl-carousel owl-theme col-12 d-lg-none" id="j-pop-mobilebg"></div>
+					</div>
+					<div class="tab-pane fade" id="alternative-rock">
+						<div class="row d-none d-lg-flex"></div>
+						<div class="owl-carousel owl-theme col-12 d-lg-none" id="alternative-rock-mobilebg"></div>
+					</div>
+					<div class="tab-pane fade" id="idol-dance">
+						<div class="row"></div>							
+					</div>
+					<div class="tab-pane fade" id="moe-kuyn">
+						<div class="row d-none d-lg-flex"></div>
+						<div class="owl-carousel owl-theme col-12 d-lg-none" id="moe-kuyn-mobilebg">	
+						</div><!----owl-carousel---->
+					</div><!----tab-pane---->
+				  </div><!----tab-content---->
+			</div><!-----home-weeklyrating----->
+		</div><!---weekly-section--->
+	
+	</div><!-- container-fluid ---->
+	<!-----RATING (END)------>
+	<!------ABOUT US (START)------>
+	<div class="container-fluid" id="abus-bg">
+		<div class="container" id="abus-container">
+			<div class="abus-gradientbg">
+				<img src="imgs/Home/ABUS-NEWS/abus-gradientbg.png" alt="Background">
+			</div><!----abus-gradientbg---->
+			<div class="row" id="AB-HEADING">
+				<div class="col-xl-5 col-lg-6 col-12 about-heading">
+					<span>What Do We <span id="provide-gradient">Provide ?</span></span>
+					<div class="about-btn">
+						<a href="Nguyen Hoang Vinh Phu_AboutUs.html">About Us</a>
+					</div><!----about-btn---->
+				</div><!-----about-heading----->
+				<div class="offset-lg-1 offset-xl-3 col-lg-5 col-xl-4  d-none d-lg-block about-caption">
+					<h5>At EKOH, inspired by the captivating sounds of anime, we bring our customers high-quality and authentic anime soundtracks.</h5>
+				</div><!-----about-caption----->
+			</div><!-----ROW---->
+			<div class="ab-content">
+				<div class="contentab1 glass-figma d-none d-lg-block">
+					<img src="imgs/Home/ABUS-NEWS/akiba.jpg" loading="lazy" class="d-none d-lg-block">
+					<h3>Starting Point</h3>
+					<p>Since 2010 at Akihabara, Japan which is the Captital of Anime culture, we founded EKOH to satisfy our love for Anime Songs.</p>
+					<div class="contentab-overlay glass-figma-2">
+						<div class="about-btn1">
+							<a href="Nguyen Hoang Vinh Phu_AboutUs.html">Explore</a>
+						</div><!----about-btn---->
+					</div><!--contentab-overlay-->
+				</div><!----contentab1---->
+				<div class="contentab2 glass-figma d-none d-lg-block">
+					<img src="imgs/02. Compact Disks/04 Compact Disk.png" loading="lazy">
+					<h3>Expanding Beyond Borders</h3>
+					<p>From our roots in Akihabara, EKOH has grown into a bridge connecting anime music fans around the world.</p>
+					<div class="about-btn2"><a href="Nguyen Hoang Vinh Phu_AboutUs.html">Explore</a></div>
+				</div>
+				<div class="contentab3 glass-figma d-none d-lg-block">
+					<img src="imgs/02. Compact Disks/07 Compact Disk.png" loading="lazy">
+					<h3>Preserving the Spirit of Anime Music</h3>
+					<p>At EKOH, music is more than sound — it’s emotion and legacy. Each CD we create celebrates the timeless melodies that shaped anime culture, keeping the passion alive for every generation of fans.</p>
+					<div class="about-btn2"><a href="Nguyen Hoang Vinh Phu_AboutUs.html">Explore</a></div>
+				</div>
+
+			</div><!----ab-content---->
+
+			<!------ABUS content MD->XS (Start)------>
+			<div class="row">
+				<div class="col-md-6 col-12 d-lg-none" id="ab-content-mobileBg1">
+					<div class="contentab-mobile1 glass-figma-2">
+						<h6>At EKOH, inspired by the captivating sounds of anime, we bring our customers high-quality and authentic anime soundtracks.</h6>
+					</div><!---contentab-mobile1---->
+					<div class="contentab-mobile2 d-none d-md-block glass-figma-2">
+						<img src="imgs/Home/ABUS-NEWS/akiba.jpg" alt="akiba" loading="lazy">
+						<h6>Starting Point</h6>
+						<p>Since 2010 at Akihabara, Japan which is the Captital of Anime culture, we founded EKOH to satisfy our love for Anime Songs.</p>
+					</div><!----contentab-mobile2---->
+				</div><!----ab-content-mobileBg1---->
+				<div class="col-6 d-md-none" id="ab-content-mobileBg3">
+					<div class="contentab-mobile2 glass-figma-2">
+						<img src="imgs/Home/ABUS-NEWS/akiba.jpg" alt="akiba" loading="lazy">
+						<h6>Starting Point</h6>
+						<p>Since 2010 at Akihabara, Japan which is the Captital of Anime culture, we founded EKOH to satisfy our love for Anime Songs.</p>
+					</div><!----contentab-mobile2---->
+				</div>
+				<div class="col-6 d-lg-none" id="ab-content-mobileBg2">
+					<div class="contentab-mobile3 glass-figma-2">
+						<img src="imgs/02. Compact Disks/08 Compact Disk.png" alt="cd" loading="lazy">
+						<h6>Expanding Beyond Borders</h6>
+						<p>From our roots in Akihabara, EKOH has grown into a bridge connecting anime music fans around the world.</p>
+						<span class="d-md-none">Tap to see more !</span>
+					</div><!---contentab-mobile3---->
+					<div class="contentab-mobile4 glass-figma-2">
+						<img src="imgs/02. Compact Disks/07 Compact Disk.png">
+						<h6 class="d-none d-md-block">Preserving the Spirit of Anime Music</h6>
+						<p class="d-none d-md-block">At EKOH, music is more than sound — it’s emotion and legacy. Each CD we create celebrates the timeless melodies that shaped anime culture.</p>
+						<h6 class="d-md-none">Preserving Anime Music</h6>
+						<p class="d-md-none">At EKOH, music is more than sound — it’s emotion and legacy. Each CD we create celebrates...</p>
+						<span class="d-md-none">Tap to see more !</span>
+					</div><!-----contentab-mobile4----->
+				</div><!-----ab-content-mobileBg2----->
+			</div><!-----ROW----->
+			<!------ABUS content MD->XS (End)------>
+
+		</div><!----Container----->
+	</div>
+	<!------ABOUT US (END)------>
+
+	<!------NEWS (START)------->
+	<div class="container-fluid" id="news-bg">
+		<div id="news-heading">
+			<h1>News</h1>
+		</div><!-----news-heading----->
+		<div class="container" id="new-gradient-bg">
+			<div id="news-gradientbg">
+				<img src="imgs/Home/ABUS-NEWS/news-gradientbg.png" loading="lazy">
+			</div><!----news-gradientbg---->
+		</div>
+		
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6 col-7">
+					<div class="glass-figma-2 news-content1">
+						<img src="imgs/Home/ABUS-NEWS/dynamic-light-painting-background.jpg" loading="lazy">
+						<h2>Dive into the World of Pure Sound</h2>
+						<p>Driven by innovation and artistry, we bring you the ultimate audio experience — where every note resonates with love,clarity, depth, and emotion.</p>
+						<div class="btn-container">
+							<button id="news-btn">
+								<p>More Info</p>
+								<img src="imgs/icon/Info-pink.svg">
+							</button><!----news-btn---->
+						</div>
+					</div><!----news-content1---->
+					
+				</div><!----col-xl-6----->
+				<div class="col-lg-6 col-5" id="content-container">
+					<div class="news-content2 glass-figma">
+						<div class="news-content2-heading">
+							<h2>Return to the era of CD players.</h2>
+							<p>Rediscover the warmth of physical music. Each CD holds not just sound, but memories that last.</p>
+						</div><!-----news-contnet2-heading----->
+						<img class="d-none d-md-block" src="imgs/Home/ABUS-NEWS/cd-player.png" alt="cd-play" loading="lazy">
+						<img class="d-md-none" src="imgs/Home/ABUS-NEWS/cd-player-3.png" alt="cd-player" loading="lazy">
+					</div><!----news-content2---->
+					<div class="row" id="news-childcontent">
+						<div class="news-content3 glass-figma">
+							<h1>Take a look of our most loved Artist</h1>
+							<button>Take a Look <img src="imgs/icon/Music-pink.svg" loading="lazy"></button>
+						</div><!----News-conent3---->
+						<div class="news-content4">
+							<div class="content4-inner glass-figma-2">
+								<div class="content4-front">
+									<img src="imgs/CD-IMG/Kaguya.png" alt="cd" loading="lazy">
+								</div><!-----content4-front----->
+								<div class="content4-back">
+									<h1>New Arrival !</h1>
+									<img src="imgs/Home/03. Plastic Wrap for CD Cases/02 Plastic Wrap.png" alt="wrap" loading="lazy">
+								</div><!-----content4-back----->
+							</div><!---content4-inner--->
+							
+						</div><!----news-content4---->
+					</div><!----news-childcontent---->
+				</div><!----content-container---->
+			</div><!----row---->
+		</div><!----container---->
+	</div><!-----news-bg (container-fluid)----->
+	<!------NEWS (END)------->
+
+
+	<!-------WHY CHOOSE US (START)------->
+	<div class="container-fluid" id="choose-bg">
+		<div class="choose-gradientbg">
+			<img src="imgs/Home/ABUS-NEWS/news-gradientbg2.png" loading="lazy">
+		</div><!----choose-gradientbg---->
+		<div id="choose-heading">
+			<h1>Why Choose Us ?</h1>
+		</div><!----Choose-heading---->
+		<div class="container choose-content">
+			<div class="choose-content-child">
+				<img src="imgs/icon/Music-pink.svg" loading="lazy" alt="icon">
+				<h2>Authentic CD
+					From Japan</h2>
+			</div><!----choose-content-child---->
+			<div class="choose-content-child">
+				<img src="imgs/icon/Truck-kun-pink.svg" loading="lazy" alt="icon">
+				<h2>Worldwide Shipping</h2>
+			</div><!----choose-content-child---->
+			<div class="choose-content-child">
+				<img src="imgs/icon/credit-card-regular-pink.svg" loading="lazy" alt="icon">
+				<h2 class="d-none d-xl-block">Secure Payment Method</h2>
+				<h2 class="d-xl-none">Secure Payment</h2>
+			</div><!----choose-content-child---->
+			<div class="choose-content-child">
+				<img src="imgs/icon/Tag-pink.svg" loading="lazy" alt="icon">
+				<h2>Damage-free Packaging</h2>
+			</div><!----choose-content-child---->
+			
+		</div><!---container--->
+	</div><!---container-fluid--->
+	<!-------WHY CHOOSE US (END)------->
+
+	<!-------CUSTOMER'S FEEDBACK (START)------->
+	<div class="container-fluid" id="feedback-bg">
+		<div class="feedback-heading">
+			<h1>Customer's Feedback</h1>
+		</div><!----feedback-heading---->
+		<div class="feedback-gradientbg">
+			<img src="imgs/Home/Customer_s Feedback/feedback-gradientbg2.png" loading="lazy">
+		</div>
+		<div class="container feedback-content">
+			<div class="feedback-content-child glass-figma-2">
+				<img src="imgs/Home/Customer_s Feedback/costumer2.webp" alt="customer" loading="lazy">
+				<div class="content-info">
+					<h4>Itsuki</h4>
+					<ul>
+						<li><img src="imgs/icon/Star-pink.svg" alt="star" loading="lazy"></li>
+						<li><img src="imgs/icon/Star-pink.svg" alt="star" loading="lazy"></li>
+						<li><img src="imgs/icon/Star-pink.svg" alt="star" loading="lazy"></li>
+						<li><img src="imgs/icon/Star-pink.svg" alt="star" loading="lazy"></li>
+						<li><img src="imgs/icon/Star-pink.svg" alt="star" loading="lazy"></li>
+					</ul>
+					<p>30/10/2025</p>
+				</div><!----content-info---->
+				<div class="content-comment">
+					<p>The sound quality of this CD is absolutely stunning. Every note feels rich and immersive, bringing out details I’ve never noticed before. It’s clear, balanced, and full of depth—like listening to the music live for the first time!</p>
+				</div><!----content-comment---->
+			</div><!----feedback-content-child---->
+			<div class="feedback-content-child glass-figma-2">
+				<img src="imgs/Home/Customer_s Feedback/customer3.png" alt="customer" loading="lazy">
+				<div class="content-info">
+					<h4>Dr.Okabe</h4>
+					<ul>
+						<li><img src="imgs/icon/Star-pink.svg" alt="star" loading="lazy"></li>
+						<li><img src="imgs/icon/Star-pink.svg" alt="star" loading="lazy"></li>
+						<li><img src="imgs/icon/Star-pink.svg" alt="star" loading="lazy"></li>
+						<li><img src="imgs/icon/Star-pink.svg" alt="star" loading="lazy"></li>
+						<li><img src="imgs/icon/Star-pink.svg" alt="star" loading="lazy"></li>
+					</ul>
+					<p>12/08/2024</p>
+				</div><!----content-info---->
+				<div class="content-comment">
+					<p>The CD sounds incredible — clear, rich, and full of life. The packaging is beautifully designed and feels premium. It’s a product made with real care and passion. Exceptional!</p>
+				</div><!----content-comment---->
+			</div><!----feedback-content-child---->
+			<div class="feedback-content-child glass-figma-2">
+				<img src="imgs/Home/Customer_s Feedback/meo.jpg" alt="customer" loading="lazy">
+				<div class="content-info">
+					<h4>ChiCano</h4>
+					<ul>
+						<li><img src="imgs/icon/Star-pink.svg" alt="star" loading="lazy"></li>
+						<li><img src="imgs/icon/Star-pink.svg" alt="star" loading="lazy"></li>
+						<li><img src="imgs/icon/Star-pink.svg" alt="star" loading="lazy"></li>
+						<li><img src="imgs/icon/Star-pink.svg" alt="star" loading="lazy"></li>
+						<li><img src="imgs/icon/Star-pink.svg" alt="star" loading="lazy"></li>
+					</ul>
+					<p>11/11/2021</p>
+				</div><!----content-info---->
+				<div class="content-comment">
+					<p>The CD sounds incredible — clear, rich, and full of life. The packaging is beautifully designed and feels premium in every detail. You can tell it was made with real care and passion, making the whole experience truly satisfying.</p>
+				</div><!----content-comment---->
+			</div><!----feedback-content-child---->
+			
+		</div><!-----container----->
+	</div><!----container-fluid---->
+	<!-------CUSTOMER'S FEEDBACK (END)------->
+
+	<!-------FOOTER (START)------->
+	<div class="container-fluid" id="footer-bg">
+        <div class="container">
+            <div class="row" id="footer-row">
+                <div class="col-lg-3 col-md-4 col-12" id="footer-logo-section">
+                    <img src="imgs/logo/logo-white-pink.svg" alt="logo" loading="lazy">
+                    <p>Where Anime Lives in Sound</p>
+                    <div class="social-med-row">
+                        <a href="#"><img src="imgs/icon/Facebook-pink.svg" alt="facebook" loading="lazy"></a>
+                        <a href="#"><img src="imgs/icon/Insta-pink.svg" alt="instagram" loading="lazy"></a>
+                        <a href="#"><img src="imgs/icon/Tiktok-pink.svg" alt="tiktok" loading="lazy"></a>
+                    </div><!------social-med-row----->
+                </div><!----footer-logo-section----->
+                <div class="col-12 d-md-none" id="footer-product-mobile">
+                    <button data-toggle="collapse" data-target="#product-content">
+                        <h3>Products</h3> <img class="arrow-icon" src="imgs/icon/Chevron down.svg" alt="chevron-down">
+                    </button><!----product-mobile-button---->
+                    <div id="product-content" class="collapse">
+                        <a href="Tran Ngoc Bao Tran_Product.html">Collections</a>
+                        <a href="Tran Ngoc Bao Tran_Product.html">Best Seller</a>
+                        <a href="Tran Ngoc Bao Tran_Product.html">J-Pop</a>
+                        <a href="Tran Ngoc Bao Tran_Product.html">Pop Rock</a>
+                        <a href="Tran Ngoc Bao Tran_Product.html">Idol-Dance</a>
+                        <a href="Tran Ngoc Bao Tran_Product.html">Metal</a>
+                    </div><!---product-section-child----->
+                </div><!-----footer-product-mobil----->
+                <div class="col-lg-2 col-md-4 d-none d-md-flex" id="footer-product-section">
+                    <h3>Products</h3>
+                    <div id="product-section-child">
+                        <a href="Tran Ngoc Bao Tran_Product.html">Collections</a>
+                        <a href="Tran Ngoc Bao Tran_Product.html">Best Seller</a>
+                        <a href="Tran Ngoc Bao Tran_Product.html">J-Pop</a>
+                        <a href="Tran Ngoc Bao Tran_Product.html">Pop Rock</a>
+                        <a href="Tran Ngoc Bao Tran_Product.html">Idol-Dance</a>
+                        <a href="Tran Ngoc Bao Tran_Product.html">Metal</a>
+                    </div><!---product-section-child----->
+                </div><!-----footer-product-section---->
+                <div class="col-12 d-md-none" id="footer-info-mobile">
+                    <button data-toggle="collapse" data-target="#info-content">
+                        <h3>Information</h3> <img class="arrow-icon" src="imgs/icon/Chevron down.svg" alt="chevron-down">
+                    </button><!----product-mobile-button---->
+                    <div id="info-content" class="collapse">
+                        <a href="Tran Ngoc Bao Tran_Contact.html">Contact</a>
+                        <a href="Nguyen Hoang Vinh Phu_AboutUs.html">About Us</a>
+                        <a href="#">Product Updates</a>
+                        <a href="#">News</a>
+                        <a href="#">Return Policy</a>
+                        <a href="#">Terms of Service</a>
+                    </div><!---product-section-child----->
+                </div><!----footer-info-mobile----->
+                <div class="col-lg-3 col-md-4 d-none d-md-flex" id="footer-info-section">
+                    <h3>Information</h3>
+                    <div id="info-child">
+                        <a href="Tran Ngoc Bao Tran_Contact.html">Contact</a>
+                        <a href="Nguyen Hoang Vinh Phu_AboutUs.html">About Us</a>
+                        <a href="#">Product Updates</a>
+                        <a href="#">News</a>
+                        <a href="#">Return Policy</a>
+                        <a href="#">Terms of Service</a>
+                    </div><!---info-child---->
+                </div><!----footer-info-section---->
+                <div class="col-lg-4 col-md-12" id="footer-news-section">
+                    <h3>Newsletter</h3>
+                    <p>Stay up to date with pre-orders, releases, and product drops!</p>
+                    <form action="#">
+                        <input type="email" placeholder="Email Address" class="glass-figma-2">
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div><!-----footer-newsletter-section---->
+            </div><!-----footer-row----->
+            <div class="row" id="footer-inline-row">
+                <div class="inline-footer">
+                    <p>© 2025 EKOH. All rights reserved. &nbsp; </p>
+                    <a href="#">Terms</a>
+                    <p>,</p> &nbsp;
+                    <a href="#">Privacy</a> &nbsp;
+                    <p> & </p> &nbsp;
+                    <a href="#">Accessibility</a>
+                </div><!----inline-footer----->
+                <div class="inline-footer">
+                    <p>Do not sell our personal information</p>
+                </div><!----inline-footer----->
+            </div><!----footer-inline-row----->
+        </div><!----container---->
+    </div><!----container-fluid----->
+	<!-------FOOTER (END)------->
+
+	<!-- Product Card Component System -->
+	<script>
+		document.addEventListener("click", (event) => {
+			// Handle click on #home-no1rating - redirect to Detail page
+			const no1Rating = event.target.closest("#home-no1rating");
+			if (no1Rating) {
+				window.location.href = "Nguyen Dao Khanh Linh_Detail.html";
+				return;
+			}
+
+			// Handle click on mobile content cards - redirect to AboutUs
+			const mobileContent = event.target.closest(".contentab-mobile2, .contentab-mobile3, .contentab-mobile4, .contentab1");
+			if (mobileContent) {
+				window.location.href = "Nguyen Hoang Vinh Phu_AboutUs.html";
+				return;
+			}
+
+			// Handle click on card-front img
+			const cardFrontImg = event.target.closest(".card-front img");
+			if (cardFrontImg) {
+				window.location.href = "Nguyen Dao Khanh Linh_Detail.html";
+				return;
+			}
+
+			// Handle click on card-overlay
+			const overlay = event.target.closest(".card-overlay");
+			if (!overlay) return;
+
+			// Ignore clicks on interactive buttons so their own handlers run
+			const actionBtn = event.target.closest(".heart-btn, .preview-btn, .product-btn");
+			if (actionBtn) return;
+
+			window.location.href = "Nguyen Dao Khanh Linh_Detail.html";
+		});
+	</script>
+	<script src="js/product-card-component.js"></script>
+	<script src="js/product-data.js"></script>
+	<script src="js/init-products.js"></script>
+	<script src="js/index.js"></script>
+  </body>
+</html>

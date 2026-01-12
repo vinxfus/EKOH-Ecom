@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CART PAGE</title>
+    <!--CSS-->
+	<link href="css/bootstrap-4.4.1.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet" type="text/css">
+	<link href="fontawesome/css/all.min.css" rel="stylesheet" type="text/css">
+	<link href="fontawesome/css/all.css" rel="stylesheet" type="text/css">
+	<link href="css/Khanh Linh/style_Yourcart.css" rel="stylesheet" type="text/css">  
+	<!--Bootstrap--> 
+	<script src="js/jquery-3.4.1.min.js"></script>
+	<script src="js/popper.min.js"></script> 
+	<script src="js/bootstrap-4.4.1.js"></script>
+	  
+<script>
+	  function changeImage(el) {
+  document.getElementById("mainImage").src = el.src;
+  document.querySelectorAll('.thumb-img').forEach(img => img.classList.remove('active'));
+  el.classList.add('active');
+}
+
+	  </script>
+	  <script>
+	  function changeImage(el) {
+  document.getElementById("mainImage").src = el.src;
+  document.querySelectorAll('.thumb-img').forEach(img => img.classList.remove('active'));
+  el.classList.add('active');
+}
+
+	  </script>
+	  
+	  
+	  
+	  
+	  
+	<script>
+		$(document).ready(function () {
+			  const quantityContainer = document.querySelector("#quantity");
+			  const minusBtn = quantityContainer.querySelector(".minus");
+			  const plusBtn = quantityContainer.querySelector(".plus");
+			  const inputBox = quantityContainer.querySelector(".input-box");
+
+			  updateButtonStates();
+
+			  quantityContainer.addEventListener("click", handleButtonClick);
+			  inputBox.addEventListener("input", handleQuantityChange);
+
+			  function updateButtonStates() {
+				const value = parseInt(inputBox.value);
+				minusBtn.disabled = value <= 1;
+				plusBtn.disabled = value >= parseInt(inputBox.max);
+			  }
+
+			  function handleButtonClick(event) {
+				if (event.target.classList.contains("minus")) {
+				  decreaseValue();
+				} else if (event.target.classList.contains("plus")) {
+				  increaseValue();
+				}
+			  }
+
+			  function decreaseValue() {
+				let value = parseInt(inputBox.value);
+				value = isNaN(value) ? 1 : Math.max(value - 1, 1);
+				inputBox.value = value;
+				updateButtonStates();
+				handleQuantityChange();
+			  }
+
+			  function increaseValue() {
+				let value = parseInt(inputBox.value);
+				value = isNaN(value) ? 1 : Math.min(value + 1, parseInt(inputBox.max));
+				inputBox.value = value;
+				updateButtonStates();
+				handleQuantityChange();
+			  }
+
+			  function handleQuantityChange() {
+				let value = parseInt(inputBox.value);
+				value = isNaN(value) ? 1 : value;
+
+				// Execute your code here based on the updated quantity value
+				console.log("Quantity changed:", value);
+			  }
+			})();
+
+		
+	</script>  
+	  
+	 <script>
+		$(document).ready(function () {
+			  const quantityContainer = document.querySelector("#quantity2");
+			  const minusBtn = quantityContainer.querySelector(".minus");
+			  const plusBtn = quantityContainer.querySelector(".plus");
+			  const inputBox = quantityContainer.querySelector(".input-box");
+
+			  updateButtonStates();
+
+			  quantityContainer.addEventListener("click", handleButtonClick);
+			  inputBox.addEventListener("input", handleQuantityChange);
+
+			  function updateButtonStates() {
+				const value = parseInt(inputBox.value);
+				minusBtn.disabled = value <= 1;
+				plusBtn.disabled = value >= parseInt(inputBox.max);
+			  }
+
+			  function handleButtonClick(event) {
+				if (event.target.classList.contains("minus")) {
+				  decreaseValue();
+				} else if (event.target.classList.contains("plus")) {
+				  increaseValue();
+				}
+			  }
+
+			  function decreaseValue() {
+				let value = parseInt(inputBox.value);
+				value = isNaN(value) ? 1 : Math.max(value - 1, 1);
+				inputBox.value = value;
+				updateButtonStates();
+				handleQuantityChange();
+			  }
+
+			  function increaseValue() {
+				let value = parseInt(inputBox.value);
+				value = isNaN(value) ? 1 : Math.min(value + 1, parseInt(inputBox.max));
+				inputBox.value = value;
+				updateButtonStates();
+				handleQuantityChange();
+			  }
+
+			  function handleQuantityChange() {
+				let value = parseInt(inputBox.value);
+				value = isNaN(value) ? 1 : value;
+
+				// Execute your code here based on the updated quantity value
+				console.log("Quantity changed:", value);
+			  }
+			})();
+
+		
+	</script>   
+	  
+		 <script>
+		$(document).ready(function () {
+			  const quantityContainer = document.querySelector("#quantity3");
+			  const minusBtn = quantityContainer.querySelector(".minus");
+			  const plusBtn = quantityContainer.querySelector(".plus");
+			  const inputBox = quantityContainer.querySelector(".input-box");
+
+			  updateButtonStates();
+
+			  quantityContainer.addEventListener("click", handleButtonClick);
+			  inputBox.addEventListener("input", handleQuantityChange);
+
+			  function updateButtonStates() {
+				const value = parseInt(inputBox.value);
+				minusBtn.disabled = value <= 1;
+				plusBtn.disabled = value >= parseInt(inputBox.max);
+			  }
+
+			  function handleButtonClick(event) {
+				if (event.target.classList.contains("minus")) {
+				  decreaseValue();
+				} else if (event.target.classList.contains("plus")) {
+				  increaseValue();
+				}
+			  }
+
+			  function decreaseValue() {
+				let value = parseInt(inputBox.value);
+				value = isNaN(value) ? 1 : Math.max(value - 1, 1);
+				inputBox.value = value;
+				updateButtonStates();
+				handleQuantityChange();
+			  }
+
+			  function increaseValue() {
+				let value = parseInt(inputBox.value);
+				value = isNaN(value) ? 1 : Math.min(value + 1, parseInt(inputBox.max));
+				inputBox.value = value;
+				updateButtonStates();
+				handleQuantityChange();
+			  }
+
+			  function handleQuantityChange() {
+				let value = parseInt(inputBox.value);
+				value = isNaN(value) ? 1 : value;
+
+				// Execute your code here based on the updated quantity value
+				console.log("Quantity changed:", value);
+			  }
+			})();
+
+		
+	</script>
+	  
+	  
+	  
+  </head>
+  <body>
+
+	  
+		  
+		  
+	<!----------------- Header (Start) ----------------->
+	<div class="col-12 d-none 
+				header"></div>				
+	<!----------------- Header (End) ----------------->
+
+		<!----------------- NAVIGATIONS (Start) ----------------->
+		<div class="container glass-figma" id="nav-bg">
+            <div class="row">
+                
+                <div class="col-xl-3 d-none d-xl-flex nav-logo">
+                    <a href="Nguyen Hoang Vinh Phu_Home.html"><img src="imgs/logo/logo-white-pink.svg" alt="logo"></a>
+                </div>
+                <div class="col-xl-6 d-none d-xl-block nav-content">
+                    <ul>
+                        <li><a href="Nguyen Hoang Vinh Phu_Home.html">HOME</a></li>
+                    
+                        <li class="dropdown">
+                            <a id="store-btn-drop" href="#">STORE <img src="imgs/icon/Chevron down.svg"></a>
+                            <ul class="dropdown-menu">
+                              <li><a href="Tran Ngoc Bao Tran_Product.html">Jpop</a></li>
+                              <li><a href="Tran Ngoc Bao Tran_Product.html">Pop Rock</a></li>
+                              <li><a href="Tran Ngoc Bao Tran_Product.html">Alternative Rock</a></li>
+                              <li><a href="Tran Ngoc Bao Tran_Product.html">Punk Rock</a></li>
+                              <li><a href="Tran Ngoc Bao Tran_Product.html">Idol-Dance Pop</a></li>
+                              <li><a href="Tran Ngoc Bao Tran_Product.html">Metal</a></li>
+                              <li><a href="Tran Ngoc Bao Tran_Product.html">EDM-Electro-Techno</a></li>
+    
+    
+                            </ul>
+                          </li>
+                        <li><a href="Nguyen Hoang Vinh Phu_AboutUs.html">ABOUT US</a></li>
+                        <li><a href="Tran Ngoc Bao Tran_Contact.html">CONTACT</a></li>
+                    </ul>
+                </div><!-- nav-content -->
+                <div class="col-xl-3 d-none d-xl-block nav-icon">
+                    <ul>
+                        <li><a href="#" data-toggle="collapse" data-target="#search-dropdown"><img src="imgs/icon/Search.svg" alt="search"></a></li>
+                        <li><a href="#"><img src="imgs/icon/User.svg" alt="user" loading=></a></li>
+                        <li><a href="Nguyen Dao Khanh Linh_Cart.html"><img src="imgs/icon/Shopping cart.svg" alt="cart"></a></li>
+                    </ul>
+                    <div id="search-dropdown" class="collapse">
+                        <div class="search-flex glass-figma-pink">
+                        <input type="text" placeholder="Search...">
+                        <button type="submit"><img src="imgs/icon/Search.svg" alt="search"></button>
+                        </div><!-- search-flex -->
+                    </div><!-- search-dropdown -->
+                </div><!-- nav-icon -->
+                <div class="col-3 col-sm-3 col-md-2 col-lg-2 d-xl-none" id="mobile-menu">
+                    <a id="menubtn"><img src="imgs/icon/Menu.svg" alt="menu"></a>
+                </div>
+                <div class="offset-1 offset-md-2 col-4 d-xl-none" id="mobile-logo">
+                    <a href="Nguyen Hoang Vinh Phu_Home.html"><img src="imgs/logo/logo-white-pink.svg" alt="logo"></a>
+                </div><!-- mobile-logo -->
+                <div class="col-3 col-md-2 offset-1 offset-md-2 d-xl-none" id="mobile-cart">
+                    <a href="Nguyen Dao Khanh Linh_Cart.html"><img src="imgs/icon/Shopping cart-mobile.svg" alt="cart-mobile"></a>
+                </div><!-- mobile-cart -->
+            </div><!-- .row -->
+        </div><!-- .container -->
+        <!-----Thanh trượt MENU Mobile----->
+        <nav id="menu">
+            <a id="closebtn"><img src="imgs/icon/X-pink.svg" alt="X"></a>
+            <a id="user-btn" class="glass-figma-pink"><img src="imgs/icon/User.svg" alt="user"></a>
+            <form class="form-mobile-menu glass-figma-pink">
+                <input type="text" placeholder="Search...">
+                <button type="submit"><img src="imgs/icon/Search.svg" alt="search"></button>
+            </form>
+            <ul>
+                <li><a href="Nguyen Hoang Vinh Phu_Home.html">HOME</a></li>
+                <li><a href="Tran Ngoc Bao Tran_Product.html" data-toggle="collapse" data-target="#product-mobile-content">STORE <img class="arrow-icon" src="imgs/icon/Chevron down-pink.svg"></a></li>
+                <div id="product-mobile-content" class="collapse">
+                    <ul id="product-mobile-sublist">
+                        <li><a href="Tran Ngoc Bao Tran_Product.html">JPOP</a></li>
+                        <li><a href="Tran Ngoc Bao Tran_Product.html">POP ROCK</a></li>
+                        <li><a href="Tran Ngoc Bao Tran_Product.html">ALTERNATIVE ROCK</a></li>
+                        <li><a href="Tran Ngoc Bao Tran_Product.html">PUNK ROCK</a></li>
+                        <li><a href="Tran Ngoc Bao Tran_Product.html">IDOL-DANCE POP</a></li>
+                        <li><a href="Tran Ngoc Bao Tran_Product.html">METAL</a></li>
+                        <li><a href="Tran Ngoc Bao Tran_Product.html">EDM-ELECTRO-TECHNO</a></li>
+                    </ul><!----product-mobile-sublist----->
+                </div><!-- product-mobile-content -->
+                <li><a href="Nguyen Hoang Vinh Phu_AboutUs.html">ABOUT US</a></li>
+                <li><a href="Tran Ngoc Bao Tran_Contact.html">CONTACT</a></li>
+                <li><a href="#">NEWS</a></li>
+                <li><a href="Tran Ngoc Bao Tran_Contact.html">FAQ</a></li>
+            </ul>
+        </nav><!-- #menu -->
+	<!----------------- NAVIGATIONS (END) ----------------->
+	
+	<!----Bắt đầu code từ đây, LƯU Ý là code phần nào thì Note lại START-END để dễ nhìn nha mấy đứa, CSS cũng thế nhe----->
+		  
+		  
+
+		 <div class="benner">
+		  <img src="imgs/Khanh Linh/banner_product1.png" class="img-fluid" alt="Snow" style="width:100%;">
+			<div class="bottom-right1">Add one more item to get a   </div>
+		  	<div class="bottom-right">10% discount! </div>
+		</div>
+	  
+	  
+	<div class="container-fluid" id="nenyc" style="padding-left: 0px;">	  
+	<!-----BREADCRUMB (START)----->
+	<div class="container" id="breadcrumb-container">
+		<div class="row" id="breadcrumb-row">
+			<a class="breadcrumb-home" href="Nguyen Hoang Vinh Phu_Home.html">Home</a>
+			<a href="#"><img src="imgs/icon/Chevron right-pink.svg" alt="chevron-right"></a>
+			<a href="#">Cart</a>
+		</div><!------row------>
+	</div><!---breadcrumb-container--->
+	  <!-----BREADCRUMB (END)----->
+		
+		
+		<!---------------------------- Product XL-MD ---------------------------->
+		<div class="container" id="hr">
+			<div class="row">
+				<div class="col-xl-4
+							col-lg-4
+							col-md-5 d-none d-md-block pr">
+					<p class="Product">Product</p>
+				</div>
+				
+				<div class="col-xl-8
+							col-lg-8
+							col-md-7 d-none d-md-block">
+					<div class="row">
+						<div class=" col-xl-5
+									 col-lg-5
+									 col-md-5 ct1">
+							<p class="Attributes">Attributes</p>
+						</div>
+						<div class=" col-xl-4
+									 col-lg-4
+									 col-md-4 ct1">
+							<p class="Quantity">Quantity</p>
+						</div>
+						<div class=" col-xl-3
+									 col-lg-3
+									 col-md-3 ct1">
+							<p class="Price">Price</p>
+						</div>
+					</div>
+				</div>
+			</div> <!--------------------------row--------------------->
+		<hr style="margin-bottom: 0px;margin-top: 0px;">
+		</div> <!---------------------------- container Product---------------------------->	  
+		
+		  <!--------------------------checkbox + img--------------------->
+		<div class="container">
+			<div class="row" style="margin-top: -15px;">
+				<div class="col-xl-4
+							col-lg-4
+							col-md-5 d-none d-md-block img1">
+					<img src="imgs/Khanh Linh/H1.png" alt="#">
+					<div class="IRISOUT">
+						<h5 class="poprock1">IRIS OUT</h5>
+						<p class="poprock1">Kenshi Yonezu</p>
+						 <button><a href="#" class="a1">Remove</a></button>
+					</div>
+				</div>
+				
+				<!--------------------------checkbox + img MB--------------------->
+				<div class="col-sm-8
+							col-7 d-md-none img1">
+					<img src="imgs/Khanh Linh/H1.png" alt="#">
+					<div class="IRISOUT">
+						<h5 class="poprock1">IRIS OUT</h5>
+						<p class="poprock1">Kenshi Yonezu</p>
+							<p class="poprock">Category: Pop Rock</p>
+							<p class="poprock">Classify: Full </p>
+						<button><a href="#">Remove</a></button>
+					</div>
+				</div><!--------------------------checkbox + img MB--------------------->
+				
+				<div class="col-xl-8
+							col-lg-8
+							col-md-7
+							col-sm-4
+							col-5">
+					
+					<div class="row">
+						<div class=" col-xl-5
+									 col-lg-5
+									 col-md-5
+									 d-none d-md-block ct">
+							<p class="poprock1">Category: Pop Rock</p>
+							<p class="poprock1">Classify: Full </p>
+							
+						</div>
+						<div class=" col-xl-4
+									 col-lg-4
+									 col-md-4
+									 col-sm-12
+									 col-12 ct1">
+			
+							 <div id="quantity" style="display: flex; justify-content: center; align-items: center; gap: 20px; padding: 0 20px;">
+								<button class="minus" aria-label="Decrease">&minus;</button>
+								<input type="number" class="input-box" value="1" min="1" max="10">
+								<button class="plus" aria-label="Increase">&plus;</button>
+							</div>
+						</div>
+						<div class=" col-xl-2
+									 col-lg-2
+									 col-md-3
+									 col-sm-12
+									 col-12 ct">
+							<p class="gia2">$120.00</p>
+						</div>
+					</div>
+					
+				</div>
+				
+			</div> <!--------------------------row--------------------->
+		</div><!--------------------------container checkbox + img--------------------->
+		  
+		  
+		  
+		<!--------------------------container checkbox + img2--------------------->  
+		<div class="container">
+		<hr style="margin-bottom: 0px;margin-top: 30px;">
+			<div class="row" style="margin-top: -15px;">
+				<div class="col-xl-4
+							col-lg-4
+							col-md-5 d-none d-md-block img1">
+					<img src="imgs/Khanh Linh/h2.png" alt="#">
+					<div class="IRISOUT">
+						<h5 class="poprock1">U SEE BIG GIRL T:T</h5>
+						<p class="poprock1">Hiroyuki Sawano</p>
+						 <button><a href="#" class="a1">Remove</a></button>
+					</div>
+				</div>
+				
+				<!--------------------------checkbox + img MB--------------------->
+				<div class="col-sm-8
+							col-7 d-md-none img1">
+					<img src="imgs/Khanh Linh/h2.png" alt="#">
+					<div class="IRISOUT">
+						<h5 class="poprock1">U SEE BIG GIRL T:T</h5>
+						<p class="poprock1">Hiroyuki Sawano</p>
+						<p class="poprock">Category: Pop Rock</p>
+						<p class="poprock">Classify: Full </p>
+						 <button><a href="#" class="a1">Remove</a></button>
+					</div>
+				</div><!--------------------------checkbox + img MB--------------------->
+				
+				<div class="col-xl-8
+							col-lg-8
+							col-md-7
+							col-sm-4
+							col-5">
+					
+					<div class="row">
+						<div class=" col-xl-5
+									 col-lg-5
+									 col-md-5
+									 d-none d-md-block ct">
+							<p class="poprock1">Category: Pop Rock</p>
+							<p class="poprock1">Classify: Full </p>
+							
+						</div>
+						<div class=" col-xl-4
+									 col-lg-4
+									 col-md-4
+									 col-sm-12
+									 col-12 ct1">
+			
+							 <div id="quantity2" style="display: flex; justify-content: center; align-items: center; gap: 20px; padding: 0 20px;">
+								<button class="minus" aria-label="Decrease">&minus;</button>
+								<input type="number" class="input-box" value="1" min="1" max="10">
+								<button class="plus" aria-label="Increase">&plus;</button>
+							</div>
+						</div>
+						<div class=" col-xl-2
+									 col-lg-2
+									 col-md-3
+									 col-sm-12
+									 col-12 ct">
+							<p class="gia2">$120.00</p>
+						</div>
+					</div>
+					
+				</div>
+				
+			</div> <!--------------------------row--------------------->
+		</div><!--------------------------container checkbox + img2---------------------> 
+		  
+		  
+		  <!--------------------------container checkbox + img3--------------------->  
+		<div class="container">
+		<hr style="margin-bottom: 0px;margin-top: 30px;">
+			<div class="row" style="margin-top: -15px;">
+				<div class="col-xl-4
+							col-lg-4
+							col-md-5 d-none d-md-block img1">
+					<img src="imgs/Khanh Linh/h3.png" alt="#">
+					<div class="IRISOUT">
+						<h5 class="poprock1">FORGET IT </h5>
+						<p class="poprock1">Yorushika</p>
+						 <button><a href="#" class="a1">Remove</a></button>
+					</div>
+				</div>
+				
+				<!--------------------------checkbox + img MB--------------------->
+				<div class="col-sm-8
+							col-7 d-md-none img1">
+					<img src="imgs/Khanh Linh/h3.png" alt="#">
+					<div class="IRISOUT">
+						<h5 class="poprock1">FORGET IT </h5>
+						<p class="poprock1">Yorushika</p>
+						<p class="poprock">Category:  Pop Rock</p>
+						<p class="poprock">Classify:Full </p>
+						 <button><a href="#" class="a1">Remove</a></button>
+					</div>
+				</div><!--------------------------checkbox + img MB--------------------->
+				
+				<div class="col-xl-8
+							col-lg-8
+							col-md-7
+							col-sm-4
+							col-5">
+					
+					<div class="row">
+						<div class=" col-xl-5
+									 col-lg-5
+									 col-md-5
+									 d-none d-md-block ct">
+							<p class="poprock1">Category: Pop Rock</p>
+							<p class="poprock1">Classify: Full </p>
+							
+						</div>
+						<div class=" 
+									 col-lg-4
+									 col-md-4
+									 col-sm-12
+									 col-12 ct1">
+			
+							 <div id="quantity3" style="display: flex; justify-content: center; align-items: center; gap: 20px; padding: 0 20px;">
+								<button class="minus" aria-label="Decrease">&minus;</button>
+								<input type="number" class="input-box" value="1" min="1" max="10">
+								<button class="plus" aria-label="Increase">&plus;</button>
+							</div>
+						</div>
+						<div class=" col-xl-2
+									 col-lg-2
+									 col-md-3
+									 col-sm-12
+									 col-12 ct">
+							<p class="gia2">$120.00</p>
+						</div>
+					</div>
+					
+				</div>
+				
+			</div> <!--------------------------row--------------------->
+			
+		</div><!--------------------------container checkbox + img3--------------------->
+		
+		  <div class="container">
+			<hr style="margin-bottom: 30px;margin-top: 30px;">
+			<div class="row">
+				<div class="col-6">
+					<div class="bill">
+						<h5 style="padding-top: 10px;">Total cost of goods</h5>
+						<h6 style="padding-top: 10px;">Shipping</h6>
+						<h6 style="padding-top: 10px;">Tax</h6>
+						<h6 style="padding-top: 10px;">Insurance</h6>
+						<h6 style="padding-top: 25px;">Voucher</h6>
+					</div>
+				</div>
+			  
+				<div class="col-6">
+					<div class="gia">
+						<h6 style="padding-top: 10px;">$360.00</h6>
+						<h6 style="padding-top: 10px;">-</h6>
+						<h6 style="padding-top: 10px;">$5.00</h6>
+						<h6 style="padding-top: 10px;">$10.00</h6>
+						<div class="di">
+							<h6 style="padding-top: 10px;"><input type="text" name="Discount 15%" placeholder="Discount 15%" class="Discount"></h6>
+
+							<ul>
+								<i class="fa-solid fa-arrow-right"></i>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>  
+			<div class="clear"></div>
+			
+			<hr style="margin-bottom: 0px;margin-top: 30px;">  
+			<div>	
+				<h4 style="padding-top: 40px;" class="bill2">$375.00 </h4>
+				<h4 style="padding-top: 40px;" class="bill">Total payment (3 Products)</h4>
+				
+			</div>  
+			  <div class="clear"></div>
+			
+				 
+				<a href="#" class="button second-button1">Check Out</a>
+				<a href="#" class="button second-button2">Shopping Cart</a>
+			
+		</div>
+		  
+		</div>  
+		  
+		  
+		  
+		  
+		  
+		  
+	
+	 
+	<!-----FOOTER (START)----->
+    <div class="container-fluid" id="footer-bg">
+        <div class="container">
+            <div class="row" id="footer-row">
+                <div class="col-lg-3 col-md-4 col-12" id="footer-logo-section">
+                    <img src="imgs/logo/logo-white-pink.svg" alt="logo" loading="lazy">
+                    <p>Where Anime Lives in Sound</p>
+                    <div class="social-med-row">
+                        <a href="#"><img src="imgs/icon/Facebook-pink.svg" alt="facebook" loading="lazy"></a>
+                        <a href="#"><img src="imgs/icon/Insta-pink.svg" alt="instagram" loading="lazy"></a>
+                        <a href="#"><img src="imgs/icon/Tiktok-pink.svg" alt="tiktok" loading="lazy"></a>
+                    </div><!------social-med-row----->
+                </div><!----footer-logo-section----->
+                <div class="col-12 d-md-none" id="footer-product-mobile">
+                    <button data-toggle="collapse" data-target="#product-content">
+                        <h3>Products</h3> <img class="arrow-icon" src="imgs/icon/Chevron down.svg" alt="chevron-down">
+                    </button><!----product-mobile-button---->
+                    <div id="product-content" class="collapse">
+                        <a href="Tran Ngoc Bao Tran_Product.html">Collections</a>
+                        <a href="Tran Ngoc Bao Tran_Product.html">Best Seller</a>
+                        <a href="Tran Ngoc Bao Tran_Product.html">J-Pop</a>
+                        <a href="Tran Ngoc Bao Tran_Product.html">Pop Rock</a>
+                        <a href="Tran Ngoc Bao Tran_Product.html">Idol-Dance</a>
+                        <a href="Tran Ngoc Bao Tran_Product.html">Metal</a>
+                    </div><!---product-section-child----->
+                </div><!-----footer-product-mobil----->
+                <div class="col-lg-2 col-md-4 d-none d-md-flex" id="footer-product-section">
+                    <h3>Products</h3>
+                    <div id="product-section-child">
+                        <a href="Tran Ngoc Bao Tran_Product.html">Collections</a>
+                        <a href="Tran Ngoc Bao Tran_Product.html">Best Seller</a>
+                        <a href="Tran Ngoc Bao Tran_Product.html">J-Pop</a>
+                        <a href="Tran Ngoc Bao Tran_Product.html">Pop Rock</a>
+                        <a href="Tran Ngoc Bao Tran_Product.html">Idol-Dance</a>
+                        <a href="Tran Ngoc Bao Tran_Product.html">Metal</a>
+                    </div><!---product-section-child----->
+                </div><!-----footer-product-section---->
+                <div class="col-12 d-md-none" id="footer-info-mobile">
+                    <button data-toggle="collapse" data-target="#info-content">
+                        <h3>Information</h3> <img class="arrow-icon" src="imgs/icon/Chevron down.svg" alt="chevron-down">
+                    </button><!----product-mobile-button---->
+                    <div id="info-content" class="collapse">
+                        <a href="Tran Ngoc Bao Tran_Contact.html">Contact</a>
+                        <a href="Nguyen Hoang Vinh Phu_AboutUs.html">About Us</a>
+                        <a href="#">Product Updates</a>
+                        <a href="#">News</a>
+                        <a href="#">Return Policy</a>
+                        <a href="#">Terms of Service</a>
+                    </div><!---product-section-child----->
+                </div><!----footer-info-mobile----->
+                <div class="col-lg-3 col-md-4 d-none d-md-flex" id="footer-info-section">
+                    <h3>Information</h3>
+                    <div id="info-child">
+                        <a href="Tran Ngoc Bao Tran_Contact.html">Contact</a>
+                        <a href="Nguyen Hoang Vinh Phu_AboutUs.html">About Us</a>
+                        <a href="#">Product Updates</a>
+                        <a href="#">News</a>
+                        <a href="#">Return Policy</a>
+                        <a href="#">Terms of Service</a>
+                    </div><!---info-child---->
+                </div><!----footer-info-section---->
+                <div class="col-lg-4 col-md-12" id="footer-news-section">
+                    <h3>Newsletter</h3>
+                    <p>Stay up to date with pre-orders, releases, and product drops!</p>
+                    <form action="#">
+                        <input type="email" placeholder="Email Address" class="glass-figma-2">
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div><!-----footer-newsletter-section---->
+            </div><!-----footer-row----->
+            <div class="row" id="footer-inline-row">
+                <div class="inline-footer">
+                    <p>© 2025 EKOH. All rights reserved. &nbsp; </p>
+                    <a href="#">Terms</a>
+                    <p>,</p> &nbsp;
+                    <a href="#">Privacy</a> &nbsp;
+                    <p> & </p> &nbsp;
+                    <a href="#">Accessibility</a>
+                </div><!----inline-footer----->
+                <div class="inline-footer">
+                    <p>Do not sell our personal information</p>
+                </div><!----inline-footer----->
+            </div><!----footer-inline-row----->
+        </div><!----container---->
+    </div><!----container-fluid----->
+    <!-----FOOTER (END)----->	
+
+	<script src="js/index.js"></script>
+  </body>
+</html>

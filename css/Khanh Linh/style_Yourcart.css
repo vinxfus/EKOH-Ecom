@@ -1,0 +1,1842 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+
+h1{
+	font-size: 31px;
+	}
+	h2{
+		font-size: 25px;
+	}
+	h3{
+		font-size: 22px;
+	}
+	h4{
+		font-size: 20px;
+	}
+	h5{
+		font-size: 18px;
+	}
+	h6{
+		font-size: 17px;
+	}
+	.suphead{
+		font-size: 16px;
+	}
+	p{
+		font-size: 16px;
+	}
+	.capion{
+		font-size: 14px;
+	}
+	.button{
+		font-size: 16px;
+	}
+
+hr{
+	border: 1px solid #FDB1FA;
+}
+
+#nenyc{
+	
+	background-color: var(--black-color);
+}
+	
+.benner{
+	margin-bottom: 60px;
+}
+/*---------------------------- IMG1 ----------------------------*/	
+	.poprock{
+		margin-bottom: 0px;
+		padding-left: 121px;
+		color: #FEE0FD;
+		opacity: 80%;
+	}
+	.poprock1{
+		margin-bottom: 0px;
+		
+	}
+/*----------------- breadcrumb -----------------*/
+
+h4, h5, h3, p{
+	color: #FFFFFF;
+	font-family:  heading-font;
+}
+.your{
+	padding-bottom: 30px;
+}
+.clear{
+		clear: both;
+	}
+
+.di ul{
+	margin-top: 10px;
+	padding-top: 8px;
+	padding-right: 15px;
+	border-bottom: 2px solid #FDB1FA;
+	border-top: 2px solid #FDB1FA;
+	border-right: 2px solid #FDB1FA;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+	height: 45px;
+	color: #FDB1FA;
+}
+.di ul:hover{
+	color: #FFFFFF;
+}
+.di{
+	display: flex;
+}
+
+
+.gia input{
+		border: none;
+		border-bottom-left-radius: 5px;
+		border-top-left-radius: 5px;
+		border-bottom: 2px solid #FDB1FA;
+		border-top: 2px solid #FDB1FA;
+		border-left: 2px solid #FDB1FA;
+		background-color: transparent;
+		text-align: center;
+		color:#FDB1FA;
+		width: 120px;
+		height: 45px;
+}
+.gia input:focus{
+		outline: none;
+}
+
+
+
+
+
+
+/*-----------------------------------------------------------XL----------------------------------------------------------------------*/
+@media (min-width: 1200px){
+/*--------------------benner--------------------------*/
+.benner {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+/* Bottom right text */
+.bottom-right {
+ font-family: heading-font;
+ font-weight: 700;
+ padding-bottom: 210px;
+ padding-right: 150px;
+ color: #FDB1FA;	
+ font-size: 50px;
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
+}
+
+.bottom-right1 {
+font-family: heading-font;
+ font-weight: 500;
+ padding-bottom: 270px;
+ padding-right: 131px;
+ color: #FFFFFF;	
+ font-size: 30px;
+ margin-left: 20%;
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
+}
+
+	#nenyc1{
+		background-image: url( "../../imgs/Khanh Linh/banner_product xl1.png");
+		background-repeat: no-repeat;
+	}
+
+.second-button1{
+	display: flex;
+	float: right;
+  background-color: #FDB1FA;
+  width: 180px;
+  height: 45px;
+  font-family: heading-font;
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--black-color);
+  text-decoration: none;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  margin-left: 15px;
+  margin-right: 60px;
+  border-radius: 5px;
+  transition: ease-in-out .3s;
+}
+
+
+.second-button2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  background-color: transparent;
+  border: 1px solid #FFFFFF;
+  width: 180px;
+  height: 45px;
+  font-family: heading-font;
+  font-size: 16px;
+  color: #FFFFFF;
+  text-decoration: none;
+  margin-top: 30px;
+  margin-left: 60px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  transition: ease-in-out .3s;
+}
+.second-button1:hover{
+	color: var(--black-color);
+	background: var(--white-color);
+	text-decoration: none;
+	box-shadow: 0 6px 14px rgba(253, 177, 250, .35);
+}	
+.second-button2:hover{
+	background-color: #FFFFFF;
+	color: #000000;
+	text-decoration: none;
+}
+	/*---------------------------- Product XL-MD ----------------------------*/	
+	
+	.Product{
+		padding-left: 60px;
+	}
+	.Attributes{
+		padding-left: 50px;
+	}
+	.Quantity{
+		padding-left: 20px;
+	}
+	.Price{
+		padding-left: 60px;
+	}
+	
+	.poprock1{
+		padding-left: 50px;
+	}
+	.gia2{
+		padding-left: 40px;
+	}
+	.ct{
+		padding-top: 60px;
+	}
+
+	
+	
+	.bill{
+		color:#FFFFFF;
+		float: left;
+	padding-left: 60px;
+	}
+.bill2{
+	color:#FFFFFF;
+	float: right;
+	padding-right: 60px;
+	}	
+	
+	.gia{
+		float: right;
+		color:#FFFFFF;
+		text-align: right;
+		padding-right: 60px;
+	}
+	
+
+	
+	
+	/*---------------------------- IMG1 ----------------------------*/	
+	.img1 img{
+		display: inline-block;
+		float: left;
+		padding-left: 60px;
+		padding-top: 50px;
+		padding-right: 32px;
+	}
+	.IRISOUT{
+		padding-top: 50px;
+	}
+	.IRISOUT button{
+		border: none;
+		background-color: transparent;
+		padding-left: 157px;
+	}
+	.IRISOUT button:focus{
+		outline: none;
+	}
+	
+	.IRISOUT a{
+		color: #FEE0FD;
+		opacity: 50%;
+		font-size: 16px;
+		text-decoration: none;
+	}
+	.IRISOUT a:hover{
+		color: #FA7025;
+		text-decoration: none;
+	}
+	
+
+	
+	
+	
+	
+	
+	#glass-figma{
+		width: 1192px;
+		height: 700px;
+		border-radius: 25px;
+		position: relative;
+		background: rgba(255, 255, 255, 0.05);
+			/* lớp nền trong suốt */
+		backdrop-filter: blur(5px) saturate(120%);
+		-webkit-backdrop-filter: blur(12px) saturate(180%);
+		border: 1px solid rgba(255, 255, 255, 0.1);
+		box-shadow:
+        inset 1px 1px 2px rgba(255, 255, 255, 0.15),
+        /* ánh sáng phản xạ */
+        0 8px 32px rgba(0, 0, 0, 0.4);
+        /* chiều sâu */
+    
+        /* hiệu ứng ánh sáng theo góc */
+        background-image: linear-gradient(135deg,
+        rgba(255, 255, 255, 0.1) 0%,
+        rgba(255, 255, 255, 0.0) 100%);
+	}
+	
+	
+	
+
+	 
+	
+	
+	
+	
+	#quantity {
+		margin-top: 60px;
+		width: 136px;;
+		height: 40px;
+		border-radius: 5px;
+		position: relative;
+		background: rgba(253,177,250,0.1);
+			/* lớp nền trong suốt */
+		backdrop-filter: blur(5px) saturate(120%);
+		-webkit-backdrop-filter: blur(12px) saturate(180%);
+		border: 1px solid rgba(255, 255, 255, 0.1);
+		box-shadow:
+        inset 1px 1px 2px rgba(255, 255, 255, 0.15),
+        /* ánh sáng phản xạ */
+        0 8px 32px rgba(0, 0, 0, 0.4);
+        /* chiều sâu */
+    
+        /* hiệu ứng ánh sáng theo góc */
+        background-image: linear-gradient(135deg,
+        rgba(255, 255, 255, 0.1) 0%,
+        rgba(255, 255, 255, 0.0) 100%);
+		overflow: hidden;
+		box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#quantity button {
+  background-color: transparent;
+  color: #FDB1FA;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  text-align: center;
+  transition: all ease 0,5s;
+}
+
+#quantity button:hover {
+   color: #FFFFFF;
+	transition: all ease 0,5s;
+}
+#quantity button:focus{
+	outline: none;
+}
+	
+.input-box {
+  background-color: transparent;
+  color: #FDB1FA;
+  text-align: center;
+  border: none;
+  font-size: 16px;
+  outline: none;
+}
+
+/* Hide the number input spin buttons */
+.input-box::-webkit-inner-spin-button,
+.input-box::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.input-box[type="number"] {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  -moz-appearance: textfield;
+  -webkit-appearance: textfield;
+  appearance: textfield;
+}
+
+	
+	#quantity2 {
+		margin-top: 60px;
+		width: 136px;;
+		height: 40px;
+		border-radius: 5px;
+		position: relative;
+		background: rgba(253,177,250,0.1);
+			/* lớp nền trong suốt */
+		backdrop-filter: blur(5px) saturate(120%);
+		-webkit-backdrop-filter: blur(12px) saturate(180%);
+		border: 1px solid rgba(255, 255, 255, 0.1);
+		box-shadow:
+        inset 1px 1px 2px rgba(255, 255, 255, 0.15),
+        /* ánh sáng phản xạ */
+        0 8px 32px rgba(0, 0, 0, 0.4);
+        /* chiều sâu */
+    
+        /* hiệu ứng ánh sáng theo góc */
+        background-image: linear-gradient(135deg,
+        rgba(255, 255, 255, 0.1) 0%,
+        rgba(255, 255, 255, 0.0) 100%);
+		overflow: hidden;
+		box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#quantity2 button {
+  background-color: transparent;
+  color: #FDB1FA;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  text-align: center;
+  transition: all ease 0,5s;
+}
+
+#quantity2 button:hover {
+   color: #FFFFFF;
+	transition: all ease 0,5s;
+}
+#quantity2 button:focus{
+	outline: none;
+}
+
+	#quantity3 {
+		margin-top: 60px;
+		width: 136px;;
+		height: 40px;
+		border-radius: 5px;
+		position: relative;
+		background: rgba(253,177,250,0.1);
+		backdrop-filter: blur(5px) saturate(120%);
+		-webkit-backdrop-filter: blur(12px) saturate(180%);
+		border: 1px solid rgba(255, 255, 255, 0.1);
+		box-shadow:
+        inset 1px 1px 2px rgba(255, 255, 255, 0.15),
+        0 8px 32px rgba(0, 0, 0, 0.4);
+        background-image: linear-gradient(135deg,
+        rgba(255, 255, 255, 0.1) 0%,
+        rgba(255, 255, 255, 0.0) 100%);
+		overflow: hidden;
+		box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#quantity3 button {
+  background-color: transparent;
+  color: #FDB1FA;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  text-align: center;
+  transition: all ease 0,5s;
+}
+
+#quantity3 button:hover {
+   color: #FFFFFF;
+	transition: all ease 0,5s;
+}
+#quantity3 button:focus{
+	outline: none;
+}
+
+
+
+}
+	
+/*------------------------------------------------------------------LG---------------------------------------------------------------*/
+	@media (max-width: 1199px) and (min-width: 992px) {
+		
+/*--------------------benner--------------------------*/
+.benner {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+/*---- Bottom right text---- */
+.bottom-right {
+ font-family: heading-font;
+ font-weight: 700;
+ padding-bottom: 125px;
+ padding-right: 55px;
+ color: #FDB1FA;	
+ font-size: 50px;
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
+}
+
+.bottom-right1 {
+font-family: heading-font;
+ font-weight: 500;
+ padding-bottom: 180px;
+ padding-right: 35px;
+ color: #FFFFFF;	
+ font-size: 30px;
+ margin-left: 20%;
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
+}
+
+	#nenyc1{
+		background-image: url( "../../imgs/Khanh Linh/banner_product xl1.png");
+		background-repeat: no-repeat;
+	}
+
+.second-button1{
+	display: flex;
+	float: right;
+  background-color: #FDB1FA;
+  width: 180px;
+  height: 45px;
+  font-family: heading-font;
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--black-color);
+  text-decoration: none;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  margin-left: 15px;
+  margin-right: 60px;
+  border-radius: 5px;
+  transition: ease-in-out .3s;
+}
+
+
+.second-button2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  background-color: transparent;
+  border: 1px solid #FFFFFF;
+  width: 180px;
+  height: 45px;
+  font-family: heading-font;
+  font-size: 16px;
+  color: #FFFFFF;
+  text-decoration: none;
+  margin-top: 30px;
+  margin-left: 60px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  transition: ease-in-out .3s;
+}
+.second-button1:hover{
+	color: var(--black-color);
+	background: var(--white-color);
+	text-decoration: none;
+	box-shadow: 0 6px 14px rgba(253, 177, 250, .35);
+}	
+.second-button2:hover{
+	background-color: #FFFFFF;
+	color: #000000;
+	text-decoration: none;
+}
+
+	/*---------------------------- Product XL-MD ----------------------------*/		
+	
+	.Product{
+		padding-left: 60px;
+	}
+	.Attributes{
+		padding-left: 50px;
+	}
+	.Quantity{
+		padding-left: 20px;
+	}
+	.Price{
+		padding-left: 30px;	
+	}
+		
+			.poprock1{
+		padding-left: 50px;
+	}
+	.gia2{
+		padding-left: 10px;
+	}
+	
+		.bill{
+		color:#FFFFFF;
+		float: left;
+	padding-left: 60px;
+	}
+.bill2{
+		color:#FFFFFF;
+		float: right;
+	padding-right: 60px;
+	}	
+	
+	.gia{
+		color:#FFFFFF;
+        float: right;
+		text-align: right;
+		padding-right: 60px;
+	}
+	
+	
+	
+		.ct{
+		padding-top: 60px;
+	}
+
+	
+		
+		
+	/*---------------------------- IMG1 ----------------------------*/	
+	.img1 img{
+		display: inline-block;
+		float: left;
+		padding-left: 60px;
+		padding-top: 50px;
+		padding-right: 32px;
+	}
+	.IRISOUT{
+		padding-top: 50px;
+	}
+	.IRISOUT button{
+		border: none;
+		background-color: transparent;
+		padding-left: 157px;
+	}
+	.IRISOUT button:focus{
+		outline: none;
+	}
+	
+	.IRISOUT a{
+		color: #FEE0FD;
+		opacity: 50%;
+		font-size: 16px;
+		text-decoration: none;
+	}
+	.IRISOUT a:hover{
+		color: #FA7025;
+		text-decoration: none;
+	}
+	
+		
+		
+	#glass-figma{
+		width: 970px;
+		height: 608px;
+		border-radius: 25px;
+		padding-top: 52px; 
+		position: relative;
+		background: rgba(255, 255, 255, 0.05);
+			/* lớp nền trong suốt */
+		backdrop-filter: blur(5px) saturate(120%);
+		-webkit-backdrop-filter: blur(12px) saturate(180%);
+		border: 1px solid rgba(255, 255, 255, 0.1);
+		box-shadow:
+        inset 1px 1px 2px rgba(255, 255, 255, 0.15),
+        /* ánh sáng phản xạ */
+        0 8px 32px rgba(0, 0, 0, 0.4);
+        /* chiều sâu */
+    
+        /* hiệu ứng ánh sáng theo góc */
+        background-image: linear-gradient(135deg,
+        rgba(255, 255, 255, 0.1) 0%,
+        rgba(255, 255, 255, 0.0) 100%);
+	}
+		
+	
+		
+	#quantity {
+		margin-top: 60px;
+		width: 136px;;
+		height: 40px;
+		border-radius: 5px;
+		position: relative;
+		background: rgba(253,177,250,0.1);
+			/* lớp nền trong suốt */
+		backdrop-filter: blur(5px) saturate(120%);
+		-webkit-backdrop-filter: blur(12px) saturate(180%);
+		border: 1px solid rgba(255, 255, 255, 0.1);
+		box-shadow:
+        inset 1px 1px 2px rgba(255, 255, 255, 0.15),
+        /* ánh sáng phản xạ */
+        0 8px 32px rgba(0, 0, 0, 0.4);
+        /* chiều sâu */
+    
+        /* hiệu ứng ánh sáng theo góc */
+        background-image: linear-gradient(135deg,
+        rgba(255, 255, 255, 0.1) 0%,
+        rgba(255, 255, 255, 0.0) 100%);
+		overflow: hidden;
+		box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#quantity button {
+  background-color: transparent;
+  color: #FDB1FA;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  text-align: center;
+  transition: all ease 0,5s;
+}
+
+#quantity button:hover {
+   color: #FFFFFF;
+	transition: all ease 0,5s;
+}
+#quantity button:focus{
+	outline: none;
+}
+
+.input-box {
+  background-color: transparent;
+  color: #FDB1FA;
+  text-align: center;
+  border: none;
+  font-size: 16px;
+  outline: none;
+}
+
+/* Hide the number input spin buttons */
+.input-box::-webkit-inner-spin-button,
+.input-box::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.input-box[type="number"] {
+  -moz-appearance: textfield;
+}
+
+		#quantity2 {
+		margin-top: 60px;
+		width: 136px;;
+		height: 40px;
+		border-radius: 5px;
+		position: relative;
+		background: rgba(253,177,250,0.1);
+			/* lớp nền trong suốt */
+		backdrop-filter: blur(5px) saturate(120%);
+		-webkit-backdrop-filter: blur(12px) saturate(180%);
+		border: 1px solid rgba(255, 255, 255, 0.1);
+		box-shadow:
+        inset 1px 1px 2px rgba(255, 255, 255, 0.15),
+        /* ánh sáng phản xạ */
+        0 8px 32px rgba(0, 0, 0, 0.4);
+        /* chiều sâu */
+    
+        /* hiệu ứng ánh sáng theo góc */
+        background-image: linear-gradient(135deg,
+        rgba(255, 255, 255, 0.1) 0%,
+        rgba(255, 255, 255, 0.0) 100%);
+		overflow: hidden;
+		box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#quantity2 button {
+  background-color: transparent;
+  color: #FDB1FA;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  text-align: center;
+  transition: all ease 0,5s;
+}
+
+#quantity2 button:hover {
+   color: #FFFFFF;
+	transition: all ease 0,5s;
+}
+#quantity2 button:focus{
+	outline: none;
+}
+	
+			#quantity3 {
+		margin-top: 60px;
+		width: 136px;;
+		height: 40px;
+		border-radius: 5px;
+		position: relative;
+		background: rgba(253,177,250,0.1);
+			/* lớp nền trong suốt */
+		backdrop-filter: blur(5px) saturate(120%);
+		-webkit-backdrop-filter: blur(12px) saturate(180%);
+		border: 1px solid rgba(255, 255, 255, 0.1);
+		box-shadow:
+        inset 1px 1px 2px rgba(255, 255, 255, 0.15),
+        /* ánh sáng phản xạ */
+        0 8px 32px rgba(0, 0, 0, 0.4);
+        /* chiều sâu */
+    
+        /* hiệu ứng ánh sáng theo góc */
+        background-image: linear-gradient(135deg,
+        rgba(255, 255, 255, 0.1) 0%,
+        rgba(255, 255, 255, 0.0) 100%);
+		overflow: hidden;
+		box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#quantity3 button {
+  background-color: transparent;
+  color: #FDB1FA;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  text-align: center;
+  transition: all ease 0,5s;
+}
+
+#quantity3 button:hover {
+   color: #FFFFFF;
+	transition: all ease 0,5s;
+}
+#quantity3 button:focus{
+	outline: none;
+}
+
+
+
+		
+}
+	
+/*-----------------------------------------------------------------------MD----------------------------------------------------------*/
+@media (max-width: 991px) and (min-width: 768px) {
+	/*--------------------benner--------------------------*/
+.benner {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+/* Bottom right text */
+.bottom-right {
+ font-family: heading-font;
+ font-weight: 700;
+ padding-bottom: 90px;
+ padding-right: 45px;
+ color: #FDB1FA;	
+ font-size: 40px;
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
+}
+
+.bottom-right1 {
+font-family: heading-font;
+ font-weight: 500;
+ padding-bottom: 135px;
+ padding-right: 23px;
+ color: #FFFFFF;	
+ font-size: 25px;
+ margin-left: 20%;
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
+}
+	#nenyc1{
+		background-image: url( "../../imgs/Khanh Linh/banner_productMD1.png");
+		background-repeat: no-repeat;
+	}
+
+	/*---------------------------- Product XL-MD ----------------------------*/	
+	
+	.Product{
+		padding-left: 30px;
+	}
+	
+	.Price{
+		padding-left: 30px;
+	}
+	
+	.bill{
+		color:#FFFFFF;
+		float: left;
+	
+	}
+.bill2{
+		color:#FFFFFF;
+		float: right;
+	}	
+	.gia2{
+		padding-left: 10px;
+	}
+	.gia{
+		color:#FFFFFF;
+        float: right;
+		text-align: right;
+		
+	}
+	
+
+		.ct{
+		padding-top: 60px;
+	}
+	
+.second-button1{
+	display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  padding: 10px 0;
+	float: right;
+  background-color: #FDB1FA;
+  width: 180px;
+  font-family: heading-font;
+  font-size: 16px;
+  color: var(--black-color);
+  text-decoration: none;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  margin-left: 15px;
+  border-radius: 5px;
+  transition: ease-in-out 0.3s;
+}
+.second-button1:focus{
+	color: var(--main-color);
+	background-color: var(--white-color);
+	
+	text-decoration: none;
+}
+
+.second-button2{
+  display: flex;
+	justify-content: center;
+	align-items: center;
+	font-weight: 500;
+  background-color: transparent;
+  border: 1px solid var(--white-color);
+  width: 180px;
+  padding: 10px 0;
+  font-family: heading-font;
+  font-size: 16px;
+  color: #FFFFFF;
+  text-decoration: none;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  transition: ease-in-out 0.3s;
+}
+.second-button2:focus{
+	background-color: var(--white-color);
+	color: var(--main-color);
+	text-decoration: none;
+}
+.second-button1:hover{
+	color: var(--black-color);
+	background: var(--white-color);
+	text-decoration: none;
+	box-shadow: 0 6px 14px rgba(253, 177, 250, .35);
+}	
+.second-button2:hover{
+	background-color: #FFFFFF;
+	color: #000000;
+	text-decoration: none;
+}
+	/*---------------------------- IMG1 ----------------------------*/	
+	.img1 img{
+		display: inline-block;
+		float: left;
+		padding-left: 30px;
+		padding-top: 50px;
+		padding-right: 22px;
+	}
+	.IRISOUT{
+		padding-top: 50px;
+	}
+	.IRISOUT button{
+		border: none;
+		background-color: transparent;
+		padding-left: 121px;
+	}
+	.IRISOUT button:focus{
+		outline: none;
+	}
+	
+	.IRISOUT a{
+		color: #FEE0FD;
+		opacity: 50%;
+		font-size: 16px;
+		text-decoration: none;
+	}
+	.IRISOUT a:hover{
+		color: #FA7025;
+		text-decoration: none;
+	}
+	
+	
+	#glass-figma{
+		width: 724px;
+		height: 498px;
+		border-radius: 25px;
+		position: relative;
+		background: rgba(255, 255, 255, 0.05);
+			/* lớp nền trong suốt */
+		backdrop-filter: blur(5px) saturate(120%);
+		-webkit-backdrop-filter: blur(12px) saturate(180%);
+		border: 1px solid rgba(255, 255, 255, 0.1);
+		box-shadow:
+        inset 1px 1px 2px rgba(255, 255, 255, 0.15),
+        /* ánh sáng phản xạ */
+        0 8px 32px rgba(0, 0, 0, 0.4);
+        /* chiều sâu */
+    
+        /* hiệu ứng ánh sáng theo góc */
+        background-image: linear-gradient(135deg,
+        rgba(255, 255, 255, 0.1) 0%,
+        rgba(255, 255, 255, 0.0) 100%);
+	}
+	
+	
+	
+		#quantity {
+		margin-top: 60px;
+		width: 136px;;
+		height: 40px;
+		border-radius: 5px;
+		position: relative;
+		background: rgba(253,177,250,0.1);
+			/* lớp nền trong suốt */
+		backdrop-filter: blur(5px) saturate(120%);
+		-webkit-backdrop-filter: blur(12px) saturate(180%);
+		border: 1px solid rgba(255, 255, 255, 0.1);
+		box-shadow:
+        inset 1px 1px 2px rgba(255, 255, 255, 0.15),
+        /* ánh sáng phản xạ */
+        0 8px 32px rgba(0, 0, 0, 0.4);
+        /* chiều sâu */
+    
+        /* hiệu ứng ánh sáng theo góc */
+        background-image: linear-gradient(135deg,
+        rgba(255, 255, 255, 0.1) 0%,
+        rgba(255, 255, 255, 0.0) 100%);
+		overflow: hidden;
+		box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#quantity button {
+  background-color: transparent;
+  color: #FDB1FA;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  text-align: center;
+  transition: all ease 0,5s;
+}
+
+#quantity button:hover {
+   color: #FFFFFF;
+	transition: all ease 0,5s;
+}
+#quantity button:focus{
+	outline: none;
+}
+
+.input-box {
+  background-color: transparent;
+  color: #FDB1FA;
+  text-align: center;
+  border: none;
+  font-size: 16px;
+  outline: none;
+}
+
+/* Hide the number input spin buttons */
+.input-box::-webkit-inner-spin-button,
+.input-box::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.input-box[type="number"] {
+  -moz-appearance: textfield;
+}
+
+
+	#quantity2 {
+		margin-top: 60px;
+		width: 136px;;
+		height: 40px;
+		border-radius: 5px;
+		position: relative;
+		background: rgba(253,177,250,0.1);
+			/* lớp nền trong suốt */
+		backdrop-filter: blur(5px) saturate(120%);
+		-webkit-backdrop-filter: blur(12px) saturate(180%);
+		border: 1px solid rgba(255, 255, 255, 0.1);
+		box-shadow:
+        inset 1px 1px 2px rgba(255, 255, 255, 0.15),
+        /* ánh sáng phản xạ */
+        0 8px 32px rgba(0, 0, 0, 0.4);
+        /* chiều sâu */
+    
+        /* hiệu ứng ánh sáng theo góc */
+        background-image: linear-gradient(135deg,
+        rgba(255, 255, 255, 0.1) 0%,
+        rgba(255, 255, 255, 0.0) 100%);
+		overflow: hidden;
+		box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#quantity2 button {
+  background-color: transparent;
+  color: #FDB1FA;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  text-align: center;
+  transition: all ease 0,5s;
+}
+
+#quantity2 button:hover {
+   color: #FFFFFF;
+	transition: all ease 0,5s;
+}
+#quantity2 button:focus{
+	outline: none;
+}
+
+	#quantity3 {
+		margin-top: 60px;
+		width: 136px;;
+		height: 40px;
+		border-radius: 5px;
+		position: relative;
+		background: rgba(253,177,250,0.1);
+			/* lớp nền trong suốt */
+		backdrop-filter: blur(5px) saturate(120%);
+		-webkit-backdrop-filter: blur(12px) saturate(180%);
+		border: 1px solid rgba(255, 255, 255, 0.1);
+		box-shadow:
+        inset 1px 1px 2px rgba(255, 255, 255, 0.15),
+        /* ánh sáng phản xạ */
+        0 8px 32px rgba(0, 0, 0, 0.4);
+        /* chiều sâu */
+    
+        /* hiệu ứng ánh sáng theo góc */
+        background-image: linear-gradient(135deg,
+        rgba(255, 255, 255, 0.1) 0%,
+        rgba(255, 255, 255, 0.0) 100%);
+		overflow: hidden;
+		box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#quantity3 button {
+  background-color: transparent;
+  color: #FDB1FA;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  text-align: center;
+  transition: all ease 0,5s;
+}
+
+#quantity3 button:hover {
+   color: #FFFFFF;
+	transition: all ease 0,5s;
+}
+#quantity3 button:focus{
+	outline: none;
+}
+
+
+
+}
+	
+
+
+/*--------------------------------------------------------------------------SM-------------------------------------------------------*/
+@media (max-width: 767px) and (min-width: 576px) {
+	
+/*--------------------benner--------------------------*/
+.benner {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+/* Bottom right text */
+.bottom-right {
+ font-family: heading-font;
+ font-weight: 700;
+ padding-bottom: 60px;
+ padding-right: 35px;
+ color: #FDB1FA;	
+ font-size: 30px;
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
+}
+
+.bottom-right1 {
+font-family: heading-font;
+ font-weight: 500;
+ padding-bottom: 95px;
+ padding-right: 23px;
+ color: #FFFFFF;	
+ font-size: 18px;
+ margin-left: 20%;
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
+}
+	#nenyc1{
+		background-image: url( "../../imgs/Khanh Linh/banner_productXS1.png");
+		background-repeat: no-repeat;
+	}
+	/*---------------------------- Product XL-MD ----------------------------*/	
+		.bill{
+		color:#FFFFFF;
+		float: left;
+	
+	}
+.bill2{
+		color:#FFFFFF;
+		float: right;
+	}	
+	.gia2{
+		padding-left: 87px;
+		
+	}
+	.gia{
+		color:#FFFFFF;
+        float: right;
+		text-align: right;
+		
+	}
+	
+	
+	.second-button1{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-weight: 500;
+	padding: 8px 0;
+	float: right;
+    background-color: #FDB1FA;
+    width: 180px;
+    font-family: heading-font;
+    font-size: 16px;
+    color: var(--black-color);
+    text-decoration: none;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    margin-left: 15px;
+    border-radius: 5px;
+    transition: all ease 0,5s;
+}
+
+.second-button2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  padding: 8px 0;
+  background-color: transparent;
+  border: 1px solid #FFFFFF;
+  width: 180px;
+  font-family: heading-font;
+  font-size: 16px;
+  color: #FFFFFF;
+  text-decoration: none;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  transition: ease-in-out 0.3s;
+}
+
+.second-button1:hover{
+	color: #000000;
+	text-decoration: none;
+}	
+.second-button2:hover{
+	color: #FFFFFF;
+	text-decoration: none;
+}	
+
+	/*---------------------------- IMG1 ----------------------------*/	
+	.img1 img{
+		display: inline-block;
+		float: left;
+		padding-top: 30px;
+		padding-right: 22px;
+	}
+	.IRISOUT{
+		padding-top: 30px;
+	}
+	.IRISOUT button{
+		border: none;
+		background-color: transparent;
+		padding-left: 87px;
+	}
+	.IRISOUT button:focus{
+		outline: none;
+	}
+	
+	.IRISOUT a{
+		color: #FEE0FD;
+		opacity: 50%;
+		font-size: 16px;
+		text-decoration: none;
+	}
+	.IRISOUT a:hover{
+		color: #FA7025;
+		text-decoration: none;
+	}
+	.poprock{
+		margin-bottom: 0px;
+		padding-left: 87px;
+		color: #FEE0FD;
+		opacity: 80%;
+	}
+	.poprock1{
+		margin-bottom: 0px;
+	}
+	
+	
+	
+	#glass-figma{
+			height: 610px;
+			border-radius: 25px;
+			position: relative;
+			background: rgba(255, 255, 255, 0.05);
+				/* lớp nền trong suốt */
+			backdrop-filter: blur(5px) saturate(120%);
+			-webkit-backdrop-filter: blur(12px) saturate(180%);
+			border: 1px solid rgba(255, 255, 255, 0.1);
+			box-shadow:
+			inset 1px 1px 2px rgba(255, 255, 255, 0.15),
+			/* ánh sáng phản xạ */
+			0 8px 32px rgba(0, 0, 0, 0.4);
+			/* chiều sâu */
+
+			/* hiệu ứng ánh sáng theo góc */
+			background-image: linear-gradient(135deg,
+			rgba(255, 255, 255, 0.1) 0%,
+			rgba(255, 255, 255, 0.0) 100%);
+		}
+
+	
+	
+	#quantity {
+		margin-top: 30px;
+		width: 136px;;
+		height: 40px;
+		margin-bottom: 15px;
+		margin-left: 15px;
+		border-radius: 5px;
+		position: relative;
+		background: rgba(253,177,250,0.1);
+			/* lớp nền trong suốt */
+		backdrop-filter: blur(5px) saturate(120%);
+		-webkit-backdrop-filter: blur(12px) saturate(180%);
+		border: 1px solid rgba(255, 255, 255, 0.1);
+		box-shadow:
+        inset 1px 1px 2px rgba(255, 255, 255, 0.15),
+        /* ánh sáng phản xạ */
+        0 8px 32px rgba(0, 0, 0, 0.4);
+        /* chiều sâu */
+    
+        /* hiệu ứng ánh sáng theo góc */
+        background-image: linear-gradient(135deg,
+        rgba(255, 255, 255, 0.1) 0%,
+        rgba(255, 255, 255, 0.0) 100%);
+		overflow: hidden;
+		box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#quantity button {
+  background-color: transparent;
+  color: #FDB1FA;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  text-align: center;
+  transition: all ease 0,5s;
+}
+
+#quantity button:hover {
+   color: #FFFFFF;
+	transition: all ease 0,5s;
+}
+#quantity button:focus{
+	outline: none;
+}
+
+.input-box {
+  background-color: transparent;
+  color: #FDB1FA;
+  text-align: center;
+  border: none;
+  font-size: 16px;
+  outline: none;
+}
+
+/* Hide the number input spin buttons */
+.input-box::-webkit-inner-spin-button,
+.input-box::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.input-box[type="number"] {
+  -moz-appearance: textfield;
+}
+	
+	
+#quantity2 {
+		margin-top: 30px;
+		width: 136px;;
+		height: 40px;
+		margin-bottom: 15px;
+		margin-left: 15px;
+		border-radius: 5px;
+		position: relative;
+		background: rgba(253,177,250,0.1);
+			/* lớp nền trong suốt */
+		backdrop-filter: blur(5px) saturate(120%);
+		-webkit-backdrop-filter: blur(12px) saturate(180%);
+		border: 1px solid rgba(255, 255, 255, 0.1);
+		box-shadow:
+        inset 1px 1px 2px rgba(255, 255, 255, 0.15),
+        /* ánh sáng phản xạ */
+        0 8px 32px rgba(0, 0, 0, 0.4);
+        /* chiều sâu */
+    
+        /* hiệu ứng ánh sáng theo góc */
+        background-image: linear-gradient(135deg,
+        rgba(255, 255, 255, 0.1) 0%,
+        rgba(255, 255, 255, 0.0) 100%);
+		overflow: hidden;
+		box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#quantity2 button {
+  background-color: transparent;
+  color: #FDB1FA;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  text-align: center;
+  transition: all ease 0,5s;
+}
+
+#quantity2 button:hover {
+   color: #FFFFFF;
+	transition: all ease 0,5s;
+}
+#quantity2 button:focus{
+	outline: none;
+}
+
+	#quantity3 {
+		margin-top: 30px;
+		width: 136px;;
+		height: 40px;
+		margin-bottom: 15px;
+		margin-left: 15px;
+		border-radius: 5px;
+		position: relative;
+		background: rgba(253,177,250,0.1);
+			/* lớp nền trong suốt */
+		backdrop-filter: blur(5px) saturate(120%);
+		-webkit-backdrop-filter: blur(12px) saturate(180%);
+		border: 1px solid rgba(255, 255, 255, 0.1);
+		box-shadow:
+        inset 1px 1px 2px rgba(255, 255, 255, 0.15),
+        /* ánh sáng phản xạ */
+        0 8px 32px rgba(0, 0, 0, 0.4);
+        /* chiều sâu */
+    
+        /* hiệu ứng ánh sáng theo góc */
+        background-image: linear-gradient(135deg,
+        rgba(255, 255, 255, 0.1) 0%,
+        rgba(255, 255, 255, 0.0) 100%);
+		overflow: hidden;
+		box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#quantity3 button {
+  background-color: transparent;
+  color: #FDB1FA;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  text-align: center;
+  transition: all ease 0,5s;
+}
+
+#quantity3 button:hover {
+   color: #FFFFFF;
+	transition: all ease 0,5s;
+}
+#quantity3 button:focus{
+	outline: none;
+}
+	
+	
+	
+	
+	
+}
+
+/*--------------------------------------------------------------XS-------------------------------------------------------------------*/
+@media (max-width: 575px) {
+/*--------------------benner--------------------------*/
+.benner {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+/* Bottom right text */
+.bottom-right {
+ font-family: heading-font;
+ font-weight: 700;
+ padding-bottom: 45px;
+ padding-right: 17px;
+ color: #FDB1FA;	
+ font-size: 25px;
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
+}
+
+.bottom-right1 {
+font-family: heading-font;
+ font-weight: 500;
+ padding-bottom: 75px;
+ padding-right: 8px;
+ color: #FFFFFF;	
+ font-size: 15px;
+ margin-left: 20%;
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
+}
+	
+	#nenyc1{
+		background-image: url( "../../imgs/Khanh Linh/banner_productXS1.png");
+		background-repeat: no-repeat;
+	}	
+	
+	/*---------------------------- Product XL-MD ----------------------------*/	
+			.bill{
+		color:#FFFFFF;
+		float: left;
+	
+	}
+.bill2{
+		color:#FFFFFF;
+		float: right;
+	}	
+	.gia2{
+		padding-left: 100px;
+	}
+	.gia{
+		color:#FFFFFF;
+        float: right;
+		text-align: right;
+		
+	}
+	
+
+	
+	.second-button1{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-weight: 500;
+	padding: 8px 0;
+	float: right;
+    background-color: #FDB1FA;
+    width: 180px;
+    font-family: heading-font;
+    font-size: 16px;
+    color: var(--black-color);
+    text-decoration: none;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    margin-left: 15px;
+    border-radius: 5px;
+    transition: ease-in-out 0.3s;
+}
+.second-button2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  padding: 8px 0;	
+  background-color: transparent;
+  border: 1px solid var(--white-color);
+  width: 180px;
+  font-family: heading-font;
+  font-size: 16px;
+  color: var(--white-color);
+  text-decoration: none;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  transition: ease-in-out 0.3s;
+}
+.second-button1:hover{
+	color: #000000;
+	text-decoration: none;
+}	
+.second-button2:hover{
+	color: #FFFFFF;
+	text-decoration: none;
+}	
+	
+	/*---------------------------- IMG1 ----------------------------*/	
+	.img1 img{
+		display: inline-block;
+		float: left;
+		padding-top: 30px;
+		padding-right: 22px;
+	}
+	.poprock{
+		margin-bottom: 0px;
+		padding-left: 87px;
+		color: #FEE0FD;
+		opacity: 80%;
+	}
+	.IRISOUT{
+		padding-top: 30px;
+	}
+	.IRISOUT button{
+		border: none;
+		background-color: transparent;
+		padding-left: 87px;
+	}
+	.IRISOUT button:focus{
+		outline: none;
+	}
+	
+	.IRISOUT a{
+		color: #FEE0FD;
+		opacity: 50%;
+		font-size: 16px;
+		text-decoration: none;
+	}
+	.IRISOUT a:hover{
+		color: #FA7025;
+		text-decoration: none;
+	}
+	
+	
+
+			
+			#glass-figma{
+			height: 560px;
+			border-radius: 25px;
+			position: relative;
+			background: rgba(255, 255, 255, 0.05);
+				/* lớp nền trong suốt */
+			backdrop-filter: blur(5px) saturate(120%);
+			-webkit-backdrop-filter: blur(12px) saturate(180%);
+			border: 1px solid rgba(255, 255, 255, 0.1);
+			box-shadow:
+			inset 1px 1px 2px rgba(255, 255, 255, 0.15),
+			/* ánh sáng phản xạ */
+			0 8px 32px rgba(0, 0, 0, 0.4);
+			/* chiều sâu */
+
+			/* hiệu ứng ánh sáng theo góc */
+			background-image: linear-gradient(135deg,
+			rgba(255, 255, 255, 0.1) 0%,
+			rgba(255, 255, 255, 0.0) 100%);
+		}
+
+	
+	#quantity {
+		margin-top: 30px;
+		width: 136px;;
+		height: 40px;
+		margin-bottom: 15px;
+		margin-left: 30px;
+		border-radius: 5px;
+		position: relative;
+		background: rgba(253,177,250,0.1);
+			/* lớp nền trong suốt */
+		backdrop-filter: blur(5px) saturate(120%);
+		-webkit-backdrop-filter: blur(12px) saturate(180%);
+		border: 1px solid rgba(255, 255, 255, 0.1);
+		box-shadow:
+        inset 1px 1px 2px rgba(255, 255, 255, 0.15),
+        /* ánh sáng phản xạ */
+        0 8px 32px rgba(0, 0, 0, 0.4);
+        /* chiều sâu */
+    
+        /* hiệu ứng ánh sáng theo góc */
+        background-image: linear-gradient(135deg,
+        rgba(255, 255, 255, 0.1) 0%,
+        rgba(255, 255, 255, 0.0) 100%);
+		overflow: hidden;
+		box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#quantity button {
+  background-color: transparent;
+  color: #FDB1FA;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  text-align: center;
+  transition: all ease 0,5s;
+}
+
+#quantity button:hover {
+   color: #FFFFFF;
+	transition: all ease 0,5s;
+}
+#quantity button:focus{
+	outline: none;
+}
+
+
+.input-box {
+  background-color: transparent;
+  color: #FDB1FA;
+  text-align: center;
+  border: none;
+  font-size: 16px;
+  outline: none;
+}
+
+/* Hide the number input spin buttons */
+.input-box::-webkit-inner-spin-button,
+.input-box::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.input-box[type="number"] {
+  -moz-appearance: textfield;
+}
+	
+	
+		#quantity2 {
+		margin-top: 30px;
+		width: 136px;;
+		height: 40px;
+		margin-bottom: 15px;
+		margin-left: 30px;
+		border-radius: 5px;
+		position: relative;
+		background: rgba(253,177,250,0.1);
+			/* lớp nền trong suốt */
+		backdrop-filter: blur(5px) saturate(120%);
+		-webkit-backdrop-filter: blur(12px) saturate(180%);
+		border: 1px solid rgba(255, 255, 255, 0.1);
+		box-shadow:
+        inset 1px 1px 2px rgba(255, 255, 255, 0.15),
+        /* ánh sáng phản xạ */
+        0 8px 32px rgba(0, 0, 0, 0.4);
+        /* chiều sâu */
+    
+        /* hiệu ứng ánh sáng theo góc */
+        background-image: linear-gradient(135deg,
+        rgba(255, 255, 255, 0.1) 0%,
+        rgba(255, 255, 255, 0.0) 100%);
+		overflow: hidden;
+		box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#quantity2 button {
+  background-color: transparent;
+  color: #FDB1FA;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  text-align: center;
+  transition: all ease 0,5s;
+}
+
+#quantity2 button:hover {
+   color: #FFFFFF;
+	transition: all ease 0,5s;
+}
+#quantity2 button:focus{
+	outline: none;
+}
+		
+	#quantity3 {
+		margin-top: 30px;
+		width: 136px;;
+		height: 40px;
+		margin-bottom: 15px;
+		margin-left: 30px;
+		border-radius: 5px;
+		position: relative;
+		background: rgba(253,177,250,0.1);
+			/* lớp nền trong suốt */
+		backdrop-filter: blur(5px) saturate(120%);
+		-webkit-backdrop-filter: blur(12px) saturate(180%);
+		border: 1px solid rgba(255, 255, 255, 0.1);
+		box-shadow:
+        inset 1px 1px 2px rgba(255, 255, 255, 0.15),
+        /* ánh sáng phản xạ */
+        0 8px 32px rgba(0, 0, 0, 0.4);
+        /* chiều sâu */
+    
+        /* hiệu ứng ánh sáng theo góc */
+        background-image: linear-gradient(135deg,
+        rgba(255, 255, 255, 0.1) 0%,
+        rgba(255, 255, 255, 0.0) 100%);
+		overflow: hidden;
+		box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#quantity3 button {
+  background-color: transparent;
+  color: #FDB1FA;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  text-align: center;
+  transition: all ease 0,5s;
+}
+
+#quantity3 button:hover {
+   color: #FFFFFF;
+	transition: all ease 0,5s;
+}
+#quantity3 button:focus{
+	outline: none;
+}
+	
+	
+	
+}
+	
+	

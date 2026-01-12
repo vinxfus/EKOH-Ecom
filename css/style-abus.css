@@ -1,0 +1,823 @@
+@charset "UTF-8";
+/* CSS Document */
+/*BANNER ABUS (START)*/
+#abusbanner-bg{
+    margin: 0;
+    padding: 0;
+    height: 80vh;
+    margin-bottom: 60px;
+    position: relative;
+    overflow: hidden;
+}
+.abusbanner-content{
+    height: 100%;
+    width: 100%;
+}
+.abusbanner-content img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+    display: block;
+}
+#abusbanner-heading{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 5;
+}
+#abusbanner-heading h2{
+    color: var(--secondary-color);
+    font-size: 200px;
+    line-height: 65%;
+    font-weight: 700;
+    margin: 0;
+    letter-spacing: 0.015em;
+}
+
+#abusbanner-heading h1{
+    color: var(--white-color);
+    font-size: 200px;
+    line-height: 65%;
+    margin: 0;
+    letter-spacing: 0.015em;
+}
+#banner-idk{
+    width: 100%;
+    height: 150px;
+    border-radius: 60px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+@media (max-width: 1199px){ /*Style size LG*/
+    #abusbanner-heading{
+        top: 50%;
+    }
+    #abusbanner-heading h1,
+    #abusbanner-heading h2{
+        font-size: 150px;
+        text-align: center;
+    }
+    #banner-idk{
+        height: 100px;
+        width: 90%;
+    }
+
+}
+@media (max-width: 991px){/*Style size MD*/
+    #abusbanner-bg{
+        height: 60vh;
+        width: 100%;
+    }
+    #abusbanner-heading{
+        top: 55%;
+    }
+    #abusbanner-heading h1,
+    #abusbanner-heading h2{
+        font-size: 120px;
+        text-align: center;
+    }
+    #banner-idk{
+        height: 70px;
+        width: 90%;
+    }
+}
+@media (max-width: 767px){/*Style size SM*/
+    #abusbanner-bg{
+        height: 55vh;
+        width: 100%;
+    }
+    #abusbanner-heading h1,
+    #abusbanner-heading h2{
+        font-size: 70px;
+        text-align: center;
+    }
+    #banner-idk{
+        height: 45px;
+        width: 80%;
+    }
+}
+/*BANNER ABUS (END)*/
+
+
+
+/*ABOUT US - OUR STORY (START)*/
+#ab-ourstory-bg{
+    position: relative;
+    margin-bottom: 60px;
+}
+#desiny-bg, #history-bg{
+    position: relative;
+    margin-bottom: 60px;
+}
+.ab-ourstory-heading, .destiny-heading,
+.history-heading, .ourteam-heading{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+.ab-ourstory-heading h1,
+.destiny-heading h1,
+.history-heading h1,
+.ourteam-heading h1{
+    margin-bottom: 40px;
+    font-size: 34.94px;
+    color: var(--white-color);
+    z-index: 1;
+}
+.ab-ourstory-heading img{
+    position: absolute;
+    top: 2%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 0;
+}
+.destiny-heading img{
+
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 0;
+}
+.history-heading img{
+    position: absolute;
+    top: 2%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 0;
+}
+#starting-point-row{
+    margin-bottom: 40px;
+}
+.starting-point{
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+    justify-content: center;
+}
+.starting-point h1{
+    color: var(--main-color);
+    line-height: 100%;
+    margin-bottom: 24px;
+}
+.starting-point p{
+    color: var(--white-color);
+    font-family: body-font;
+    font-size: 16.92px;
+    font-weight: 300;
+    line-height: 1.5;
+    margin: 0;
+}
+.starting-point-img{
+    width: 100%;
+    height: auto;
+    display: flex;
+    padding: 0;
+    justify-content: end;
+}
+.starting-point-img img{
+    object-fit: cover;
+    width: 540px;
+    border-radius: 20px;
+}
+#border-row{
+    margin-bottom: 40px;
+}
+.border-img{
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+.border-img img{
+    object-fit: cover;
+    width: 540px;
+    height: 360px;
+    border-radius: 20px;
+}
+.border-content{
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 30px;
+    justify-content: center;
+}
+.border-content h1{
+    color: var(--main-color);
+    line-height: 100%;
+    margin-bottom: 24px;
+}
+.border-content p{
+    color: var(--white-color);
+    font-family: body-font;
+    font-size: 16.92px;
+    font-weight: 300;
+    line-height: 1.5;
+    margin: 0;
+}
+.anime-music{
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    padding-right: 15px;
+    justify-content: center;
+}
+.anime-music h1{
+    color: var(--main-color);
+    line-height: 100%;
+    margin-bottom: 24px;
+    width: 400px;
+}
+.anime-music p{
+    color: var(--white-color);
+    font-family: body-font;
+    font-size: 16.92px;
+    font-weight: 300;
+    line-height: 1.5;
+    margin: 0;
+}
+.anime-music-img{
+    width: 100%;
+    height: auto;
+    display: flex;
+    padding: 0;
+    justify-content: end;
+}
+.anime-music-img img{
+    object-fit: cover;
+    width: 540px;
+    border-radius: 20px;
+    height: 360px;
+}
+.destiny-img{
+    width: 100%;
+    padding: 0;
+    padding-right: 30px;
+}
+.destiny-img img{
+    object-fit: cover;
+    width: 100%;
+    border-radius: 20px;
+}
+.destiny-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.destiny-content h2{
+    color: var(--white-color);
+}
+.destiny-content h1{
+    color: var(--main-color);
+    align-self: end;
+}
+@media (max-width: 1199px){/*Style size LG*/
+    
+    .ab-ourstory-heading img,
+    .destiny-heading img,
+    .history-heading img{
+        height: 160px;
+        width: auto;
+    }
+    .starting-point-img img,
+    .border-img img,
+    .anime-music-img img{
+        width: 465px;
+        height: 310px;
+    }
+    .destiny-heading img{
+        top: 6%;
+    }
+    .ab-ourstory-heading img{
+        top: 2.5%;
+    }
+
+}
+@media (max-width: 991px){/*Style size MD*/
+    .ab-ourstory-heading h1,
+    .destiny-heading h1,
+    .history-heading h1,
+    .ourteam-heading h1 {
+        margin-bottom: 40px;
+        font-size: 31.25px;
+        letter-spacing: 0.02em;
+        color: var(--white-color);
+        z-index: 1;
+    }
+    .ab-ourstory-heading img,
+    .destiny-heading img,
+    .history-heading img{
+        height: 150px;
+        width: 700px;
+    }
+    .ab-ourstory-heading img{
+        top: 3%;
+    }
+    .destiny-heading img{
+        top: 6.3%;
+    }
+    .history-heading img{
+        top: 1.8%;
+    }
+    .starting-point-img img,
+    .border-img img,
+    .anime-music-img img{
+        width: 340px;
+        height: auto;
+    }
+    .border-img{
+        padding: 0;
+    }
+    .starting-point{
+        justify-content: center;
+    }
+    .starting-point h1,
+    .border-content h1,
+    .anime-music h1{
+        font-size: 25px;
+        line-height: 1.1;
+        letter-spacing: 0.02em;
+    }
+    .starting-point p,
+    .border-content p,
+    .anime-music p{
+        font-size: 15.13px;
+        line-height: 1.5;
+    }
+    .destiny-content{
+        padding: 0;
+    }
+    .destiny-content h2{
+        font-size: 22.36px;
+        font-weight: 600px;
+        line-height: 1.1;
+        letter-spacing: 0.02em;
+    }
+    .destiny-content h1{
+        font-size: 25px;
+        line-height: 1.1;
+        letter-spacing: 0.02em;
+    }
+}
+@media (max-width: 767px){/*Style size SM*/
+    .ab-ourstory-heading h1,
+    .destiny-heading h1,
+    .history-heading h1,
+    .ourteam-heading h1 {
+        margin-bottom: 40px;
+        font-size: 25px;
+        letter-spacing: 0.02em;
+        font-weight: 600;
+        color: var(--white-color);
+        z-index: 1;
+    }
+    .ab-ourstory-heading img,
+    .destiny-heading img,
+    .history-heading img{
+        height: 100px;
+        width: 560px;
+    }
+    .ab-ourstory-heading img{
+        top: 1.2%;
+    }
+    .destiny-heading img{
+        top: 5.5%;
+    }
+    .history-heading img{
+        top: 0%;
+    }
+    .starting-point-img{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 330px;
+        margin-bottom: 50px;
+
+    }
+    .starting-point-img img{
+        width: 330px;
+        height: auto;
+    }
+    .starting-point-img h1{
+        color: var(--white-color);
+        font-size: 22.36px;
+        font-weight: 500;
+        line-height: 1.1;
+        letter-spacing: 0.025em;
+        margin: 0;
+        margin-top: 30px;
+        margin-bottom: 16px;
+    }
+    .starting-point-img p{
+        color: var(--white-color);
+        font-family: body-font;
+        font-size: 15.13px;
+        font-weight: 300;
+        line-height: 1.5;
+        margin: 0;
+        width: 330px;
+    }
+    .border-img{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 50px;
+    }
+    .border-img img{
+        width: 330px;
+        height: 220px;
+    }
+    .border-img h1{
+        color: var(--white-color);
+        font-size: 22.36px;
+        font-weight: 500;
+        line-height: 1.1;
+        letter-spacing: 0.025em;
+        margin: 0;
+        margin-top: 30px;
+        margin-bottom: 16px;
+    }
+    .border-img p{
+        color: var(--white-color);
+        font-family: body-font;
+        font-size: 15.13px;
+        font-weight: 300;
+        line-height: 1.5;
+        margin: 0;
+        width: 330px;
+    }
+    .anime-music-img{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 50px;
+    }
+    .anime-music-img img{
+        width: 330px;
+        height: 220px;
+    }
+    .anime-music-img h1{
+        color: var(--white-color);
+        font-size: 22.36px;
+        font-weight: 500;
+        line-height: 1.1;
+        letter-spacing: 0.025em;
+        margin: 0;
+        margin-top: 30px;
+        margin-bottom: 16px;
+        width: 330px;
+    }
+    .anime-music-img p{
+        color: var(--white-color);
+        font-family: body-font;
+        font-size: 15.13px;
+        font-weight: 300;
+        line-height: 1.5;
+        margin: 0;
+        width: 330px;
+    }
+    .destiny-content h2{
+        font-size: 17.89px;
+        font-weight: 500;
+        line-height: 1.3;
+        letter-spacing: 0.03em;
+    }
+    .destiny-content h1{
+        margin: 0;
+        font-size: 20px;
+        letter-spacing: 0.025em;
+    }
+}
+@media (max-width: 575px){/*Style size XS*/
+    .ab-ourstory-heading img,
+    .destiny-heading img,
+    .history-heading img{
+        height: 100px;
+        width: 480px;
+    }
+}
+/*ABOUT US - OUR STORY (END)*/
+
+
+/*EKOH HISTORY (START)*/
+.tineline-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #1f1f1f;
+    min-height: 100vh;
+    padding: 100px 0;
+  }
+  
+  .design {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .timeline {
+    width: 80%;
+    height: auto;
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .timeline-content {
+    padding: 20px 40px !important;
+    border-radius: 5px;
+    
+    transition: 0.4s ease;
+    overflow-wrap: break-word !important;
+    margin: 1rem;
+    margin-bottom: 20px;
+    border-radius: 20px;
+  }
+  @media (max-width: 991px){/*Style Size MD*/
+    #timeline-container.container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .timeline{
+        width: 100%;
+        margin: 0px;
+    }
+    .timeline-content{
+        padding: 20px 30px !important;
+    }
+    .timeline-component{
+        margin: 0px 15px 30px 15px !important;
+    }
+    .timeline-content p{
+        font-size: 15.13px !important;
+    }
+    
+}
+  .timeline-content h2{
+    color: var(--secondary-color);
+    margin-bottom: 8px;
+    line-height: 1.1;
+  }
+  .timeline-content p{
+    font-family: body-font;
+    font-size: 16.92px;
+    font-weight: 300;
+    color: var(--white-color);
+    line-height: 1.5;
+    margin: 0;
+  }
+  .timeline-component {
+    margin: 0px 20px 20px 20px;
+  }
+  
+  @media screen and (min-width: 768px) {
+    .timeline {
+      display: grid;
+      grid-template-columns: 1fr 3px 1fr;
+    }
+    .timeline-middle {
+      position: relative;
+      background-image: linear-gradient(45deg, #F27121, #E94057, #8A2387);
+      width: 5px;
+      height: 100%;
+    }
+    .main-middle {
+      opacity: 0;
+    }
+    .timeline-circle {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      width: 15px;
+      height: 15px;
+      border-radius: 50%;
+      background-image: linear-gradient(45deg, #F27121, #E94057, #8A2387);
+      -webkit-transform: translateX(-50%);
+              transform: translateX(-50%);
+    }
+  }
+  @media (max-width: 767px){/*Style size SM*/
+    #mobile-history-bg{
+        position: relative;
+        margin-bottom: 25px;
+    }
+    .mobile-history-heading{
+        display: flex;
+        justify-content: center;
+    }
+    .mobile-history-heading h2{
+        color: var(--white-color);
+        margin-bottom: 40px;
+        z-index: 1;
+    }
+    .mobile-history-heading img{
+        position: absolute;
+        top: 1.7%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        height: 100px;
+        width: 560px;
+        z-index: 0;
+    }
+    #mobile-history-timeline{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .timeline-heading{
+        height: 35px;
+        width: 35px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        overflow: visible;
+        margin-bottom: 16px;
+    }
+    .timeline-heading h3{
+        color: var(--secondary-color);
+    }
+    .timeline-content{
+        padding: 16px !important;
+        width: 385px;
+        height: auto;
+        margin: 0;
+        margin-bottom: 30px;
+    }
+    .timeline-content p{
+        font-size: 15.13px !important;
+        letter-spacing: 0.025em;
+    }
+}
+@media (max-width: 575px){/*Style size XS*/
+    .mobile-history-heading img{
+        width: 480px;
+        top: 1.7%;
+    }
+    html{
+        scroll-behavior: smooth;   
+        overflow-x: hidden;
+    }
+}
+/*EKOH HISTORY (END)*/
+
+/****WHY CHOOSE US (START)*****/
+#choose-bg{
+    position: relative;
+    height: auto;
+    margin-top: 60px;
+}
+.choose-gradientbg{
+    z-index: -1;
+    position: absolute;
+    top: -50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+}
+.choose-gradientbg img{
+    z-index: 0;
+    opacity: .8;
+    pointer-events: none;
+}
+#choose-heading{
+    display: flex;
+    justify-content: center;
+}
+#choose-heading h1{
+    color: var(--white-color);
+    z-index: 10;
+    margin: 0;
+}
+.choose-content{
+    width: 100%;
+    display: flex;
+    gap: 30px;
+    margin-top: 40px;
+}
+.choose-content-child{
+    width: 25%;
+    height: 270px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    padding: 0 15px;
+}
+.choose-content-child h2{
+    color: var(--white-color);
+    text-align: center;
+    letter-spacing: 0.02em;
+    line-height: 110%;
+}
+.choose-content-child img{
+    height: 70px;
+    width: 70px;
+}
+@media (max-width: 1199px){/*Style size LG*/
+    .choose-gradientbg img{
+        width: 350px;
+        height: 750px;
+    }
+    .choose-content-child{
+        height: 230px;
+        padding: 0 12px;
+    }
+    .choose-content-child h2{
+        font-size: 25px;
+    }
+}
+@media (max-width: 991px){/*Style size MD*/
+    #choose-bg{
+        margin-top: 50px;
+    }
+    .choose-gradientbg{
+        top: -50%;
+    }
+    .choose-gradientbg img{
+        height: 660px;
+        width: 370px;
+    }
+    #choose-heading h1{
+        font-size: 31.25px;
+        line-height: 110%;
+        font-weight: 700;
+    }
+    .choose-content-child{
+        gap: 20px;
+        height: 160px;
+    }
+    .choose-content-child img{
+        height: 60px;
+        width: 60px;
+    }
+    .choose-content-child h2{
+        font-weight: 500;
+        font-size: 17.89px;
+        line-height: 1.3;
+        letter-spacing: 0.03em;
+    }
+}
+@media (max-width: 767px){/*Style size SM*/
+    #choose-heading h1{
+        font-size: 25px;
+        font-weight: 600;
+        letter-spacing: 0.02em;
+    }
+    .choose-content-child{
+        width: 105px;
+        height: 125px;
+        padding: 0;
+    }
+    .choose-content-child img{
+        height: 42px;
+        width: 42px;
+    }
+    .choose-content-child h2{
+        font-size: 16px;
+        letter-spacing: 0em;
+    }
+
+}
+/****WHY CHOOSE US (END)*****/
+
+/*EKOH TEAM (START)*/
+#ourteam-container{
+    width: 100%;
+    padding: 0px 40px;
+}
+#ourteam-container img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 20px;
+}
+#ourteam-container p{
+    margin: 0;
+    margin-top: 12px;
+    font-family: body-font;
+    font-weight: 300;
+    font-size: 14.31px;
+    line-height: 1.5;
+    color: var(--white-color);
+    opacity: 80%;
+}
+@media (max-width: 767px){/*Style size SM*/
+    #ourteam-container{
+        padding: 0;
+    }
+    #ourteam-container p{
+        font-size: 12.8px;
+    }
+}
+/*EKOH TEAM (END)*/

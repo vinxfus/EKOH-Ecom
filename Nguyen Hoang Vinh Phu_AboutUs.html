@@ -1,0 +1,444 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ABOUT US</title>
+    <!--CSS-->
+	<link href="css/bootstrap-4.4.1.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet" type="text/css">
+	<link href="css/style-abus.css" rel="stylesheet" type="text/css">
+	<!--Bootstrap--> 
+	<script src="js/jquery-3.4.1.min.js"></script>
+	<script src="js/popper.min.js"></script> 
+	<script src="js/bootstrap-4.4.1.js"></script>
+  </head>
+  <body>
+	<!----------------- Header (Start) ----------------->
+	<div class="col-12 header d-none"></div>				
+	<!----------------- Header (End) ----------------->
+
+		<!----------------- NAVIGATIONS (Start) ----------------->
+        <div class="container glass-figma" id="nav-bg">
+            <div class="row">
+                
+                <div class="col-xl-3 d-none d-xl-flex nav-logo">
+                    <a href="Nguyen Hoang Vinh Phu_Home.html"><img src="imgs/logo/logo-white-pink.svg" alt="logo"></a>
+                </div>
+                <div class="col-xl-6 d-none d-xl-block nav-content">
+                    <ul>
+                        <li><a href="Nguyen Hoang Vinh Phu_Home.html">HOME</a></li>
+                    
+                        <li class="dropdown">
+                            <a id="store-btn-drop" href="#">STORE <img src="imgs/icon/Chevron down.svg"></a>
+                            <ul class="dropdown-menu">
+                              <li><a href="Tran Ngoc Bao Tran_Product.html">Jpop</a></li>
+                              <li><a href="Tran Ngoc Bao Tran_Product.html">Pop Rock</a></li>
+                              <li><a href="Tran Ngoc Bao Tran_Product.html">Alternative Rock</a></li>
+                              <li><a href="Tran Ngoc Bao Tran_Product.html">Punk Rock</a></li>
+                              <li><a href="Tran Ngoc Bao Tran_Product.html">Idol-Dance Pop</a></li>
+                              <li><a href="Tran Ngoc Bao Tran_Product.html">Metal</a></li>
+                              <li><a href="Tran Ngoc Bao Tran_Product.html">EDM-Electro-Techno</a></li>
+    
+    
+                            </ul>
+                          </li>
+                        <li><a href="Nguyen Hoang Vinh Phu_AboutUs.html">ABOUT US</a></li>
+                        <li><a href="Tran Ngoc Bao Tran_Contact.html">CONTACT</a></li>
+                    </ul>
+                </div><!-- nav-content -->
+                <div class="col-xl-3 d-none d-xl-block nav-icon">
+                    <ul>
+                        <li><a href="#" data-toggle="collapse" data-target="#search-dropdown"><img src="imgs/icon/Search.svg" alt="search"></a></li>
+                        <li><a href="#"><img src="imgs/icon/User.svg" alt="user" loading=></a></li>
+                        <li><a href="Nguyen Dao Khanh Linh_Cart.html"><img src="imgs/icon/Shopping cart.svg" alt="cart"></a></li>
+                    </ul>
+                    <div id="search-dropdown" class="collapse">
+                        <div class="search-flex glass-figma-pink">
+                        <input type="text" placeholder="Search...">
+                        <button type="submit"><img src="imgs/icon/Search.svg" alt="search"></button>
+                        </div><!-- search-flex -->
+                    </div><!-- search-dropdown -->
+                </div><!-- nav-icon -->
+                <div class="col-3 col-sm-3 col-md-2 col-lg-2 d-xl-none" id="mobile-menu">
+                    <a id="menubtn"><img src="imgs/icon/Menu.svg" alt="menu"></a>
+                </div>
+                <div class="offset-1 offset-md-2 col-4 d-xl-none" id="mobile-logo">
+                    <a href="Nguyen Hoang Vinh Phu_Home.html"><img src="imgs/logo/logo-white-pink.svg" alt="logo"></a>
+                </div><!-- mobile-logo -->
+                <div class="col-3 col-md-2 offset-1 offset-md-2 d-xl-none" id="mobile-cart">
+                    <a href="Nguyen Dao Khanh Linh_Cart.html"><img src="imgs/icon/Shopping cart-mobile.svg" alt="cart-mobile"></a>
+                </div><!-- mobile-cart -->
+            </div><!-- .row -->
+        </div><!-- .container -->
+        <!-----Thanh trượt MENU Mobile----->
+        <nav id="menu">
+            <a id="closebtn"><img src="imgs/icon/X-pink.svg" alt="X"></a>
+            <a id="user-btn" class="glass-figma-pink"><img src="imgs/icon/User.svg" alt="user"></a>
+            <form class="form-mobile-menu glass-figma-pink">
+                <input type="text" placeholder="Search...">
+                <button type="submit"><img src="imgs/icon/Search.svg" alt="search"></button>
+            </form>
+            <ul>
+                <li><a href="Nguyen Hoang Vinh Phu_Home.html">HOME</a></li>
+                <li><a href="Tran Ngoc Bao Tran_Product.html" data-toggle="collapse" data-target="#product-mobile-content">STORE <img class="arrow-icon" src="imgs/icon/Chevron down-pink.svg"></a></li>
+                <div id="product-mobile-content" class="collapse">
+                    <ul id="product-mobile-sublist">
+                        <li><a href="Tran Ngoc Bao Tran_Product.html">JPOP</a></li>
+                        <li><a href="Tran Ngoc Bao Tran_Product.html">POP ROCK</a></li>
+                        <li><a href="Tran Ngoc Bao Tran_Product.html">ALTERNATIVE ROCK</a></li>
+                        <li><a href="Tran Ngoc Bao Tran_Product.html">PUNK ROCK</a></li>
+                        <li><a href="Tran Ngoc Bao Tran_Product.html">IDOL-DANCE POP</a></li>
+                        <li><a href="Tran Ngoc Bao Tran_Product.html">METAL</a></li>
+                        <li><a href="Tran Ngoc Bao Tran_Product.html">EDM-ELECTRO-TECHNO</a></li>
+                    </ul><!----product-mobile-sublist----->
+                </div><!-- product-mobile-content -->
+                <li><a href="Nguyen Hoang Vinh Phu_AboutUs.html">ABOUT US</a></li>
+                <li><a href="Tran Ngoc Bao Tran_Contact.html">CONTACT</a></li>
+                <li><a href="#">NEWS</a></li>
+                <li><a href="Tran Ngoc Bao Tran_Contact.html">FAQ</a></li>
+            </ul>
+        </nav><!-- #menu -->
+	<!----------------- NAVIGATIONS (END) ----------------->
+	
+	<!----Bắt đầu code từ đây, LƯU Ý là code phần nào thì Note lại START-END để dễ nhìn nha mấy đứa, CSS cũng thế nhe----->
+
+
+    <!-----BANNER ABUS (START)------>
+	<div class="container-fluid" id="abusbanner-bg">
+        <div class="abusbanner-content">
+        <img src="imgs/Abus/banner-gradient.jpg" alt="banner-abus">
+        <div class="container" id="abusbanner-heading">
+            <h1>ABOUT US</h1>
+            <h2>ABOUT US</h2>
+            <div class="glass-figma-2" id="banner-idk"></div>
+        </div><!-----container----->
+    </div><!----abusbanner-content----->
+    </div><!-----container-fluid---->				
+	<!-----BANNER ABUS (END)------>
+
+    <!-----BREAD-CRUMB (START)------>
+    <div class="container" id="breadcrumb-container">
+        <div class="row" id="breadcrumb-row">
+            <a class="breadcrumb-home" href="Nguyen Hoang Vinh Phu_Home.html">Home</a>
+            <a href="#"><img src="imgs/icon/Chevron right-pink.svg" alt="chevron-right"></a>
+            <a href="#">About Us</a>
+        </div><!------row------>
+    </div>
+    <!-----BREAD-CRUMB (END)------>
+
+    <!-----ABOUT US - OUR STORY (START)------>
+    <div class="container-fluid" id="ab-ourstory-bg">
+        <div class="ab-ourstory-heading">
+            <h1>Our Story</h1>
+            <img src="imgs/Abus/heading-gradientbg.png" alt="heading-gradientbg">
+        </div><!-----ab-ourstory-heaeding----->
+        <div class="container">
+            <div class="row" id="starting-point-row">
+                <div class="col-md-6 d-none d-md-flex starting-point">
+                    <h1>1. Starting Point</h1>
+                    <p>Since 2010 in Akihabara, Japan — known as the capital of anime culture — we founded EKOH to satisfy our love
+                        for anime songs. What started as a small project among a few passionate fans has now grown into a community
+                        where people from all over the world can experience the joy, nostalgia, and energy that anime music brings.
+                    </p>
+                </div> <!----starting-point----->
+                <div class="col-md-6 col-12 starting-point-img">
+                    <img src="imgs/Abus/akiba.jpg" alt="akiba" loading="lazy">
+                    <h1 class="d-md-none">1. Starting Point</h1>
+                    <p class="d-md-none">Since 2010 in Akihabara, Japan — known as the capital of anime culture — we founded EKOH to satisfy our love
+                        for anime songs. What started as a small project among a few passionate fans has now grown into a community
+                        where people from all over the world can experience the joy, nostalgia, and energy that anime music brings.
+                    </p>
+                </div><!----starting-point-img------>
+            </div><!----row---->
+            <div class="row" id="border-row">
+                <div class="col-md-6 col-12 border-img">
+                    <img src="imgs/Abus/customer2.jpg" alt="anime-fans" loading="lazy">
+                    <h1 class="d-md-none">2. Expanding Beyond Borders</h1>
+                    <p class="d-md-none">From our roots in Akihabara, EKOH has grown into a bridge connecting anime music fans around the world. What began as a small circle of enthusiasts has evolved into a global community, united by the rhythm, emotion, and storytelling found within every anime song.
+                    </p>
+                </div><!----border-img------>
+                <div class="col-md-6 d-none d-md-flex border-content">
+                    <h1>2. Expanding Beyond Borders</h1>
+                    <p>From our roots in Akihabara, EKOH has grown into a bridge connecting anime music fans around the world. What began as a small circle of enthusiasts has evolved into a global community, united by the rhythm, emotion, and storytelling found within every anime song.
+                    </p>
+                </div><!----border-content---->
+            </div><!----row---->
+            <div class="row" id="anime-music-row">
+                <div class="col-md-6 d-none d-md-flex anime-music">
+                    <h1>3. Preserving the Spirit of Anime Music</h1>
+                    <p>At EKOH, music is more than sound — it’s emotion, memory, and legacy. Each CD we create celebrates the timeless melodies that have defined anime culture for decades. Through our work, we aim to preserve these stories in sound, keeping the spirit of anime music alive for every generation to come.
+                    </p>
+                </div><!-----anime-music----->
+                <div class="col-md-6 anime-music-img">
+                    <img src="imgs/Abus/packaging.jpg" alt="anime-music" loading="lazy">
+                    <h1 class="d-md-none">3. Preserving the Spirit of Anime Music</h1>
+                    <p class="d-md-none">At EKOH, music is more than sound — it’s emotion, memory, and legacy. Each CD we create celebrates the timeless melodies that have defined anime culture for decades. Through our work, we aim to preserve these stories in sound, keeping the spirit of anime music alive for every generation to come.
+                    </p>
+                </div><!----anime-music-img----->
+            </div><!----row----->
+        </div><!-----container----->
+    </div><!----container-fluid----->
+    <!-----ABOUT US - OUR STORY (END)------>
+	
+    <!----ABOUT US - OUR DESTINY (START)----->
+    <div class="container-fluid" id="desiny-bg">
+        <div class="destiny-heading">
+            <h1>Our Destiny</h1>
+            <img src="imgs/Abus/heading-gradientbg.png" alt="heading-gradientbg">
+        </div><!------destiny-heading----->
+        <div class="container">
+            <div class="row" id="destiny-row">
+                <div class="col-lg-5 col-6 destiny-img">
+                    <img src="imgs/Abus/Generated Image November 09, 2025 - 8_09PM.png" alt="founder-img" loading="lazy">
+                </div><!-----destiny-img---->
+                <div class="col-lg-7 col-6 destiny-content">
+                    <h2>“At EKOH, we are committed to excellence in every detail of sound and visuals, designing each product to deliver a premium, captivating experience that resonates with fans and elevates their connection to anime culture.</h2>
+                    <h1>-Itsuki Minami”</h1>
+                </div><!-----destiny-content----->
+            </div><!-----row----->
+        </div><!----container---->
+    </div><!----container-fluid----->
+    <!----ABOUT US - OUR DESTINY (END)----->
+
+    <!-----EKOH HISTORY (START)----->
+    <div class="container-fluid d-none d-md-block" id="history-bg">
+        <div class="history-heading">
+            <h1>EKOH History</h1>
+            <img src="imgs/Abus/heading-gradientbg.png" alt="heading-gradientbg">
+        </div><!----history-heading---->
+        <div class="container" id="timeline-container">
+            <div class="timeline">
+                
+                <!-- First timeline item - LEFT side -->
+                <div class="timeline-component timeline-content glass-figma-2">
+                    <h2>2010</h2>
+                    <p>EKOH was founded by Itsuki Minami, whose vision was to transform a lifelong love for anime songs into a platform that connects fans and keeps the spirit of anime culture alive through music.</p>
+                </div>
+                <div class="timeline-middle">
+                    <div class="timeline-circle"></div>
+                </div>
+                
+                <div class="timeline-empty"></div>
+
+                <!------content on RIGHT SIDE------->
+                <div class="timeline-empty"></div>
+                <div class="timeline-middle">
+                    <div class="timeline-circle"></div>
+                </div>
+                <div class="timeline-component timeline-content glass-figma-2">
+                    <h2>2011</h2>
+                    <p>EKOH opened its first official store in Akihabara, Japan — the heart of anime culture — creating a space where fans can experience, collect, and celebrate the music that defines their favorite worlds.</p>
+                </div>
+                
+                <!------content on LEFT SIDE------->
+                <div class=" timeline-component timeline-content glass-figma-2">
+                    <h2>2013</h2>
+                    <p>It was during the golden age of anime culture that EKOH’s sales truly exploded, driven by a growing community of fans who found their identity and nostalgia in every song we released to customer.</p>
+                </div>
+                <div class="timeline-middle">
+                    <div class="timeline-circle"></div>
+                </div>
+                <div class="timeline-empty">
+                </div>
+
+                <!------content on RIGHT SIDE------->
+                <div class="timeline-empty"></div>
+                <div class="timeline-middle">
+                    <div class="timeline-circle"></div>
+                </div>
+                <div class="timeline-component timeline-content glass-figma-2">
+                    <h2>2014</h2>
+                    <p>In the following year, we brought EKOH beyond Japan’s borders, officially turning it into an international brand that connects anime music fans worldwide.</p>
+                </div>
+               
+                <!------content on LEFT SIDE------->
+                <div class=" timeline-component timeline-content glass-figma-2">
+                    <h2>2015 - NOW</h2>
+                    <p>EKOH is still growing, bringing high-quality anime soundtracks to fans around the world while staying true to the passion and creativity that started it all.</p>
+                </div>
+                <div class="timeline-middle">
+                    <div class="timeline-circle"></div>
+                </div>
+                <div class="timeline-empty">
+                </div>
+                
+            </div><!-----timeline---->
+        </div><!---container--->
+    </div><!----container-fluid----->
+    <!-----EKOH HISTORY (END)----->
+
+    <!-----EKOH HISTORY MOBILE (START)------>
+    <div class="container d-md-none" id="mobile-history-bg">
+        <div class="mobile-history-heading">
+            <h2>EKOH History</h2>
+            <img src="imgs/Abus/heading-gradientbg.png" alt="heading-gradientbg">
+        </div><!-----mobile-history-heading---->
+        <div id="mobile-history-timeline">
+            <div class="timeline-heading glass-figma-2">
+                <h3>2010</h3>
+            </div><!----timeline-heading----->
+            <div class="timeline-content glass-figma-2">
+                <p>EKOH was founded by Itsuki Minami, whose vision was to transform a lifelong love for anime songs into a platform that connects fans and keeps the spirit of anime culture alive through music.</p>
+            </div><!----timeline-content----->
+            <div class="timeline-heading glass-figma-2">
+                <h3>2011</h3>
+            </div><!----timeline-heading----->
+            <div class="timeline-content glass-figma-2">
+                <p>EKOH opened its first official store in Akihabara, Japan — the heart of anime culture — creating a space where fans can experience, collect, and celebrate the music that defines their favorite worlds.</p>
+            </div><!----timeline-content----->
+            <div class="timeline-heading glass-figma-2">
+                <h3>2013</h3>
+            </div><!----timeline-heading----->
+            <div class="timeline-content glass-figma-2">
+                <p>It was during the golden age of anime culture that EKOH’s sales truly exploded, driven by a growing community of fans who found their identity and nostalgia in every song we released to customer.</p>
+            </div><!----timeline-content----->
+            <div class="timeline-heading glass-figma-2">
+                <h3>2014</h3>
+            </div><!----timeline-heading----->
+            <div class="timeline-content glass-figma-2">
+                <p>In the following year, we brought EKOH beyond Japan’s borders, officially turning it into an international brand that connects anime music fans worldwide.</p>
+            </div><!----timeline-content----->
+            <div class="timeline-heading glass-figma-2">
+                <h3>Present</h3>
+            </div><!----timeline-heading----->
+            <div class="timeline-content glass-figma-2">
+                <p>EKOH is still growing, bringing high-quality anime soundtracks to fans around the world while staying true to the passion and creativity that started it all.</p>
+            </div><!----timeline-content----->
+        </div><!----mobile-history-timeline----->
+    </div><!-----container---->
+    <!-----EKOH HISTORY MOBILE (END)------>
+
+    <!-----EKOH TEAM (START)----->
+    <div class="container-fluid" id="ourteam-bg">
+        <div class="ourteam-heading">
+            <h1>Our Team</h1>
+        </div><!----ourteam-heading----->
+        <div class="container" id="ourteam-container">
+            <img src="imgs/Abus/our team.jpg" alt="EKOH's OG Team">
+            <p>From left to right: Itsuki Minami (Founder) - Takanami Wakana - Moriya Rintaro - Kinshibe Tetsuki - Fujimoto Akira - Hinatano Hinata.</p>
+        </div><!----container---->
+    </div><!-----container-fluid---->
+    <!-----EKOH TEAM (END)----->
+
+    <!-------WHY CHOOSE US (START)------->
+	<div class="container-fluid" id="choose-bg">
+		<div class="choose-gradientbg d-none">
+			<img src="imgs/Home/ABUS-NEWS/news-gradientbg2.png" loading="lazy">
+		</div><!----choose-gradientbg---->
+		<div id="choose-heading">
+			<h1>Why Choose Us ?</h1>
+		</div><!----Choose-heading---->
+		<div class="container choose-content">
+			<div class="choose-content-child">
+				<img src="imgs/icon/Music-pink.svg" loading="lazy" alt="icon">
+				<h2>Authentic CD
+					From Japan</h2>
+			</div><!----choose-content-child---->
+			<div class="choose-content-child">
+				<img src="imgs/icon/Truck-kun-pink.svg" loading="lazy" alt="icon">
+				<h2>Worldwide Shipping</h2>
+			</div><!----choose-content-child---->
+			<div class="choose-content-child">
+				<img src="imgs/icon/credit-card-regular-pink.svg" loading="lazy" alt="icon">
+				<h2 class="d-none d-xl-block">Secure Payment Method</h2>
+				<h2 class="d-xl-none">Secure Payment</h2>
+			</div><!----choose-content-child---->
+			<div class="choose-content-child">
+				<img src="imgs/icon/Tag-pink.svg" loading="lazy" alt="icon">
+				<h2>Damage-free Packaging</h2>
+			</div><!----choose-content-child---->
+			
+		</div><!---container--->
+	</div><!---container-fluid--->
+	<!-------WHY CHOOSE US (END)------->
+
+    <!-----FOOTER (START)----->
+    <div class="container-fluid" id="footer-bg">
+        <div class="container">
+            <div class="row" id="footer-row">
+                <div class="col-lg-3 col-md-4 col-12" id="footer-logo-section">
+                    <img src="imgs/logo/logo-white-pink.svg" alt="logo" loading="lazy">
+                    <p>Where Anime Lives in Sound</p>
+                    <div class="social-med-row">
+                        <a href="#"><img src="imgs/icon/Facebook-pink.svg" alt="facebook" loading="lazy"></a>
+                        <a href="#"><img src="imgs/icon/Insta-pink.svg" alt="instagram" loading="lazy"></a>
+                        <a href="#"><img src="imgs/icon/Tiktok-pink.svg" alt="tiktok" loading="lazy"></a>
+                    </div><!------social-med-row----->
+                </div><!----footer-logo-section----->
+                <div class="col-12 d-md-none" id="footer-product-mobile">
+                    <button data-toggle="collapse" data-target="#product-content">
+                        <h3>Products</h3> <img class="arrow-icon" src="imgs/icon/Chevron down.svg" alt="chevron-down">
+                    </button><!----product-mobile-button---->
+                    <div id="product-content" class="collapse">
+                        <a href="Tran Ngoc Bao Tran_Product.html">Collections</a>
+                        <a href="Tran Ngoc Bao Tran_Product.html">Best Seller</a>
+                        <a href="Tran Ngoc Bao Tran_Product.html">J-Pop</a>
+                        <a href="Tran Ngoc Bao Tran_Product.html">Pop Rock</a>
+                        <a href="Tran Ngoc Bao Tran_Product.html">Idol-Dance</a>
+                        <a href="Tran Ngoc Bao Tran_Product.html">Metal</a>
+                    </div><!---product-section-child----->
+                </div><!-----footer-product-mobil----->
+                <div class="col-lg-2 col-md-4 d-none d-md-flex" id="footer-product-section">
+                    <h3>Products</h3>
+                    <div id="product-section-child">
+                        <a href="Tran Ngoc Bao Tran_Product.html">Collections</a>
+                        <a href="Tran Ngoc Bao Tran_Product.html">Best Seller</a>
+                        <a href="Tran Ngoc Bao Tran_Product.html">J-Pop</a>
+                        <a href="Tran Ngoc Bao Tran_Product.html">Pop Rock</a>
+                        <a href="Tran Ngoc Bao Tran_Product.html">Idol-Dance</a>
+                        <a href="Tran Ngoc Bao Tran_Product.html">Metal</a>
+                    </div><!---product-section-child----->
+                </div><!-----footer-product-section---->
+                <div class="col-12 d-md-none" id="footer-info-mobile">
+                    <button data-toggle="collapse" data-target="#info-content">
+                        <h3>Information</h3> <img class="arrow-icon" src="imgs/icon/Chevron down.svg" alt="chevron-down">
+                    </button><!----product-mobile-button---->
+                    <div id="info-content" class="collapse">
+                        <a href="Tran Ngoc Bao Tran_Contact.html">Contact</a>
+                        <a href="Nguyen Hoang Vinh Phu_AboutUs.html">About Us</a>
+                        <a href="#">Product Updates</a>
+                        <a href="#">News</a>
+                        <a href="#">Return Policy</a>
+                        <a href="#">Terms of Service</a>
+                    </div><!---product-section-child----->
+                </div><!----footer-info-mobile----->
+                <div class="col-lg-3 col-md-4 d-none d-md-flex" id="footer-info-section">
+                    <h3>Information</h3>
+                    <div id="info-child">
+                        <a href="Tran Ngoc Bao Tran_Contact.html">Contact</a>
+                        <a href="Nguyen Hoang Vinh Phu_AboutUs.html">About Us</a>
+                        <a href="#">Product Updates</a>
+                        <a href="#">News</a>
+                        <a href="#">Return Policy</a>
+                        <a href="#">Terms of Service</a>
+                    </div><!---info-child---->
+                </div><!----footer-info-section---->
+                <div class="col-lg-4 col-md-12" id="footer-news-section">
+                    <h3>Newsletter</h3>
+                    <p>Stay up to date with pre-orders, releases, and product drops!</p>
+                    <form action="#">
+                        <input type="email" placeholder="Email Address" class="glass-figma-2">
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div><!-----footer-newsletter-section---->
+            </div><!-----footer-row----->
+            <div class="row" id="footer-inline-row">
+                <div class="inline-footer">
+                    <p>© 2025 EKOH. All rights reserved. &nbsp; </p>
+                    <a href="#">Terms</a>
+                    <p>,</p> &nbsp;
+                    <a href="#">Privacy</a> &nbsp;
+                    <p> & </p> &nbsp;
+                    <a href="#">Accessibility</a>
+                </div><!----inline-footer----->
+                <div class="inline-footer">
+                    <p>Do not sell our personal information</p>
+                </div><!----inline-footer----->
+            </div><!----footer-inline-row----->
+        </div><!----container---->
+    </div><!----container-fluid----->
+    <!-----FOOTER (END)----->
+	<script src="js/index.js"></script>
+  </body>
+</html>

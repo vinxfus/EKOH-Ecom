@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CONTACT PAGE</title>
+  <!--CSS-->
+  <link href="css/bootstrap-4.4.1.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet" type="text/css">
+  <link href="css/tran/style_contact.css" rel="stylesheet" type="text/css">
+  <!--Bootstrap-->
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap-4.4.1.js"></script>
+</head>
+
+<body>
+  <!----------------- Header (Start) ----------------->
+  <div class="col-12 header d-none"></div>
+  <!----------------- Header (End) ----------------->
+
+  <!----------------- NAVIGATIONS (Start) ----------------->
+  <div class="container glass-figma" id="nav-bg">
+    <div class="row">
+        
+        <div class="col-xl-3 d-none d-xl-flex nav-logo">
+            <a href="Nguyen Hoang Vinh Phu_Home.html"><img src="imgs/logo/logo-white-pink.svg" alt="logo"></a>
+        </div>
+        <div class="col-xl-6 d-none d-xl-block nav-content">
+            <ul>
+                <li><a href="Nguyen Hoang Vinh Phu_Home.html">HOME</a></li>
+            
+                <li class="dropdown">
+                    <a id="store-btn-drop" href="#">STORE <img src="imgs/icon/Chevron down.svg"></a>
+                    <ul class="dropdown-menu">
+                      <li><a href="Tran Ngoc Bao Tran_Product.html">Jpop</a></li>
+                      <li><a href="Tran Ngoc Bao Tran_Product.html">Pop Rock</a></li>
+                      <li><a href="Tran Ngoc Bao Tran_Product.html">Alternative Rock</a></li>
+                      <li><a href="Tran Ngoc Bao Tran_Product.html">Punk Rock</a></li>
+                      <li><a href="Tran Ngoc Bao Tran_Product.html">Idol-Dance Pop</a></li>
+                      <li><a href="Tran Ngoc Bao Tran_Product.html">Metal</a></li>
+                      <li><a href="Tran Ngoc Bao Tran_Product.html">EDM-Electro-Techno</a></li>
+
+
+                    </ul>
+                  </li>
+                <li><a href="Nguyen Hoang Vinh Phu_AboutUs.html">ABOUT US</a></li>
+                <li><a href="Tran Ngoc Bao Tran_Contact.html">CONTACT</a></li>
+            </ul>
+        </div><!-- nav-content -->
+        <div class="col-xl-3 d-none d-xl-block nav-icon">
+            <ul>
+                <li><a href="#" data-toggle="collapse" data-target="#search-dropdown"><img src="imgs/icon/Search.svg" alt="search"></a></li>
+                <li><a href="#"><img src="imgs/icon/User.svg" alt="user" loading=></a></li>
+                <li><a href="Nguyen Dao Khanh Linh_Cart.html"><img src="imgs/icon/Shopping cart.svg" alt="cart"></a></li>
+            </ul>
+            <div id="search-dropdown" class="collapse">
+                <div class="search-flex glass-figma-pink">
+                <input type="text" placeholder="Search...">
+                <button type="submit"><img src="imgs/icon/Search.svg" alt="search"></button>
+                </div><!-- search-flex -->
+            </div><!-- search-dropdown -->
+        </div><!-- nav-icon -->
+        <div class="col-3 col-sm-3 col-md-2 col-lg-2 d-xl-none" id="mobile-menu">
+            <a id="menubtn"><img src="imgs/icon/Menu.svg" alt="menu"></a>
+        </div>
+        <div class="offset-1 offset-md-2 col-4 d-xl-none" id="mobile-logo">
+            <a href="Nguyen Hoang Vinh Phu_Home.html"><img src="imgs/logo/logo-white-pink.svg" alt="logo"></a>
+        </div><!-- mobile-logo -->
+        <div class="col-3 col-md-2 offset-1 offset-md-2 d-xl-none" id="mobile-cart">
+            <a href="Nguyen Dao Khanh Linh_Cart.html"><img src="imgs/icon/Shopping cart-mobile.svg" alt="cart-mobile"></a>
+        </div><!-- mobile-cart -->
+    </div><!-- .row -->
+</div><!-- .container -->
+<!-----Thanh trượt MENU Mobile----->
+<nav id="menu">
+    <a id="closebtn"><img src="imgs/icon/X-pink.svg" alt="X"></a>
+    <a id="user-btn" class="glass-figma-pink"><img src="imgs/icon/User.svg" alt="user"></a>
+    <form class="form-mobile-menu glass-figma-pink">
+        <input type="text" placeholder="Search...">
+        <button type="submit"><img src="imgs/icon/Search.svg" alt="search"></button>
+    </form>
+    <ul>
+        <li><a href="Nguyen Hoang Vinh Phu_Home.html">HOME</a></li>
+        <li><a href="Tran Ngoc Bao Tran_Product.html" data-toggle="collapse" data-target="#product-mobile-content">STORE <img class="arrow-icon" src="imgs/icon/Chevron down-pink.svg"></a></li>
+        <div id="product-mobile-content" class="collapse">
+            <ul id="product-mobile-sublist">
+                <li><a href="Tran Ngoc Bao Tran_Product.html">JPOP</a></li>
+                <li><a href="Tran Ngoc Bao Tran_Product.html">POP ROCK</a></li>
+                <li><a href="Tran Ngoc Bao Tran_Product.html">ALTERNATIVE ROCK</a></li>
+                <li><a href="Tran Ngoc Bao Tran_Product.html">PUNK ROCK</a></li>
+                <li><a href="Tran Ngoc Bao Tran_Product.html">IDOL-DANCE POP</a></li>
+                <li><a href="Tran Ngoc Bao Tran_Product.html">METAL</a></li>
+                <li><a href="Tran Ngoc Bao Tran_Product.html">EDM-ELECTRO-TECHNO</a></li>
+            </ul><!----product-mobile-sublist----->
+        </div><!-- product-mobile-content -->
+        <li><a href="Nguyen Hoang Vinh Phu_AboutUs.html">ABOUT US</a></li>
+        <li><a href="Tran Ngoc Bao Tran_Contact.html">CONTACT</a></li>
+        <li><a href="#">NEWS</a></li>
+        <li><a href="Tran Ngoc Bao Tran_Contact.html">FAQ</a></li>
+    </ul>
+  </nav><!-- #menu -->
+  <!----------------- NAVIGATIONS (END) ----------------->
+
+  <!----Bắt đầu code từ đây, LƯU Ý là code phần nào thì Note lại START-END để dễ nhìn nha mấy đứa, CSS cũng thế nhe----->
+
+
+  <!-----BANNER (START)----->
+  <div class="container-fluid" id="contact_banner">
+    <div class="container">
+      <!-- TEXT LAYER -->
+      <div class="hero-text">
+
+        <h1>
+          Stay In Tune<br>
+          <span class="orange">With Us</span>
+        </h1>
+
+        <!-- MENU -->
+        <div class="hero-menu">
+          <span>Connect</span>
+          <span>Listen</span>
+          <span>Feel</span>
+        </div>
+
+      </div>
+    </div>
+  </div><!-- product-banner -->
+  <!-----BANNER (END)----->
+  <!-----BREADCRUMB (START)----->
+  <div class="container" id="breadcrumb-container">
+    <div class="row" id="breadcrumb-row">
+        <a class="breadcrumb-home" href="Nguyen Hoang Vinh Phu_Home.html">Home</a>
+        <a href="#"><img src="imgs/icon/Chevron right-pink.svg" alt="chevron-right"></a>
+        <a href="#">Contact</a>
+    </div><!------row------>
+</div><!---breadcrumb-container--->
+  <!-----BREADCRUMB (END)----->
+  <!-----INFO (START)----->
+  <div class="container-fluid" id="contact-section">
+    <div class="container contact-container">
+      <div class="row contact-row justify-content-center">
+        <div class="col-6 col-sm-6 col-md-6 col-lg-3 mb-4">
+          <div class="contact-card glass-skin">
+            <img src="imgs/Contact/icon/Mail.svg">
+            <p>support.ekoh@gmail.com</p>
+          </div>
+        </div>
+
+        <div class="col-6 col-sm-6 col-md-6 col-lg-3 mb-4">
+          <div class="contact-card glass-figma">
+            <img src="imgs/Contact/icon/Phone.svg">
+            <p>+8498675299</p>
+          </div>
+        </div>
+
+        <div class="col-6 col-sm-6 col-md-6 col-lg-3 mb-4">
+          <div class="contact-card glass-figma">
+            <img src="imgs/Contact/icon/Map pin.svg">
+            <p>27 Ly Tu Trong, HCMC</p>
+          </div>
+        </div>
+
+        <div class="col-6 col-sm-6 col-md-6 col-lg-3 mb-4">
+          <div class="contact-card glass-figma">
+            <img src="imgs/Contact/icon/Instagram.svg">
+            <p>@ekoh</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-------------- PINK BLUR (START) ------------->
+  <div class="container-fluid" id="soul_blur">
+    <div class="sound-section">
+      <img src="imgs/Product/background/category_gradientbg.png" alt="background glow">
+      <h2>Reach the Sound Realm</h2>
+    </div>
+  </div>
+  <!-------------- PINK BLUR (END) ------------->
+
+  <!-------------- FORM (START) ------------->
+  <div class="container-fluid">
+    <div class="container form_contact glass-figma">
+
+      <!-- ================= FORM TRÁI ================= -->
+      <div class="row justify-content-center align-items-center contact-wrapper">
+
+        <!-- FORM (luôn hiện) -->
+        <div class="col-xl-7 col-lg-7 col-md-10 col-sm-12 form-box">
+
+          <form>
+            <div class="form-group row">
+              <label class="col-sm-3 col-form-label text-white">Name:</label>
+              <div class="col-sm-9">
+                <input type="text" class="form-control" placeholder="Text Here...">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="col-sm-3 col-form-label text-white">Email:</label>
+              <div class="col-sm-9">
+                <input type="email" class="form-control" placeholder="Text Here...">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="col-sm-3 col-form-label text-white">Phone:</label>
+              <div class="col-sm-9">
+                <input type="text" class="form-control" placeholder="Text Here...">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="col-sm-3 col-form-label text-white">Message:</label>
+              <div class="col-sm-9">
+                <textarea class="form-control" rows="5" placeholder="Write your opinion..."></textarea>
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <div class="col-sm-9 offset-sm-3 text-right">
+                <button class="btn-formcontact">Send</button>
+              </div>
+            </div>
+          </form>
+        </div>
+
+        <!-- HÌNH (chỉ hiện ở LG trở lên) -->
+        <div class="col-xl-5 col-lg-5 pr-0 d-none d-lg-flex img-box">
+          <img src="imgs/Contact/img/char.png" class="right-img">
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+
+  <!-------------- FORM (END) ------------->
+  <div class="container">
+    <div class="map-box">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.0538163790766!2d106.70062424947061!3d10.778452630221654!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f1cdddcd4a7%3A0x8f4f04cc0dbea5b6!2zVmluY29tIENlbnRlciBEw7ZqIEzhuqNpIFRyw7QgVHJ1bmc!5e0!3m2!1sen!2s!4v1700000000000"
+        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+  </div>
+  <!-----FOOTER (START)----->
+  <div class="container-fluid" id="footer-bg">
+    <div class="container">
+        <div class="row" id="footer-row">
+            <div class="col-lg-3 col-md-4 col-12" id="footer-logo-section">
+                <img src="imgs/logo/logo-white-pink.svg" alt="logo" loading="lazy">
+                <p>Where Anime Lives in Sound</p>
+                <div class="social-med-row">
+                    <a href="#"><img src="imgs/icon/Facebook-pink.svg" alt="facebook" loading="lazy"></a>
+                    <a href="#"><img src="imgs/icon/Insta-pink.svg" alt="instagram" loading="lazy"></a>
+                    <a href="#"><img src="imgs/icon/Tiktok-pink.svg" alt="tiktok" loading="lazy"></a>
+                </div><!------social-med-row----->
+            </div><!----footer-logo-section----->
+            <div class="col-12 d-md-none" id="footer-product-mobile">
+                <button data-toggle="collapse" data-target="#product-content">
+                    <h3>Products</h3> <img class="arrow-icon" src="imgs/icon/Chevron down.svg" alt="chevron-down">
+                </button><!----product-mobile-button---->
+                <div id="product-content" class="collapse">
+                    <a href="Tran Ngoc Bao Tran_Product.html">Collections</a>
+                    <a href="Tran Ngoc Bao Tran_Product.html">Best Seller</a>
+                    <a href="Tran Ngoc Bao Tran_Product.html">J-Pop</a>
+                    <a href="Tran Ngoc Bao Tran_Product.html">Pop Rock</a>
+                    <a href="Tran Ngoc Bao Tran_Product.html">Idol-Dance</a>
+                    <a href="Tran Ngoc Bao Tran_Product.html">Metal</a>
+                </div><!---product-section-child----->
+            </div><!-----footer-product-mobil----->
+            <div class="col-lg-2 col-md-4 d-none d-md-flex" id="footer-product-section">
+                <h3>Products</h3>
+                <div id="product-section-child">
+                    <a href="Tran Ngoc Bao Tran_Product.html">Collections</a>
+                    <a href="Tran Ngoc Bao Tran_Product.html">Best Seller</a>
+                    <a href="Tran Ngoc Bao Tran_Product.html">J-Pop</a>
+                    <a href="Tran Ngoc Bao Tran_Product.html">Pop Rock</a>
+                    <a href="Tran Ngoc Bao Tran_Product.html">Idol-Dance</a>
+                    <a href="Tran Ngoc Bao Tran_Product.html">Metal</a>
+                </div><!---product-section-child----->
+            </div><!-----footer-product-section---->
+            <div class="col-12 d-md-none" id="footer-info-mobile">
+                <button data-toggle="collapse" data-target="#info-content">
+                    <h3>Information</h3> <img class="arrow-icon" src="imgs/icon/Chevron down.svg" alt="chevron-down">
+                </button><!----product-mobile-button---->
+                <div id="info-content" class="collapse">
+                    <a href="Tran Ngoc Bao Tran_Contact.html">Contact</a>
+                    <a href="Nguyen Hoang Vinh Phu_AboutUs.html">About Us</a>
+                    <a href="#">Product Updates</a>
+                    <a href="#">News</a>
+                    <a href="#">Return Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div><!---product-section-child----->
+            </div><!----footer-info-mobile----->
+            <div class="col-lg-3 col-md-4 d-none d-md-flex" id="footer-info-section">
+                <h3>Information</h3>
+                <div id="info-child">
+                    <a href="Tran Ngoc Bao Tran_Contact.html">Contact</a>
+                    <a href="Nguyen Hoang Vinh Phu_AboutUs.html">About Us</a>
+                    <a href="#">Product Updates</a>
+                    <a href="#">News</a>
+                    <a href="#">Return Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div><!---info-child---->
+            </div><!----footer-info-section---->
+            <div class="col-lg-4 col-md-12" id="footer-news-section">
+                <h3>Newsletter</h3>
+                <p>Stay up to date with pre-orders, releases, and product drops!</p>
+                <form action="#">
+                    <input type="email" placeholder="Email Address" class="glass-figma-2">
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div><!-----footer-newsletter-section---->
+        </div><!-----footer-row----->
+        <div class="row" id="footer-inline-row">
+            <div class="inline-footer">
+                <p>© 2025 EKOH. All rights reserved. &nbsp; </p>
+                <a href="#">Terms</a>
+                <p>,</p> &nbsp;
+                <a href="#">Privacy</a> &nbsp;
+                <p> & </p> &nbsp;
+                <a href="#">Accessibility</a>
+            </div><!----inline-footer----->
+            <div class="inline-footer">
+                <p>Do not sell our personal information</p>
+            </div><!----inline-footer----->
+        </div><!----footer-inline-row----->
+    </div><!----container---->
+</div><!----container-fluid----->
+  <!-----FOOTER (END)----->
+
+
+  <script src="js/index.js"></script>
+</body>
+
+</html>

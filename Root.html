@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ROOT</title>
+    <!--CSS-->
+	<link href="css/bootstrap-4.4.1.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet" type="text/css">
+	<link href="css/gradient.css" rel="stylesheet" type="text/css">
+	<!--Bootstrap--> 
+	<script src="js/jquery-3.4.1.min.js"></script>
+	<script src="js/popper.min.js"></script> 
+	<script src="js/bootstrap-4.4.1.js"></script>
+	
+  </head>
+  <body>
+	<!----------------- Header (Start) ----------------->
+	<div class="col-12 header"></div>				
+	<!----------------- Header (End) ----------------->
+
+		<!----------------- NAVIGATIONS (Start) ----------------->
+	<div class="container glass-figma" id="nav-bg">
+		<div class="row">
+			
+			<div class="col-xl-3 d-none d-xl-block nav-logo">
+				<h1>LOGO</h1>
+			</div>
+			<div class="col-xl-6 d-none d-xl-block nav-content">
+				<ul>
+					<li><a href="#">HOME</a></li>
+				
+					<li class="dropdown">
+						<a href="#">STORE <img src="imgs/icon/Chevron down.svg"></a>
+						<ul class="dropdown-menu">
+						  <li><a href="#">Jpop</a></li>
+						  <li><a href="#">Pop Rock</a></li>
+						  <li><a href="#">Alternative Rock</a></li>
+						  <li><a href="#">Punk Rock</a></li>
+						  <li><a href="#">Idol-Dance Pop</a></li>
+						  <li><a href="#">Metal</a></li>
+						  <li><a href="#">EDM-Electro-Techno</a></li>
+
+
+						</ul>
+					  </li>
+					<li><a href="#">CONTACT</a></li>
+					<li><a href="#">ABOUT US</a></li>
+				</ul>
+			</div><!-- nav-content -->
+			<div class="col-xl-3 d-none d-xl-block nav-icon">
+				<ul>
+					<li><a href="#" data-toggle="collapse" data-target="#search-dropdown"><img src="imgs/icon/Search.svg"></a></li>
+					<li><a href="#"><img src="imgs/icon/User.svg"></a></li>
+					<li><a href="#"><img src="imgs/icon/Shopping cart.svg"></a></li>
+				</ul>
+				<div id="search-dropdown" class="collapse">
+					<div class="search-flex glass-figma">
+					<img src="imgs/icon/Search.svg">
+					<input type="text" placeholder="Search...">
+					</div><!-- search-flex -->
+				</div><!-- search-dropdown -->
+			</div><!-- nav-icon -->
+			<div class="col-3 col-sm-3 col-md-2 col-lg-2 d-xl-none" id="mobile-menu">
+				<a id="menubtn"><img src="imgs/icon/Menu.svg"></a>
+			</div>
+			<div class="offset-1 offset-md-2 col-4 d-xl-none" id="mobile-logo">
+				<h1>LOGO</h1>
+			</div><!-- mobile-logo -->
+			<div class="col-3 col-md-2 offset-1 offset-md-2 d-xl-none" id="mobile-cart">
+				<a href="#"><img src="imgs/icon/Shopping cart-mobile.svg"></a>
+			</div><!-- mobile-cart -->
+		</div><!-- .row -->
+	</div><!-- .container -->
+	<!-----Thanh trượt MENU Mobile----->
+	<nav id="menu">
+		<a id="closebtn"><img src="imgs/icon/X-pink.svg"></a>
+		<a id="user-btn" class="glass-figma-pink"><img src="imgs/icon/User.svg"></a>
+		<form class="form-mobile-menu glass-figma-pink">
+			<img src="imgs/icon/Search.svg">
+			<input type="text" placeholder="Search...">
+		</form>
+		<ul>
+			<li><a href="#">HOME</a></li>
+			<li><a href="#" data-toggle="collapse" data-target="#product-mobile-content">STORE <img class="arrow-icon" src="imgs/icon/Chevron down-pink.svg"></a></li>
+			<div id="product-mobile-content" class="collapse">
+				<ul id="product-mobile-sublist">
+					<li><a href="#">JPOP</a></li>
+					<li><a href="#">POP ROCK</a></li>
+					<li><a href="#">ALTERNATIVE ROCK</a></li>
+					<li><a href="#">PUNK ROCK</a></li>
+					<li><a href="#">IDOL-DANCE POP</a></li>
+					<li><a href="#">METAL</a></li>
+					<li><a href="#">EDM-ELECTRO-TECHNO</a></li>
+				</ul><!----product-mobile-sublist----->
+			</div><!-- product-mobile-content -->
+			<li><a href="#">CONTACT</a></li>
+			<li><a href="#">ABOUT US</a></li>
+			<li><a href="#">FAQ</a></li>
+			<li><a href="#">INFORMATION</a></li>
+			
+		</ul>
+	</nav><!-- #menu -->
+	<!----------------- NAVIGATIONS (END) ----------------->
+	
+	<!----Bắt đầu code từ đây, LƯU Ý là code phần nào thì Note lại START-END để dễ nhìn nha mấy đứa, CSS cũng thế nhe----->
+
+	<!-- Loader -->
+	<div id="loader">
+		<video autoplay muted loop id="loader-video">
+		  <source src="imgs/pageloader/Comp 1_1.webm" type="video/webm">
+		  Your browser does not support the video tag.
+		</video>
+	  </div>
+	
+	<!-- Nội dung trang -->
+	
+
+
+	<script src="js/product-card-component.js"></script>
+	<script src="js/product-data.js"></script>
+	<script src="js/init-products.js"></script>
+	<script src="js/index.js"></script>
+  </body>
+</html>

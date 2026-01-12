@@ -1,0 +1,625 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/**Filter**/
+.dropdown-btn {
+  background-clip: padding-box;
+}
+
+.filter {
+  display: flex;
+  margin-top: 20px;
+}
+
+.filter button {
+  width: 160px;
+  height: 45px;
+  color: var(--white-color);
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  gap: 6px;
+  transition: ease-in .3s;
+}
+
+.filter button:hover {
+  border: none;
+  border-radius: 10px;
+}
+
+.filter button:hover img {
+  filter: brightness(0) invert(1);
+  transition: ease-in .3s;
+}
+
+.filter button:focus {
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  box-shadow: none;
+}
+
+.filter button:focus img {
+  filter: brightness(0) invert(1);
+  transition: ease-in .3s;
+}
+
+.filter button span {
+  margin-top: 2px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.filter button img {
+  height: 14px;
+  transition: ease-in .3s;
+}
+
+/** chua set html **/
+
+
+
+.filter-body {
+  border-radius: 12px;
+  /* bo tròn các góc */
+  overflow: hidden;
+  /* không cho tràn ra ngoài */
+  padding: 1rem;
+  /* tạo không gian bên trong */
+  margin-top: 6px;
+  /* tách nhẹ với tiêu đề trên */
+}
+
+.filter-collapse {
+  padding: 0px;
+  margin-bottom: 20px;
+}
+
+.filtercontent {
+  justify-content: space-between;
+  gap: 50px;
+  margin-bottom: 10px;
+  padding-left: 20px;
+  color: var(--white-color);
+}
+
+/* ban đầu mũi tên hướng xuống */
+a[ data-toggle="collapse"] img {
+  transition: transform 0.3s ease;
+  transform: rotate(0deg);
+}
+
+/* khi menu được thu gọn (Bootstrap tự thêm class collapsed) */
+a.collapsed img {
+  transform: rotate(180deg);
+}
+
+
+/* Container cho checkbox */
+.checkbox-container {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-family: heading-font;
+  letter-spacing: 0.8px;
+  font-size: 16px;
+  padding-left: 12px;
+}
+
+/* Ẩn checkbox mặc định (START) */
+.checkbox-container input {
+  display: none;
+}
+
+/* Hình vuông ngoài */
+.checkmark {
+  width: 16px;
+  height: 16px;
+  border: 1px solid var(--main-color);
+  /* viền nhạt */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 20px;
+  transition: all 0.2s ease;
+  border-radius: 2px;
+}
+
+/* Vuông bên trong (ẩn mặc định) */
+.checkmark::after {
+  content: "";
+  width: 0;
+  height: 0;
+  background-color: transparent important;
+  /* màu default */
+  transition: all 0.2s ease;
+}
+
+/* Hover: có hình vuông nhỏ hơn bên trong */
+.checkbox-container:hover .checkmark::after {
+  width: 7px;
+  height: 7px;
+}
+
+/* Checked: vuông to bên trong + viền đậm */
+.checkbox-container input:checked+.checkmark {
+  border: none;
+}
+
+.checkbox-container input:checked+.checkmark {
+  position: relative;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(5px) saturate(120%);
+  -webkit-backdrop-filter: blur(12px) saturate(180%);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow:
+    inset 1px 1px 2px rgba(255, 255, 255, 0.15),
+    0 8px 32px rgba(0, 0, 0, 0.4);
+  background-image: linear-gradient(135deg,
+      rgba(255, 255, 255, 0.1) 0%,
+      rgba(255, 255, 255, 0) 100%);
+}
+
+.checkbox-container input:checked+.checkmark::after {
+  width: 10px;
+  height: 10px;
+  background-color: var(--main-color);
+}
+
+/* Ẩn checkbox mặc định (END) */
+
+/**FILTER (END)**/
+
+
+/* ====== Hiệu ứng mượt cho filter collapse ở màn MD ====== */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  #myDiv.collapse {
+    display: block;
+    height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: all 0.4s ease;
+  }
+
+  #myDiv.collapse.show {
+    height: auto;
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/*-------------------------------XL--------------------------------*/
+@media (min-width: 1200px) {
+
+  /* FILTER CANVAS (START) */
+  /* Hide offcanvas on md+ */
+  .offcanvas-filter,
+  .offcanvas-overlay {
+    display: none !important;
+  }
+
+  /* FILTER CANVAS (END) */
+  .custom-dropdown .dropdown-btn:focus {
+    border: 1px solid var(--main-color);
+  }
+
+  .filter-action {
+    display: flex;
+    /* Các button sẽ nằm cạnh nhau */
+    gap: 16px;
+    /* Khoảng cách giữa các nút */
+    margin-top: 16px;
+    justify-content: flex-start;
+    /* Canh sang bên trái */
+    margin-left: 16px;
+    margin-bottom: 16px;
+  }
+
+}
+
+
+
+
+/*----------------------------LG--------------------------*/
+@media (max-width: 1199px) and (min-width: 992px) {
+
+  /* FILTER CANVAS (START) */
+  /* Hide offcanvas on md+ */
+  .offcanvas-filter,
+  .offcanvas-overlay {
+    display: none !important;
+  }
+
+  /* FILTER CANVAS (END) */
+}
+
+
+
+/*----------------------------MD--------------------------*/
+@media (max-width: 991px) and (min-width: 768px) {
+
+  /* FILTER CANVAS (START) */
+  /* Hide offcanvas on md+ */
+  .offcanvas-filter,
+  .offcanvas-overlay {
+    display: none !important;
+  }
+
+  /* FILTER CANVAS (END) */
+  /** filter cho size sm trở xuống **/
+  #row-product {
+    /*Đây là row tổng của product*/
+    padding-left: 15px;
+    padding-right: 15px;
+
+  }
+
+  .filter button {
+    height: 40px;
+    width: 120px;
+    gap: 5px;
+  }
+
+  .filter button h3 {
+    margin-top: 8px;
+  }
+
+  .filter button:hover {
+    color: #fff;
+  }
+
+  .filter button span {
+    font-size: 12px;
+
+  }
+
+  .filter button img {
+    height: 12px;
+    margin-top: 1px;
+  }
+
+  #availability {
+    padding-left: 40px;
+  }
+
+  #color {
+    padding-left: 40px;
+  }
+
+  #manufacturer {
+    padding-left: 40px;
+  }
+
+  .filtercontent {
+    padding: 0px;
+
+  }
+
+  .filtercontent a {
+    padding-left: 30px;
+  }
+
+  .filtercontent img {
+    height: 20px;
+    display: flex;
+    position: absolute;
+    margin-left: 165px;
+    margin-top: 8px;
+  }
+
+  .filter-header p {
+    margin-bottom: 8px;
+    margin-top: 8px;
+  }
+
+  .filtercontent a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 1.28px;
+    color: #FFF;
+    display: flex;
+    margin-bottom: 20px;
+  }
+}
+
+
+
+/*----------------------------SM--------------------------*/
+@media (max-width: 767px) and (min-width: 576px) {
+
+  /* FILTER HIDE (START) */
+  /* Hide MD filter on XS/SM */
+  #filterCollapse {
+    display: none !important;
+  }
+
+  /* FILTER HIDE (END) */
+
+  /* FILTER (START) */
+  /* ========== OFFCANVAS ========== */
+  .offcanvas-header {
+    color: #fff;
+    margin-left: 8px;
+    margin-top: 8px;
+  }
+
+  .offcanvas-filter {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 80%;
+    height: 100%;
+    background: rgba(20, 20, 20, 0.7);
+    backdrop-filter: blur(8px);
+    transition: all 0.4s ease;
+    z-index: 9999;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    overflow-y: auto;
+    margin-bottom: 30px;
+  }
+
+  .offcanvas-filter.show {
+    left: 0;
+  }
+
+  .offcanvas-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.4);
+    display: none;
+    z-index: 9998;
+  }
+
+  .offcanvas-overlay.show {
+    display: block;
+  }
+
+  /**Filter sm xs(START)**/
+  label.checkbox-container {
+    margin-bottom: 0px;
+  }
+
+  .filtercontent p {
+    margin-left: 16px;
+    color: #fff;
+    font-family: heading-font;
+    font-size: 19px;
+    margin-bottom: 8px;
+    margin-top: 4px;
+  }
+
+  .filtercontent .label-text {
+    color: #fff;
+    font-family: body-font;
+    font-size: 16px;
+  }
+
+  /**Filter sm xs(END)**/
+  .filter button h3 {
+    margin-top: 8px;
+  }
+
+  .filter button:hover {
+    color: #fff;
+  }
+
+  .glass-figmafilterxs {
+    position: relative;
+    background: rgba(255, 255, 255, 0.05);
+    /* lớp nền trong suốt */
+    backdrop-filter: blur(5px) saturate(120%);
+    -webkit-backdrop-filter: blur(12px) saturate(180%);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow:
+      inset 1px 1px 2px rgba(255, 255, 255, 0.15),
+      /* ánh sáng phản xạ */
+      0 8px 32px rgba(0, 0, 0, 0.4);
+    /* chiều sâu */
+
+    /* hiệu ứng ánh sáng theo góc */
+    background-image: linear-gradient(135deg,
+        rgba(255, 255, 255, 0.1) 0%,
+        rgba(255, 255, 255, 0.0) 100%);
+  }
+
+  /* FILTER (END) */
+}
+
+/*----------------------------Xs--------------------------*/
+@media (max-width: 575px) {
+  .glass-figmafilterxs {
+    position: relative;
+    background: rgba(255, 255, 255, 0.05);
+    /* lớp nền trong suốt */
+    backdrop-filter: blur(5px) saturate(120%);
+    -webkit-backdrop-filter: blur(12px) saturate(180%);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow:
+      inset 1px 1px 2px rgba(255, 255, 255, 0.15),
+      /* ánh sáng phản xạ */
+      0 8px 32px rgba(0, 0, 0, 0.4);
+    /* chiều sâu */
+
+    /* hiệu ứng ánh sáng theo góc */
+    background-image: linear-gradient(135deg,
+        rgba(255, 255, 255, 0.1) 0%,
+        rgba(255, 255, 255, 0.0) 100%);
+    height: 100%;
+  }
+
+  /* FILTER HIDE (START) */
+  /* Hide MD filter on XS/SM */
+  #filterCollapse {
+    display: none !important;
+  }
+
+  /* FILTER HIDE (END) */
+
+  /* FILTER (START) */
+  /* ========== OFFCANVAS ========== */
+  .offcanvas-header {
+    color: var(--white-color);
+    margin-left: 8px;
+    margin-top: 8px;
+  }
+
+  .offcanvas-filter {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 80%;
+    height: 100%;
+    background: rgba(20, 20, 20, 0.7);
+    backdrop-filter: blur(8px);
+    transition: all 0.4s ease;
+    z-index: 9999;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    overflow-y: auto;
+  }
+
+  .offcanvas-filter.show {
+    left: 0;
+  }
+
+  .offcanvas-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.4);
+    display: none;
+    z-index: 9998;
+  }
+
+  .offcanvas-overlay.show {
+    display: block;
+  }
+
+  /**Filter sm xs(START)**/
+  label.checkbox-container {
+    margin-bottom: 0px;
+  }
+
+  .filtercontent p {
+    margin-left: 16px;
+    color: var(--white-color);
+    font-family: heading-font;
+    font-size: 19px;
+    margin-bottom: 8px;
+    margin-top: 4px;
+  }
+
+  .filtercontent .label-text {
+    color: var(--white-color);
+    font-family: heading-font;
+    font-size: 14px;
+  }
+
+  /**Filter sm xs(END)**/
+  .filter button h3 {
+    margin-top: 8px;
+  }
+
+  .filter button:hover {
+    color: var(--white-color)f;
+  }
+
+  /* FILTER (END) */
+}
+
+
+/* Chỉ hiện ở MD (768px → 991.98px) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .md-filter-sort {
+    display: block !important;
+    margin-bottom: 15px;
+  }
+}
+
+
+/* Ẩn ở LG + XL (≥992px) */
+@media (min-width: 992px) {
+  .md-filter-sort {
+    display: none !important;
+  }
+}
+
+/* FIX DROPDOWN KHÔNG CLICK ĐƯỢC */
+.md-sort-dropdown {
+  position: relative;
+  z-index: 9999 !important;
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+
+/* NÚT DROPDOWN (GLASS PINK) */
+.custom-dropdown .dropdown-btn {
+  width: 100%;
+  height: 43px;
+  padding: 6px 14px;
+
+  position: relative;
+  background: rgba(253, 177, 250, 0.3);
+  /* lớp nền trong suốt */
+  backdrop-filter: blur(5px) saturate(120%);
+  -webkit-backdrop-filter: blur(12px) saturate(180%);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow:
+    inset 1px 1px 2px rgba(255, 255, 255, 0.15),
+    /* ánh sáng phản xạ */
+    0 8px 32px rgba(0, 0, 0, 0.4);
+  /* chiều sâu */
+
+  /* hiệu ứng ánh sáng theo góc */
+  background-image: linear-gradient(135deg,
+      rgba(255, 255, 255, 0.1) 0%,
+      rgba(255, 255, 255, 0.0) 100%);
+
+  border-radius: 10px;
+  color: var(--white-color);
+
+  font-family: heading-font;
+  font-size: 16px;
+  font-weight: 600;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+
+
+/* MENU DROPDOWN (GLASS STYLE) */
+
+
+/* ITEM */
+.custom-dropdown .dropdown-content a {
+  display: block;
+  padding: 10px 20px;
+  color: var(--white-color);
+  font-family: heading-font;
+  font-size: 14px;
+}
+
+/* Không hover, giữ màu nguyên */
+.custom-dropdown .dropdown-content a:hover {
+  background: rgba(253, 177, 250, 0.2) !important;
+}
+
+.custom-dropdown .dropdown-btn .icon-down {
+  width: 14px;
+  /* chỉnh kích thước icon */
+  height: 14px;
+  /* có thể bỏ nếu muốn tự scale theo width */
+  margin-left: 8px;
+  object-fit: contain;
+}
+
+

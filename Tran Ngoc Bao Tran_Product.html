@@ -1,0 +1,2249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>PRODUCT PAGE</title>
+    <!--CSS-->
+    <link href="css/bootstrap-4.4.1.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="css/tran/style_productfilter.css" rel="stylesheet" type="text/css">
+    <link href="css/tran/style_product.css" rel="stylesheet" type="text/css">
+
+    <!--link owl-->
+    <link rel="stylesheet" href="js/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css" type="text/css">
+    <link rel="stylesheet" href="js/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css" type="text/css">
+    <!--Bootstrap-->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap-4.4.1.js"></script>
+    <script src="js/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('.owl-carousel').owlCarousel({
+                loop: true,
+                margin: 30,
+                nav: true,
+                dots: false,
+                autoplay: true,
+                autoplayTimeout: 3500,
+                navText: [
+                    "<img src='imgs/icon/Chevron left-white.svg' class='nav-icon'>",
+                    "<img src='imgs/icon/Chevron right-white.svg' class='nav-icon'>"
+                ],
+                responsive: {
+                    0: { items: 2 },
+                    768: { items: 2 },
+                    1200: { items: 3 }
+                }
+            });
+
+        });
+    </script>
+
+</head>
+
+<body>
+
+    <!----------------- Header (Start) ----------------->
+    <div class="col-12 header d-none"></div>
+    <!----------------- Header (End) ----------------->
+
+    <!----------------- NAVIGATIONS (Start) ----------------->
+    <div class="container glass-figma" id="nav-bg">
+        <div class="row">
+            
+            <div class="col-xl-3 d-none d-xl-flex nav-logo">
+                <a href="Nguyen Hoang Vinh Phu_Home.html"><img src="imgs/logo/logo-white-pink.svg" alt="logo"></a>
+            </div>
+            <div class="col-xl-6 d-none d-xl-block nav-content">
+                <ul>
+                    <li><a href="Nguyen Hoang Vinh Phu_Home.html">HOME</a></li>
+                
+                    <li class="dropdown">
+                        <a id="store-btn-drop" href="#">STORE <img src="imgs/icon/Chevron down.svg"></a>
+                        <ul class="dropdown-menu">
+                          <li><a href="Tran Ngoc Bao Tran_Product.html">Jpop</a></li>
+                          <li><a href="Tran Ngoc Bao Tran_Product.html">Pop Rock</a></li>
+                          <li><a href="Tran Ngoc Bao Tran_Product.html">Alternative Rock</a></li>
+                          <li><a href="Tran Ngoc Bao Tran_Product.html">Punk Rock</a></li>
+                          <li><a href="Tran Ngoc Bao Tran_Product.html">Idol-Dance Pop</a></li>
+                          <li><a href="Tran Ngoc Bao Tran_Product.html">Metal</a></li>
+                          <li><a href="Tran Ngoc Bao Tran_Product.html">EDM-Electro-Techno</a></li>
+
+
+                        </ul>
+                      </li>
+                    <li><a href="Nguyen Hoang Vinh Phu_AboutUs.html">ABOUT US</a></li>
+                    <li><a href="Tran Ngoc Bao Tran_Contact.html">CONTACT</a></li>
+                </ul>
+            </div><!-- nav-content -->
+            <div class="col-xl-3 d-none d-xl-block nav-icon">
+                <ul>
+                    <li><a href="#" data-toggle="collapse" data-target="#search-dropdown"><img src="imgs/icon/Search.svg" alt="search"></a></li>
+                    <li><a href="#"><img src="imgs/icon/User.svg" alt="user" loading=></a></li>
+                    <li><a href="Nguyen Dao Khanh Linh_Cart.html"><img src="imgs/icon/Shopping cart.svg" alt="cart"></a></li>
+                </ul>
+                <div id="search-dropdown" class="collapse">
+                    <div class="search-flex glass-figma-pink">
+                    <input type="text" placeholder="Search...">
+                    <button type="submit"><img src="imgs/icon/Search.svg" alt="search"></button>
+                    </div><!-- search-flex -->
+                </div><!-- search-dropdown -->
+            </div><!-- nav-icon -->
+            <div class="col-3 col-sm-3 col-md-2 col-lg-2 d-xl-none" id="mobile-menu">
+                <a id="menubtn"><img src="imgs/icon/Menu.svg" alt="menu"></a>
+            </div>
+            <div class="offset-1 offset-md-2 col-4 d-xl-none" id="mobile-logo">
+                <a href="Nguyen Hoang Vinh Phu_Home.html"><img src="imgs/logo/logo-white-pink.svg" alt="logo"></a>
+            </div><!-- mobile-logo -->
+            <div class="col-3 col-md-2 offset-1 offset-md-2 d-xl-none" id="mobile-cart">
+                <a href="Nguyen Dao Khanh Linh_Cart.html"><img src="imgs/icon/Shopping cart-mobile.svg" alt="cart-mobile"></a>
+            </div><!-- mobile-cart -->
+        </div><!-- .row -->
+    </div><!-- .container -->
+    <!-----Thanh trượt MENU Mobile----->
+    <nav id="menu">
+        <a id="closebtn"><img src="imgs/icon/X-pink.svg" alt="X"></a>
+        <a id="user-btn" class="glass-figma-pink"><img src="imgs/icon/User.svg" alt="user"></a>
+        <form class="form-mobile-menu glass-figma-pink">
+            <input type="text" placeholder="Search...">
+            <button type="submit"><img src="imgs/icon/Search.svg" alt="search"></button>
+        </form>
+        <ul>
+            <li><a href="Nguyen Hoang Vinh Phu_Home.html">HOME</a></li>
+            <li><a href="Tran Ngoc Bao Tran_Product.html" data-toggle="collapse" data-target="#product-mobile-content">STORE <img class="arrow-icon" src="imgs/icon/Chevron down-pink.svg"></a></li>
+            <div id="product-mobile-content" class="collapse">
+                <ul id="product-mobile-sublist">
+                    <li><a href="Tran Ngoc Bao Tran_Product.html">JPOP</a></li>
+                    <li><a href="Tran Ngoc Bao Tran_Product.html">POP ROCK</a></li>
+                    <li><a href="Tran Ngoc Bao Tran_Product.html">ALTERNATIVE ROCK</a></li>
+                    <li><a href="Tran Ngoc Bao Tran_Product.html">PUNK ROCK</a></li>
+                    <li><a href="Tran Ngoc Bao Tran_Product.html">IDOL-DANCE POP</a></li>
+                    <li><a href="Tran Ngoc Bao Tran_Product.html">METAL</a></li>
+                    <li><a href="Tran Ngoc Bao Tran_Product.html">EDM-ELECTRO-TECHNO</a></li>
+                </ul><!----product-mobile-sublist----->
+            </div><!-- product-mobile-content -->
+            <li><a href="Nguyen Hoang Vinh Phu_AboutUs.html">ABOUT US</a></li>
+            <li><a href="Tran Ngoc Bao Tran_Contact.html">CONTACT</a></li>
+            <li><a href="#">NEWS</a></li>
+            <li><a href="Tran Ngoc Bao Tran_Contact.html">FAQ</a></li>
+        </ul>
+    </nav><!-- #menu -->
+    <!----------------- NAVIGATIONS (END) ----------------->
+
+
+    <!----Bắt đầu code từ đây, LƯU Ý là code phần nào thì Note lại START-END để dễ nhìn nha mấy đứa, CSS cũng thế nhe----->
+
+    <!-----BANNER (START)----->
+    <div class="banner-wrap d-lg-none">
+        <img src="imgs/Product/banner/banner_productmdsmxs.png" class="banner-img" alt="banner_productmdsmxs">
+
+        <div class="banner-text">
+            <h1 class="line1">The Sound</h1>
+            <h1 class="line2">Of Anime</h1>
+        </div>
+    </div><!-- product-banner -->
+    <div class="banner-wrap d-none d-lg-block">
+        <img src="imgs/Product/banner/banner_productxllg.png" class="banner-img" alt="banner_productxllg">
+
+        <div class="banner-text">
+            <h1 class="line1">The Sound</h1>
+            <h1 class="line2">Of Anime</h1>
+        </div>
+    </div><!-- product-banner -->
+    <!-----BANNER (END)----->
+
+    <!-----BREADCRUMB (START)----->
+   <div class="container" id="breadcrumb-container">
+        <div class="row" id="breadcrumb-row">
+            <a class="breadcrumb-home" href="Nguyen Hoang Vinh Phu_Home.html">Home</a>
+            <a href="#"><img src="imgs/icon/Chevron right-pink.svg" alt="chevron-right"></a>
+            <a href="#">Products</a>
+        </div><!------row------>
+    </div><!---breadcrumb-container--->
+    <!-----BREADCRUMB (END)----->
+
+    <!-----CATEGORY (START)----->
+    <div class="container-fluid" id="cate_blur">
+        <div class="center-blur">
+            <img src="imgs/Product/background/category_gradientbg.png" loading="lazy">
+        </div><!---centerblur--->
+
+        <div class="container category_heading">
+            <h1>Category</h1>
+        </div> <!---text category-->
+        <!-- CARD CATEGORY (START) -->
+
+        <!-- Owl Carousel wrapper -->
+        <div class="container bg_catecard">
+            <div class="owl-carousel owl-theme">
+                <!-- CARD 1 -->
+                <div class="category-card glass-figma">
+                    <a href="#"><img src="imgs/02. Compact Disks/02 Compact Disk.png" alt="Idol - Dance Pop"
+                            class="category-img img-fluid"></a>
+                    <h2 class="category-name">Jpop</h2>
+                </div><!-- CARD 1 -->
+
+                <!-- CARD 2 -->
+                <div class="category-card glass-figma">
+                    <a href="#"><img src="imgs/02. Compact Disks/07 Compact Disk.png" alt="Anime OST"
+                            class="category-img img-fluid"></a>
+                    <h2 class="category-name">Alternative Rock</h2>
+                </div> <!-- CARD 2 -->
+
+                <!-- CARD 3 -->
+                <div class="category-card glass-figma">
+                    <a href="#"><img src="imgs/02. Compact Disks/08 Compact Disk.png" alt="Jpop"
+                            class="category-img img-fluid"></a>
+                    <h2 class="category-name">Idol-Dance Pop</h2>
+                </div><!-- CARD 3 -->
+
+                <!-- CARD 4 -->
+                <div class="category-card glass-figma">
+                    <a href="#"><img src="imgs/02. Compact Disks/06 Compact Disk.png" alt="Jpop"
+                            class="category-img img-fluid"></a>
+                    <h2 class="category-name">Visual Key-Punk Rock</h2>
+                </div><!-- CARD 4 -->
+
+                <!-- CARD 5 -->
+                <div class="category-card glass-figma">
+                    <a href="#"><img src="imgs/02. Compact Disks/04 Compact Disk.png" alt="Jpop"
+                            class="category-img img-fluid"></a>
+                    <h2 class="category-name">Metal-Symphonic Metal</h2>
+                </div> <!-- CARD 5 -->
+
+
+                <!-- CARD 6 -->
+                <div class="category-card glass-figma">
+                    <a href="#"><img src="imgs/02. Compact Disks/01 Compact Disk.png" alt="Jpop"
+                            class="category-img img-fluid"></a>
+                    <h2 class="category-name">EDM-Electronic</h2>
+                </div><!-- CARD 6 -->
+            </div><!-- owl carousel--->
+        </div><!-- container--->
+    </div><!-- container-fluild---->
+    <!-- ====== CARD CATEGORY (END) ====== -->
+    <!-- CARD CATEGORY (END) -->
+    <!-----CATEGORY (END)----->
+
+    <!-----FILTER XL (START)----->
+    <div class="container-fluid">
+        <div class="container">
+            <div class="row">
+                <!-- FILTER SIDEBAR XL -->
+                <div class="col-xl-3 col-lg-3 d-none d-lg-block" id="filter">
+                    <div class="filter-box glass-figma">
+                        <h3 class="filter-title glass-figma-pink">Filter</h3>
+
+
+                        <!-- FILTER GROUP -->
+                        <div class="filter-group"> 
+                            <button class="filter-toggle"> Label <img src="imgs/icon/Chevron down.svg"> </button>
+                            <div class="filter-content">
+                                 <label class="checkbox-container"> 
+                                    <input type="checkbox" />
+                                    <span class="checkmark"></span>
+                                    <span class="label-text">Lantis</span>
+                                 </label>
+                                <label class="checkbox-container"> 
+                                    <input type="checkbox" /> 
+                                    <span class="checkmark"></span>
+                                    <span class="label-text">Aniplex</span>
+                                 </label>
+                                <label class="checkbox-container"> 
+                                    <input type="checkbox" /> 
+                                    <span class="checkmark"></span>
+                                    <span class="label-text">Pony Canyon</span>
+                                 </label>
+                                <label class="checkbox-container">
+                                     <input type="checkbox" />
+                                      <span class="checkmark"></span>
+                                    <span class="label-text">Starchild</span>
+                                 </label>
+                            </div><!----filter-content---->
+                        </div><!----filter-group---->
+                        <div class="filter-group"> 
+                            <button class="filter-toggle"> Categories <img src="imgs/icon/Chevron down.svg" /> </button>
+                            <div class="filter-content"> 
+                                <label class="checkbox-container"> 
+                                    <input type="checkbox" />
+                                    <span class="checkmark"></span> 
+                                    <span class="label-text">J-Pop</span> 
+                                </label>
+                                <label class="checkbox-container">
+                                     <input type="checkbox" /> 
+                                     <span class="checkmark"></span>
+                                    <span class="label-text">Punk Rock</span>
+                                 </label>
+                                <label class="checkbox-container"> 
+                                    <input type="checkbox" /> 
+                                    <span class="checkmark"></span>
+                                    <span class="label-text">Idol</span> 
+                                </label>
+                                <label class="checkbox-container"> 
+                                    <input type="checkbox" />
+                                     <span class="checkmark"></span>
+                                    <span class="label-text">Visual Key</span>
+                                 </label>
+                                 <label class="checkbox-container">
+                                     <input type="checkbox" />
+                                     <span class="checkmark"></span>
+                                    <span class="label-text">EDM - Techno</span>
+                                 </label>
+                            </div><!----filter-content---->
+                        </div><!----filter-group---->
+                        <div class="filter-group">
+                             <button class="filter-toggle"> Availability <img src="imgs/icon/Chevron down.svg" />
+                             </button>
+                            <div class="filter-content"> <label class="checkbox-container"> 
+                                <input type="checkbox" />
+                                    <span class="checkmark"></span> 
+                                    <span class="label-text">In-Stock</span> 
+                                </label>
+                                <label class="checkbox-container">
+                                     <input type="checkbox" /> 
+                                     <span class="checkmark"></span>
+                                    <span class="label-text">Pre-order</span>
+                                 </label>
+                                <label class="checkbox-container"> 
+                                    <input type="checkbox" />
+                                     <span class="checkmark"></span>
+                                    <span class="label-text">Out Of Stock</span>
+                                </label>
+                        
+                            </div><!----filter-content---->
+                        </div><!----filter-group---->
+                        <div class="filter-group">
+                             <button class="filter-toggle"> Release Year <img src="imgs/icon/Chevron down.svg" />
+                            </button>
+                            <div class="filter-content">
+                                 <label class="checkbox-container"> 
+                                    <input type="checkbox" />
+                                    <span class="checkmark"></span> 
+                                    <span class="label-text">2020s (2020 - 2025)</span>
+                                </label>
+                                <label class="checkbox-container">
+                                     <input type="checkbox" /> 
+                                     <span class="checkmark"></span>
+                                    <span class="label-text">2010s (2010 - 2019)</span>
+                                </label>
+                                <label class="checkbox-container"> 
+                                    <input type="checkbox" /> 
+                                    <span class="checkmark"></span>
+                                    <span class="label-text">2000s (2000 - 2009)</span> 
+                                </label>
+                                <label class="checkbox-container"> 
+                                    <input type="checkbox" /> 
+                                    <span class="checkmark"></span>
+                                    <span class="label-text">1990s and earlier</span>
+                                 </label>
+                            </div><!----filter-content---->
+                        </div><!----filter-group---->
+                        <div class="filter-action col-12">
+
+                            <button class="clear_btn">
+                                <span>Clear</span>
+                            </button>
+
+                            <button class="apply_btn">
+                                <span>Apply</span>
+                                <img src="imgs/Product/icon/Plus circle.svg" alt="Apply icon">
+                            </button>
+                        </div>
+                    </div>
+
+                </div><!-- col FILTER XL -->
+
+                <!-- PRODUCT AREA -->
+                <div class="col-xl-9 col-lg-9 d-none d-lg-block">
+                    <div class="d-flex justify-content-end mb-3 sortby_btn">
+                        <div class="custom-dropdown">
+                            <button class="dropdown-btn">
+                                Sort By
+                                <img src="imgs/icon/Chevron down.svg" alt="▼" class="icon-down">
+                            </button>
+                            <div class="dropdown-content">
+                                <a href="#">Newest</a>
+                                <a href="#">Name: A-Z</a>
+                                <a href="#">Name: Z-A</a>
+                            </div>
+                        </div>
+                    </div><!-- sortby FILTER SIDEBAR XL -->
+
+                    <!-- PRODUCT CARD (START)-->
+                    <div class="row">
+                        <!--CARD 1-->
+                        <div class="col-6 col-md-4 col-lg-4" id="product-column">
+                            <div class="glass-figma-2" id="product-card">
+                                <div class="card-inner">
+                                    <div class="card-front">
+                                        <img src="imgs/CD-IMG/IRISOUT.png" alt="janedoe" loading="lazy">
+                                        <div class="front-content">
+                                            <div id="front-name">
+                                                <h6>Iris Out</h6>
+                                                <p>Kenshi Yonezu</p>
+                                            </div><!----front-name---->
+                                            <h5>$120</h5>
+                                        </div><!----front-content---->
+                                    </div><!----card-front---->
+                                    <div class="card-overlay">
+                                        <div class="cd-rotate">
+                                            <img src="imgs/02. Compact Disks/01 Compact Disk.png" alt="cd"
+                                                loading="lazy">
+                                        </div><!---cd-rotate--->
+                                        <div class="productbtn-container">
+                                            <div class="product-btn heart-btn glass-figma-pink">
+                                                <img src="imgs/icon/Heart-white.svg" alt="heart" loading="lazy">
+                                            </div><!----product-btn---->
+                                            <div class="preview-btn glass-figma">
+                                                <img class="preview-icon" src="imgs/icon/play-music2.svg" loading="lazy"
+                                                    alt="play">
+                                            </div><!-----preview-btn----->
+                                            <div class="product-btn glass-figma-pink">
+                                                <img src="imgs/icon/Plus-white.svg" loading="lazy" alt="plus">
+                                            </div><!----addcart-btn---->
+
+                                            <audio id="preview-audio" src="audio/IRIS OUT (mp3cut.net).mp3"></audio>
+                                        </div><!----productbtn-container---->
+                                    </div><!----card-overlay---->
+                                </div><!----card-inner---->
+                            </div><!---productcard--->
+                        </div><!-- col-xl-3 -->
+                        <!--CARD 2-->
+                        <div class="col-6 col-md-4 col-lg-4" id="product-column">
+                            <div class="glass-figma-2" id="product-card">
+                                <div class="card-inner">
+                                    <div class="card-front">
+                                        <img src="imgs/CD-IMG/JANEDOE.png" alt="janedoe" loading="lazy">
+                                        <div class="front-content">
+                                            <div id="front-name">
+                                                <h6>Jane Doe</h6>
+                                                <p>Kenshi Yonezu</p>
+                                            </div><!----front-name---->
+                                            <h5>$120</h5>
+                                        </div><!----front-content---->
+                                    </div><!----card-front---->
+                                    <div class="card-overlay">
+                                        <div class="cd-rotate">
+                                            <img src="imgs/02. Compact Disks/08 Compact Disk.png" alt="cd"
+                                                loading="lazy">
+                                        </div><!---cd-rotate--->
+                                        <div class="productbtn-container">
+                                            <div class="product-btn heart-btn glass-figma-pink">
+                                                <img src="imgs/icon/Heart-white.svg" alt="heart" loading="lazy">
+                                            </div><!----product-btn---->
+                                            <div class="preview-btn glass-figma">
+                                                <img class="preview-icon" src="imgs/icon/play-music2.svg" loading="lazy"
+                                                    alt="play">
+                                            </div><!-----preview-btn----->
+                                            <div class="product-btn glass-figma-pink">
+                                                <img src="imgs/icon/Plus-white.svg" loading="lazy" alt="plus">
+                                            </div><!----addcart-btn---->
+
+                                            <audio id="preview-audio" src="audio/JANE DOE (mp3cut.net).mp3"></audio>
+                                        </div><!----productbtn-container---->
+                                    </div><!----card-overlay---->
+                                </div><!----card-inner---->
+                            </div><!---productcard--->
+                        </div><!-- col-xl-3 -->
+                        <!--CARD 3-->
+                        <div class="col-6 col-md-4 col-lg-4" id="product-column">
+                            <div class="glass-figma-2" id="product-card">
+                                <div class="card-inner">
+                                    <div class="card-front">
+                                        <img src="imgs/CD-IMG/Forget It.png" alt="janedoe" loading="lazy">
+                                        <div class="front-content">
+                                            <div id="front-name">
+                                                <h6>Forget It</h6>
+                                                <p>Yorushika</p>
+                                            </div><!----front-name---->
+                                            <h5>$120</h5>
+                                        </div><!----front-content---->
+                                    </div><!----card-front---->
+                                    <div class="card-overlay">
+                                        <div class="cd-rotate">
+                                            <img src="imgs/02. Compact Disks/03 Compact Disk.png" alt="cd"
+                                                loading="lazy">
+                                        </div><!---cd-rotate--->
+                                        <div class="productbtn-container">
+                                            <div class="product-btn heart-btn glass-figma-pink">
+                                                <img src="imgs/icon/Heart-white.svg" alt="heart" loading="lazy">
+                                            </div><!----product-btn---->
+                                            <div class="preview-btn glass-figma">
+                                                <img class="preview-icon" src="imgs/icon/play-music2.svg" loading="lazy"
+                                                    alt="play">
+                                            </div><!-----preview-btn----->
+                                            <div class="product-btn glass-figma-pink">
+                                                <img src="imgs/icon/Plus-white.svg" loading="lazy" alt="plus">
+                                            </div><!----addcart-btn---->
+
+                                            <audio id="preview-audio" src="audio/Forget It (mp3cut.net).mp3"></audio>
+                                        </div><!----productbtn-container---->
+                                    </div><!----card-overlay---->
+                                </div><!----card-inner---->
+                            </div><!---productcard--->
+                        </div><!-- col-xl-3 -->
+                        <!--CARD 4-->
+                        <div class="col-6 col-md-4 col-lg-4" id="product-column">
+                            <div class="glass-figma-2" id="product-card">
+                                <div class="card-inner">
+                                    <div class="card-front">
+                                        <img src="imgs/CD-IMG/Idol.png" alt="Idol" loading="lazy">
+                                        <div class="front-content">
+                                            <div id="front-name">
+                                                <h6>Idol</h6>
+                                                <p>Yoasobi</p>
+                                            </div><!----front-name---->
+                                            <h5>$120</h5>
+                                        </div><!----front-content---->
+                                    </div><!----card-front---->
+                                    <div class="card-overlay">
+                                        <div class="cd-rotate">
+                                            <img src="imgs/02. Compact Disks/08 Compact Disk.png" alt="cd"
+                                                loading="lazy">
+                                        </div><!---cd-rotate--->
+                                        <div class="productbtn-container">
+                                            <div class="product-btn heart-btn glass-figma-pink">
+                                                <img src="imgs/icon/Heart-white.svg" alt="heart" loading="lazy">
+                                            </div><!----product-btn---->
+                                            <div class="preview-btn glass-figma">
+                                                <img class="preview-icon" src="imgs/icon/play-music2.svg" loading="lazy"
+                                                    alt="play">
+                                            </div><!-----preview-btn----->
+                                            <div class="product-btn glass-figma-pink">
+                                                <img src="imgs/icon/Plus-white.svg" loading="lazy" alt="plus">
+                                            </div><!----addcart-btn---->
+
+                                            <audio id="preview-audio" src="audio/Idol _ アイドル (mp3cut.net).mp3"></audio>
+                                        </div><!----productbtn-container---->
+                                    </div><!----card-overlay---->
+                                </div><!----card-inner---->
+                            </div><!---productcard--->
+                        </div><!-- col-xl-3 -->
+                        <!--CARD 5-->
+                        <div class="col-6 col-md-4 col-lg-4" id="product-column">
+                            <div class="glass-figma-2" id="product-card">
+                                <div class="card-inner">
+                                    <div class="card-front">
+                                        <img src="imgs/CD-IMG/Otonoke.png" alt="Otonoke" loading="lazy">
+                                        <div class="front-content">
+                                            <div id="front-name">
+                                                <h6>Otonoke</h6>
+                                                <p>Creepy Nuts</p>
+                                            </div><!----front-name---->
+                                            <h5>$120</h5>
+                                        </div><!----front-content---->
+                                    </div><!----card-front---->
+                                    <div class="card-overlay">
+                                        <div class="cd-rotate">
+                                            <img src="imgs/02. Compact Disks/04 Compact Disk.png" alt="cd"
+                                                loading="lazy">
+                                        </div><!---cd-rotate--->
+                                        <div class="productbtn-container">
+                                            <div class="product-btn heart-btn glass-figma-pink">
+                                                <img src="imgs/icon/Heart-white.svg" alt="heart" loading="lazy">
+                                            </div><!----product-btn---->
+                                            <div class="preview-btn glass-figma">
+                                                <img class="preview-icon" src="imgs/icon/play-music2.svg" loading="lazy"
+                                                    alt="play">
+                                            </div><!-----preview-btn----->
+                                            <div class="product-btn glass-figma-pink">
+                                                <img src="imgs/icon/Plus-white.svg" loading="lazy" alt="plus">
+                                            </div><!----addcart-btn---->
+
+                                            <audio id="preview-audio" src="audio/Otonoke (mp3cut.net).mp3"></audio>
+                                        </div><!----productbtn-container---->
+                                    </div><!----card-overlay---->
+                                </div><!----card-inner---->
+                            </div><!---productcard--->
+                        </div><!-- col-xl-3 -->
+                        <!--CARD 6-->
+                        <div class="col-6 col-md-4 col-lg-4" id="product-column">
+                            <div class="glass-figma-2" id="product-card">
+                                <div class="card-inner">
+                                    <div class="card-front">
+                                        <img src="imgs/CD-IMG/kawaiied2.png" alt="janedoe" loading="lazy">
+                                        <div class="front-content">
+                                            <div id="front-name">
+                                                <h6>Kawaii Kawai</h6>
+                                                <p>PiKi</p>
+                                            </div><!----front-name---->
+                                            <h5>$120</h5>
+                                        </div><!----front-content---->
+                                    </div><!----card-front---->
+                                    <div class="card-overlay">
+                                        <div class="cd-rotate">
+                                            <img src="imgs/02. Compact Disks/05 Compact Disk.png" alt="cd"
+                                                loading="lazy">
+                                        </div><!---cd-rotate--->
+                                        <div class="productbtn-container">
+                                            <div class="product-btn heart-btn glass-figma-pink">
+                                                <img src="imgs/icon/Heart-white.svg" alt="heart" loading="lazy">
+                                            </div><!----product-btn---->
+                                            <div class="preview-btn glass-figma">
+                                                <img class="preview-icon" src="imgs/icon/play-music2.svg" loading="lazy"
+                                                    alt="play">
+                                            </div><!-----preview-btn----->
+                                            <div class="product-btn glass-figma-pink">
+                                                <img src="imgs/icon/Plus-white.svg" loading="lazy" alt="plus">
+                                            </div><!----addcart-btn---->
+
+                                            <audio id="preview-audio"
+                                                src="audio/Kawaii Kaiwai (mp3cut.net).mp3"></audio>
+                                        </div><!----productbtn-container---->
+                                    </div><!----card-overlay---->
+                                </div><!----card-inner---->
+                            </div><!---productcard--->
+                        </div><!-- col-xl-3 -->
+                        <!--CARD 7-->
+                        <div class="col-6 col-md-4 col-lg-4" id="product-column">
+                            <div class="glass-figma-2" id="product-card">
+                                <div class="card-inner">
+                                    <div class="card-front">
+                                        <img src="imgs/CD-IMG/TheBook1.png" alt="TheBook1" loading="lazy">
+                                        <div class="front-content">
+                                            <div id="front-name">
+                                                <h6>Encore</h6>
+                                                <p>Yoasobi</p>
+                                            </div><!----front-name---->
+                                            <h5>$120</h5>
+                                        </div><!----front-content---->
+                                    </div><!----card-front---->
+                                    <div class="card-overlay">
+                                        <div class="cd-rotate">
+                                            <img src="imgs/02. Compact Disks/07 Compact Disk.png" alt="cd"
+                                                loading="lazy">
+                                        </div><!---cd-rotate--->
+                                        <div class="productbtn-container">
+                                            <div class="product-btn heart-btn glass-figma-pink">
+                                                <img src="imgs/icon/Heart-white.svg" alt="heart" loading="lazy">
+                                            </div><!----product-btn---->
+                                            <div class="preview-btn glass-figma">
+                                                <img class="preview-icon" src="imgs/icon/play-music2.svg" loading="lazy"
+                                                    alt="play">
+                                            </div><!-----preview-btn----->
+                                            <div class="product-btn glass-figma-pink">
+                                                <img src="imgs/icon/Plus-white.svg" loading="lazy" alt="plus">
+                                            </div><!----addcart-btn---->
+
+                                            <audio id="preview-audio"
+                                                src="audio/Encore _ アンコール (mp3cut.net).mp3"></audio>
+                                        </div><!----productbtn-container---->
+                                    </div><!----card-overlay---->
+                                </div><!----card-inner---->
+                            </div><!---productcard--->
+                        </div><!-- col-xl-3 -->
+                        <!--CARD 8-->
+                        <div class="col-6 col-md-4 col-lg-4" id="product-column">
+                            <div class="glass-figma-2" id="product-card">
+                                <div class="card-inner">
+                                    <div class="card-front">
+                                        <img src="imgs/CD-IMG/TheBook3.png" alt="janedoe" loading="lazy">
+                                        <div class="front-content">
+                                            <div id="front-name">
+                                                <h6>A Little More</h6>
+                                                <p>Yoasobi</p>
+                                            </div><!----front-name---->
+                                            <h5>$120</h5>
+                                        </div><!----front-content---->
+                                    </div><!----card-front---->
+                                    <div class="card-overlay">
+                                        <div class="cd-rotate">
+                                            <img src="imgs/02. Compact Disks/08 Compact Disk.png" alt="cd"
+                                                loading="lazy">
+                                        </div><!---cd-rotate--->
+                                        <div class="productbtn-container">
+                                            <div class="product-btn heart-btn glass-figma-pink">
+                                                <img src="imgs/icon/Heart-white.svg" alt="heart" loading="lazy">
+                                            </div><!----product-btn---->
+                                            <div class="preview-btn glass-figma">
+                                                <img class="preview-icon" src="imgs/icon/play-music2.svg" loading="lazy"
+                                                    alt="play">
+                                            </div><!-----preview-btn----->
+                                            <div class="product-btn glass-figma-pink">
+                                                <img src="imgs/icon/Plus-white.svg" loading="lazy" alt="plus">
+                                            </div><!----addcart-btn---->
+
+                                            <audio id="preview-audio"
+                                                src="audio/Encore _ アンコール (mp3cut.net).mp3"></audio>
+                                        </div><!----productbtn-container---->
+                                    </div><!----card-overlay---->
+                                </div><!----card-inner---->
+                            </div><!---productcard--->
+                        </div><!-- col-xl-3 -->
+                        <!--CARD 9-->
+                        <div class="col-6 col-md-4 col-lg-4" id="product-column">
+                            <div class="glass-figma-2" id="product-card">
+                                <div class="card-inner">
+                                    <div class="card-front">
+                                        <img src="imgs/CD-IMG/Ur Name.png" alt="Idol" loading="lazy">
+                                        <div class="front-content">
+                                            <div id="front-name">
+                                                <h6>Sparkle</h6>
+                                                <p>Radwimps</p>
+                                            </div><!----front-name---->
+                                            <h5>$120</h5>
+                                        </div><!----front-content---->
+                                    </div><!----card-front---->
+                                    <div class="card-overlay">
+                                        <div class="cd-rotate">
+                                            <img src="imgs/02. Compact Disks/09 Compact Disk.png" alt="cd"
+                                                loading="lazy">
+                                        </div><!---cd-rotate--->
+                                        <div class="productbtn-container">
+                                            <div class="product-btn heart-btn glass-figma-pink">
+                                                <img src="imgs/icon/Heart-white.svg" alt="heart" loading="lazy">
+                                            </div><!----product-btn---->
+                                            <div class="preview-btn glass-figma">
+                                                <img class="preview-icon" src="imgs/icon/play-music2.svg" loading="lazy"
+                                                    alt="play">
+                                            </div><!-----preview-btn----->
+                                            <div class="product-btn glass-figma-pink">
+                                                <img src="imgs/icon/Plus-white.svg" loading="lazy" alt="plus">
+                                            </div><!----addcart-btn---->
+
+                                            <audio id="preview-audio"
+                                                src="audio/Sparkle (Movie Version) (mp3cut.net).mp3"></audio>
+                                        </div><!----productbtn-container---->
+                                    </div><!----card-overlay---->
+                                </div><!----card-inner---->
+                            </div><!---productcard--->
+                        </div><!-- col-xl-3 -->
+
+                        <!--CARD 10-->
+                        <div class="col-6 col-md-4 col-lg-4" id="product-column">
+                            <div class="glass-figma-2" id="product-card">
+                                <div class="card-inner">
+                                    <div class="card-front">
+                                        <img src="imgs/CD-IMG/Duvet.png" alt="Idol" loading="lazy">
+                                        <div class="front-content">
+                                            <div id="front-name">
+                                                <h6>Duvet</h6>
+                                                <p>Boa</p>
+                                            </div><!----front-name---->
+                                            <h5>$120</h5>
+                                        </div><!----front-content---->
+                                    </div><!----card-front---->
+                                    <div class="card-overlay">
+                                        <div class="cd-rotate">
+                                            <img src="imgs/02. Compact Disks/01 Compact Disk.png" alt="cd"
+                                                loading="lazy">
+                                        </div><!---cd-rotate--->
+                                        <div class="productbtn-container">
+                                            <div class="product-btn heart-btn glass-figma-pink">
+                                                <img src="imgs/icon/Heart-white.svg" alt="heart" loading="lazy">
+                                            </div><!----product-btn---->
+                                            <div class="preview-btn glass-figma">
+                                                <img class="preview-icon" src="imgs/icon/play-music2.svg" loading="lazy"
+                                                    alt="play">
+                                            </div><!-----preview-btn----->
+                                            <div class="product-btn glass-figma-pink">
+                                                <img src="imgs/icon/Plus-white.svg" loading="lazy" alt="plus">
+                                            </div><!----addcart-btn---->
+
+                                            <audio id="preview-audio"
+                                                src="audio/Duvet (Sped Up) (mp3cut.net).mp3"></audio>
+                                        </div><!----productbtn-container---->
+                                    </div><!----card-overlay---->
+                                </div><!----card-inner---->
+                            </div><!---productcard--->
+                        </div><!-- col-xl-3 -->
+
+                        <!--CARD 11-->
+                        <div class="col-6 col-md-4 col-lg-4" id="product-column">
+                            <div class="glass-figma-2" id="product-card">
+                                <div class="card-inner">
+                                    <div class="card-front">
+                                        <img src="imgs/CD-IMG/renai-circulation.png" alt="Idol" loading="lazy">
+                                        <div class="front-content">
+                                            <div id="front-name">
+                                                <h6>Renai Circulate</h6>
+                                                <p>*Namirin</p>
+                                            </div><!----front-name---->
+                                            <h5>$120</h5>
+                                        </div><!----front-content---->
+                                    </div><!----card-front---->
+                                    <div class="card-overlay">
+                                        <div class="cd-rotate">
+                                            <img src="imgs/02. Compact Disks/03 Compact Disk.png" alt="cd"
+                                                loading="lazy">
+                                        </div><!---cd-rotate--->
+                                        <div class="productbtn-container">
+                                            <div class="product-btn heart-btn glass-figma-pink">
+                                                <img src="imgs/icon/Heart-white.svg" alt="heart" loading="lazy">
+                                            </div><!----product-btn---->
+                                            <div class="preview-btn glass-figma">
+                                                <img class="preview-icon" src="imgs/icon/play-music2.svg" loading="lazy"
+                                                    alt="play">
+                                            </div><!-----preview-btn----->
+                                            <div class="product-btn glass-figma-pink">
+                                                <img src="imgs/icon/Plus-white.svg" loading="lazy" alt="plus">
+                                            </div><!----addcart-btn---->
+
+                                            <audio id="preview-audio"
+                                                src="audio/Renai Circulation恋愛サーキュレーション歌ってみたなみりん (mp3cut.net).mp3"></audio>
+                                        </div><!----productbtn-container---->
+                                    </div><!----card-overlay---->
+                                </div><!----card-inner---->
+                            </div><!---productcard--->
+                        </div><!-- col-xl-3 -->
+
+                        <!--CARD 12-->
+                        <div class="col-6 col-md-4 col-lg-4" id="product-column">
+                            <div class="glass-figma-2" id="product-card">
+                                <div class="card-inner">
+                                    <div class="card-front">
+                                        <img src="imgs/CD-IMG/kutegomen.png" alt="Idol" loading="lazy">
+                                        <div class="front-content">
+                                            <div id="front-name">
+                                                <h6>Kawaii Gomen</h6>
+                                                <p>Kohanaramu</p>
+                                            </div><!----front-name---->
+                                            <h5>$120</h5>
+                                        </div><!----front-content---->
+                                    </div><!----card-front---->
+                                    <div class="card-overlay">
+                                        <div class="cd-rotate">
+                                            <img src="imgs/02. Compact Disks/07 Compact Disk.png" alt="cd"
+                                                loading="lazy">
+                                        </div><!---cd-rotate--->
+                                        <div class="productbtn-container">
+                                            <div class="product-btn heart-btn glass-figma-pink">
+                                                <img src="imgs/icon/Heart-white.svg" alt="heart" loading="lazy">
+                                            </div><!----product-btn---->
+                                            <div class="preview-btn glass-figma">
+                                                <img class="preview-icon" src="imgs/icon/play-music2.svg" loading="lazy"
+                                                    alt="play">
+                                            </div><!-----preview-btn----->
+                                            <div class="product-btn glass-figma-pink">
+                                                <img src="imgs/icon/Plus-white.svg" loading="lazy" alt="plus">
+                                            </div><!----addcart-btn---->
+
+                                            <audio id="preview-audio"
+                                                src="audio/可愛くてごめん feat. ちゅーたんCV早見沙織HoneyWorks (mp3cut.net).mp3"></audio>
+                                        </div><!----productbtn-container---->
+                                    </div><!----card-overlay---->
+                                </div><!----card-inner---->
+                            </div><!---productcard--->
+                        </div><!-- col-xl-3 -->
+
+                    </div><!-- .row -->
+
+
+
+                </div><!-- col product area-->
+            </div><!-- .row -->
+        </div><!-- container -->
+    </div><!-- container-fluid -->
+
+
+    <!-------- FILTER MD SM XS (START) -------->
+    <!-------- FILTER (START) -------->
+    <div class="container-fluid">
+        <div class="container">
+            <div class="row" id="row-product">
+
+                <!-- BUTTON FILTER (hiện ở XS/SM/MD) -->
+                <div class="col-6 d-lg-none" id="fsNav">
+                    <nav class="filter">
+                        <button class="btn glass-figma-pink" id="filterBtn">
+                            <h3>Filter</h3>
+                            <img src="imgs/icon/Chevron down.svg" alt="▼" class="icon-down">
+                        </button>
+                    </nav>
+                </div><!-- col -->
+
+
+
+
+                <!-- SORT BY (MD ONLY) -->
+                <div class="col-6 md-filter-sort">
+                    <div class="row w-100 m-0 justify-content-end">
+                        <div class="custom-dropdown md-sort-dropdown">
+                            <button class="dropdown-btn glass-figma-pink">
+                                Sort By
+                                <img src="imgs/icon/Chevron down.svg" alt="▼" class="icon-down">
+                            </button>
+
+                            <div class="dropdown-content">
+                                <a href="#">Newest</a>
+                                <a href="#">Name: A-Z</a>
+                                <a href="#">Name: Z-A</a>
+                            </div><!--dropdown content -->
+                        </div><!-- md sort dropdown -->
+
+                    </div><!-- row -->
+                </div><!-- col -->
+
+                <!-- FILTER COLLAPSE (MD) -->
+                <div class="col-md-12 d-none d-md-block d-lg-none filter-collapse glass-figma filter-body"
+                    id="filterCollapse">
+                    <div id="myDiv" class="collapse show">
+                        <div class="row">
+                            <!-- AVAILABILITY -->
+                            <div class="col-6 col-md-4 col-lg-12 col-xl-12 filtercontent">
+                                <a data-toggle="collapse" href="#availability" class="glass-figma-pink filter-header">
+                                    <p>Label</p>
+                                    <img src="imgs/icon/Chevron down.svg" />
+                                </a>
+                                <div id="availability" class="collapse show">
+                                    <label class="checkbox-container">
+                                        <input type="checkbox" />
+                                        <span class="checkmark"></span>
+                                        <span class="label-text">Lantis</span>
+                                    </label>
+                                    <label class="checkbox-container">
+                                        <input type="checkbox" />
+                                        <span class="checkmark"></span>
+                                        <span class="label-text">Aniplex</span>
+                                    </label>
+                                    <label class="checkbox-container">
+                                        <input type="checkbox" />
+                                        <span class="checkmark"></span>
+                                        <span class="label-text">Pony Canyon</span>
+                                    </label>
+                                    <label class="checkbox-container">
+                                        <input type="checkbox" />
+                                        <span class="checkmark"></span>
+                                        <span class="label-text">Starchild</span>
+                                    </label>
+                                </div>
+                            </div><!--availability -->
+
+                            <!-- PRODUCT TYPE -->
+                            <div class="col-6 col-md-4 col-lg-12 col-xl-12 filtercontent">
+                                <a data-toggle="collapse" href="#product-type" class="glass-figma-pink filter-header">
+                                    <p>Categories</p>
+                                    <img src="imgs/icon/Chevron down.svg" />
+                                </a>
+                                <div id="product-type" class="collapse show">
+                                    <label class="checkbox-container"><input type="checkbox" /><span
+                                            class="checkmark"></span><span class="label-text">J-Pop</span></label>
+                                    <label class="checkbox-container"><input type="checkbox" /><span
+                                            class="checkmark"></span><span class="label-text">Punk Rock</span></label>
+                                    <label class="checkbox-container"><input type="checkbox" /><span
+                                            class="checkmark"></span><span class="label-text">Idol</span></label>
+                                    <label class="checkbox-container"><input type="checkbox" /><span
+                                            class="checkmark"></span><span class="label-text">Visual Key</span></label>
+                                    <label class="checkbox-container"><input type="checkbox" /><span
+                                            class="checkmark"></span><span class="label-text">EDM - Techno</span></label>
+                                </div>
+                            </div><!-- series name -->
+                            
+                            <!-- MANUFACTURER -->
+                            <div class="col-6 col-md-4 col-lg-12 col-xl-12 filtercontent">
+                                <a data-toggle="collapse" href="#manufacturer" class="glass-figma-pink filter-header">
+                                    <p>Availability</p>
+                                    <img src="imgs/icon/Chevron down.svg" />
+                                </a>
+                                <div id="manufacturer" class="collapse show">
+                                    <label class="checkbox-container"><input type="checkbox" /><span
+                                            class="checkmark"></span><span class="label-text">In-stock</span></label>
+                                    <label class="checkbox-container"><input type="checkbox" /><span
+                                            class="checkmark"></span><span class="label-text">Pre-order</span></label>
+                                    <label class="checkbox-container"><input type="checkbox" /><span
+                                            class="checkmark"></span><span class="label-text">Out Of
+                                            Stock</span></label>
+                                </div>
+                            </div><!-- manufacturer -->
+
+                            <!-- COLOR -->
+                            <div class="col-6 col-md-4 col-lg-12 col-xl-12 filtercontent">
+                                <a data-toggle="collapse" href="#color" class="glass-figma-pink filter-header">
+                                    <p>Release Year</p>
+                                    <img src="imgs/icon/Chevron down.svg" />
+                                </a>
+                                <div id="color" class="collapse show">
+                                    <label class="checkbox-container"><input type="checkbox" /><span
+                                            class="checkmark"></span><span
+                                            class="label-text">2020s<br>(2020-2025)</span></label>
+                                    <label class="checkbox-container"><input type="checkbox" /><span
+                                            class="checkmark"></span><span
+                                            class="label-text">2010s(2010-2019)</span></label>
+                                    <label class="checkbox-container"><input type="checkbox" /><span
+                                            class="checkmark"></span><span
+                                            class="label-text">2000s<br>(2000-2009)</span></label>
+                                    <label class="checkbox-container"><input type="checkbox" /><span
+                                            class="checkmark"></span><span class="label-text">1990s and
+                                            earlier</span></label>
+                                </div>
+                            </div><!-- color -->
+
+                            <!-- ACTION -->
+                            <div class="filter-action col-12">
+
+                                <button class="clear_btn">
+                                    <span>Clear</span>
+                                </button>
+
+                                <button class="apply_btn">
+                                    <span>Apply</span>
+                                    <img src="imgs/Product/icon/Plus circle.svg" alt="Apply icon">
+                                </button>
+                            </div><!--filter action -->
+                        </div><!-- row filer md -->
+                    </div><!-- myDIV -->
+                </div><!-- col filter md -->
+            </div><!-- row product -->
+            <div class="row d-none d-md-flex d-lg-none">
+                <div class="col-6 col-md-4 col-lg-4" id="product-column">
+                    <div class="glass-figma-2" id="product-card">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <img src="imgs/CD-IMG/IRISOUT.png" alt="janedoe" loading="lazy">
+                                <div class="front-content">
+                                    <div id="front-name">
+                                        <h6>Iris Out</h6>
+                                        <p>Kenshi Yonezu</p>
+                                    </div><!----front-name---->
+                                    <h5>$120</h5>
+                                </div><!----front-content---->
+                            </div><!----card-front---->
+                            <div class="card-overlay">
+                                <div class="cd-rotate">
+                                    <img src="imgs/02. Compact Disks/08 Compact Disk.png" alt="cd" loading="lazy">
+                                </div><!---cd-rotate--->
+                                <div class="productbtn-container">
+                                    <div class="product-btn heart-btn glass-figma-pink">
+                                        <img src="imgs/icon/Heart-white.svg" alt="heart" loading="lazy">
+                                    </div><!----product-btn---->
+                                    <div class="preview-btn glass-figma">
+                                        <img class="preview-icon" src="imgs/icon/play-music2.svg" loading="lazy"
+                                            alt="play">
+                                    </div><!-----preview-btn----->
+                                    <div class="product-btn glass-figma-pink">
+                                        <img src="imgs/icon/Plus-white.svg" loading="lazy" alt="plus">
+                                    </div><!----addcart-btn---->
+
+                                    <audio id="preview-audio" src="audio/IRIS OUT (mp3cut.net).mp3"></audio>
+                                </div><!----productbtn-container---->
+                            </div><!----card-overlay---->
+                        </div><!----card-inner---->
+                    </div><!---productcard--->
+                </div><!-- col-xl-3 -->
+
+                <div class="col-6 col-md-4 col-lg-4" id="product-column">
+                    <div class="glass-figma-2" id="product-card">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <img src="imgs/CD-IMG/JANEDOE.png" alt="janedoe" loading="lazy">
+                                <div class="front-content">
+                                    <div id="front-name">
+                                        <h6>Jane Doe</h6>
+                                        <p>Kenshi Yonezu</p>
+                                    </div><!----front-name---->
+                                    <h5>$120</h5>
+                                </div><!----front-content---->
+                            </div><!----card-front---->
+                            <div class="card-overlay">
+                                <div class="cd-rotate">
+                                    <img src="imgs/02. Compact Disks/01 Compact Disk.png" alt="cd" loading="lazy">
+                                </div><!---cd-rotate--->
+                                <div class="productbtn-container">
+                                    <div class="product-btn heart-btn glass-figma-pink">
+                                        <img src="imgs/icon/Heart-white.svg" alt="heart" loading="lazy">
+                                    </div><!----product-btn---->
+                                    <div class="preview-btn glass-figma">
+                                        <img class="preview-icon" src="imgs/icon/play-music2.svg" loading="lazy"
+                                            alt="play">
+                                    </div><!-----preview-btn----->
+                                    <div class="product-btn glass-figma-pink">
+                                        <img src="imgs/icon/Plus-white.svg" loading="lazy" alt="plus">
+                                    </div><!----addcart-btn---->
+
+                                    <audio id="preview-audio" src="audio/JANE DOE (mp3cut.net).mp3"></audio>
+                                </div><!----productbtn-container---->
+                            </div><!----card-overlay---->
+                        </div><!----card-inner---->
+                    </div><!---productcard--->
+                </div><!-- col-xl-3 -->
+
+                <div class="col-6 col-md-4 col-lg-4" id="product-column">
+                    <div class="glass-figma-2" id="product-card">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <img src="imgs/CD-IMG/Forget It.png" alt="janedoe" loading="lazy">
+                                <div class="front-content">
+                                    <div id="front-name">
+                                        <h6>Forget It</h6>
+                                        <p>Yorushika</p>
+                                    </div><!----front-name---->
+                                    <h5>$120</h5>
+                                </div><!----front-content---->
+                            </div><!----card-front---->
+                            <div class="card-overlay">
+                                <div class="cd-rotate">
+                                    <img src="imgs/02. Compact Disks/04 Compact Disk.png" alt="cd" loading="lazy">
+                                </div><!---cd-rotate--->
+                                <div class="productbtn-container">
+                                    <div class="product-btn heart-btn glass-figma-pink">
+                                        <img src="imgs/icon/Heart-white.svg" alt="heart" loading="lazy">
+                                    </div><!----product-btn---->
+                                    <div class="preview-btn glass-figma">
+                                        <img class="preview-icon" src="imgs/icon/play-music2.svg" loading="lazy"
+                                            alt="play">
+                                    </div><!-----preview-btn----->
+                                    <div class="product-btn glass-figma-pink">
+                                        <img src="imgs/icon/Plus-white.svg" loading="lazy" alt="plus">
+                                    </div><!----addcart-btn---->
+
+                                    <audio id="preview-audio" src="audio/Forget It (mp3cut.net).mp3"></audio>
+                                </div><!----productbtn-container---->
+                            </div><!----card-overlay---->
+                        </div><!----card-inner---->
+                    </div><!---productcard--->
+                </div><!-- col-xl-3 -->
+
+                <div class="col-6 col-md-4" id="product-column">
+                    <div class="glass-figma-2" id="product-card">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <img src="imgs/CD-IMG/Idol.png" alt="janedoe" loading="lazy">
+                                <div class="front-content">
+                                    <div id="front-name">
+                                        <h6>Idol</h6>
+                                        <p>Yoasobi</p>
+                                    </div><!----front-name---->
+                                    <h5>$120</h5>
+                                </div><!----front-content---->
+                            </div><!----card-front---->
+                            <div class="card-overlay">
+                                <div class="cd-rotate">
+                                    <img src="imgs/02. Compact Disks/07 Compact Disk.png" alt="cd" loading="lazy">
+                                </div><!---cd-rotate--->
+                                <div class="productbtn-container">
+                                    <div class="product-btn heart-btn glass-figma-pink">
+                                        <img src="imgs/icon/Heart-white.svg" alt="heart" loading="lazy">
+                                    </div><!----product-btn---->
+                                    <div class="preview-btn glass-figma">
+                                        <img class="preview-icon" src="imgs/icon/play-music2.svg" loading="lazy"
+                                            alt="play">
+                                    </div><!-----preview-btn----->
+                                    <div class="product-btn glass-figma-pink">
+                                        <img src="imgs/icon/Plus-white.svg" loading="lazy" alt="plus">
+                                    </div><!----addcart-btn---->
+
+                                    <audio id="preview-audio" src="audio/Idol _ アイドル (mp3cut.net).mp3"></audio>
+                                </div><!----productbtn-container---->
+                            </div><!----card-overlay---->
+                        </div><!----card-inner---->
+                    </div><!---productcard--->
+                </div><!-- col-xl-3 -->
+
+                <div class="col-6 col-md-4" id="product-column">
+                    <div class="glass-figma-2" id="product-card">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <img src="imgs/CD-IMG/Otonoke.png" alt="janedoe" loading="lazy">
+                                <div class="front-content">
+                                    <div id="front-name">
+                                        <h6>Otonoke</h6>
+                                        <p>Creepy Nuts</p>
+                                    </div><!----front-name---->
+                                    <h5>$120</h5>
+                                </div><!----front-content---->
+                            </div><!----card-front---->
+                            <div class="card-overlay">
+                                <div class="cd-rotate">
+                                    <img src="imgs/02. Compact Disks/02 Compact Disk.png" alt="cd" loading="lazy">
+                                </div><!---cd-rotate--->
+                                <div class="productbtn-container">
+                                    <div class="product-btn heart-btn glass-figma-pink">
+                                        <img src="imgs/icon/Heart-white.svg" alt="heart" loading="lazy">
+                                    </div><!----product-btn---->
+                                    <div class="preview-btn glass-figma">
+                                        <img class="preview-icon" src="imgs/icon/play-music2.svg" loading="lazy"
+                                            alt="play">
+                                    </div><!-----preview-btn----->
+                                    <div class="product-btn glass-figma-pink">
+                                        <img src="imgs/icon/Plus-white.svg" loading="lazy" alt="plus">
+                                    </div><!----addcart-btn---->
+
+                                    <audio id="preview-audio" src="audio/Otonoke (mp3cut.net).mp3"></audio>
+                                </div><!----productbtn-container---->
+                            </div><!----card-overlay---->
+                        </div><!----card-inner---->
+                    </div><!---productcard--->
+                </div><!-- col-xl-3 -->
+
+                <div class="col-6 col-md-4" id="product-column">
+                    <div class="glass-figma-2" id="product-card">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <img src="imgs/CD-IMG/kawaiied2.png" alt="janedoe" loading="lazy">
+                                <div class="front-content">
+                                    <div id="front-name">
+                                        <h6>Kawaii Kawai</h6>
+                                        <p>PiKi</p>
+                                    </div><!----front-name---->
+                                    <h5>$120</h5>
+                                </div><!----front-content---->
+                            </div><!----card-front---->
+                            <div class="card-overlay">
+                                <div class="cd-rotate">
+                                    <img src="imgs/02. Compact Disks/01 Compact Disk.png" alt="cd" loading="lazy">
+                                </div><!---cd-rotate--->
+                                <div class="productbtn-container">
+                                    <div class="product-btn heart-btn glass-figma-pink">
+                                        <img src="imgs/icon/Heart-white.svg" alt="heart" loading="lazy">
+                                    </div><!----product-btn---->
+                                    <div class="preview-btn glass-figma">
+                                        <img class="preview-icon" src="imgs/icon/play-music2.svg" loading="lazy"
+                                            alt="play">
+                                    </div><!-----preview-btn----->
+                                    <div class="product-btn glass-figma-pink">
+                                        <img src="imgs/icon/Plus-white.svg" loading="lazy" alt="plus">
+                                    </div><!----addcart-btn---->
+
+                                    <audio id="preview-audio" src="audio/Kawaii Kaiwai (mp3cut.net).mp3"></audio>
+                                </div><!----productbtn-container---->
+                            </div><!----card-overlay---->
+                        </div><!----card-inner---->
+                    </div><!---productcard--->
+                </div><!-- col-xl-3 -->
+
+                <div class="col-6 col-md-4" id="product-column">
+                    <div class="glass-figma-2" id="product-card">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <img src="imgs/CD-IMG/TheBook1.png" alt="janedoe" loading="lazy">
+                                <div class="front-content">
+                                    <div id="front-name">
+                                        <h6>Encore</h6>
+                                        <p>Yoasobi</p>
+                                    </div><!----front-name---->
+                                    <h5>$120</h5>
+                                </div><!----front-content---->
+                            </div><!----card-front---->
+                            <div class="card-overlay">
+                                <div class="cd-rotate">
+                                    <img src="imgs/02. Compact Disks/09 Compact Disk.png" alt="cd" loading="lazy">
+                                </div><!---cd-rotate--->
+                                <div class="productbtn-container">
+                                    <div class="product-btn heart-btn glass-figma-pink">
+                                        <img src="imgs/icon/Heart-white.svg" alt="heart" loading="lazy">
+                                    </div><!----product-btn---->
+                                    <div class="preview-btn glass-figma">
+                                        <img class="preview-icon" src="imgs/icon/play-music2.svg" loading="lazy"
+                                            alt="play">
+                                    </div><!-----preview-btn----->
+                                    <div class="product-btn glass-figma-pink">
+                                        <img src="imgs/icon/Plus-white.svg" loading="lazy" alt="plus">
+                                    </div><!----addcart-btn---->
+
+                                    <audio id="preview-audio" src="audio/Encore _ アンコール (mp3cut.net).mp3"></audio>
+                                </div><!----productbtn-container---->
+                            </div><!----card-overlay---->
+                        </div><!----card-inner---->
+                    </div><!---productcard--->
+                </div><!-- col-xl-3 -->
+
+                <div class="col-6 col-md-4" id="product-column">
+                    <div class="glass-figma-2" id="product-card">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <img src="imgs/CD-IMG/TheBook3.png" alt="janedoe" loading="lazy">
+                                <div class="front-content">
+                                    <div id="front-name">
+                                        <h6>A little More</h6>
+                                        <p>Yoasobi</p>
+                                    </div><!----front-name---->
+                                    <h5>$120</h5>
+                                </div><!----front-content---->
+                            </div><!----card-front---->
+                            <div class="card-overlay">
+                                <div class="cd-rotate">
+                                    <img src="imgs/02. Compact Disks/06 Compact Disk.png" alt="cd" loading="lazy">
+                                </div><!---cd-rotate--->
+                                <div class="productbtn-container">
+                                    <div class="product-btn heart-btn glass-figma-pink">
+                                        <img src="imgs/icon/Heart-white.svg" alt="heart" loading="lazy">
+                                    </div><!----product-btn---->
+                                    <div class="preview-btn glass-figma">
+                                        <img class="preview-icon" src="imgs/icon/play-music2.svg" loading="lazy"
+                                            alt="play">
+                                    </div><!-----preview-btn----->
+                                    <div class="product-btn glass-figma-pink">
+                                        <img src="imgs/icon/Plus-white.svg" loading="lazy" alt="plus">
+                                    </div><!----addcart-btn---->
+
+                                    <audio id="preview-audio" src="audio/Encore _ アンコール (mp3cut.net).mp3"></audio>
+                                </div><!----productbtn-container---->
+                            </div><!----card-overlay---->
+                        </div><!----card-inner---->
+                    </div><!---productcard--->
+                </div><!-- col-xl-3 -->
+
+                <div class="col-6 col-md-4" id="product-column">
+                    <div class="glass-figma-2" id="product-card">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <img src="imgs/CD-IMG/Ur Name.png" alt="janedoe" loading="lazy">
+                                <div class="front-content">
+                                    <div id="front-name">
+                                        <h6>Sparkle</h6>
+                                        <p>Radwimps</p>
+                                    </div><!----front-name---->
+                                    <h5>$120</h5>
+                                </div><!----front-content---->
+                            </div><!----card-front---->
+                            <div class="card-overlay">
+                                <div class="cd-rotate">
+                                    <img src="imgs/02. Compact Disks/07 Compact Disk.png" alt="cd" loading="lazy">
+                                </div><!---cd-rotate--->
+                                <div class="productbtn-container">
+                                    <div class="product-btn heart-btn glass-figma-pink">
+                                        <img src="imgs/icon/Heart-white.svg" alt="heart" loading="lazy">
+                                    </div><!----product-btn---->
+                                    <div class="preview-btn glass-figma">
+                                        <img class="preview-icon" src="imgs/icon/play-music2.svg" loading="lazy"
+                                            alt="play">
+                                    </div><!-----preview-btn----->
+                                    <div class="product-btn glass-figma-pink">
+                                        <img src="imgs/icon/Plus-white.svg" loading="lazy" alt="plus">
+                                    </div><!----addcart-btn---->
+
+                                    <audio id="preview-audio"
+                                        src="audio/Sparkle (Movie Version) (mp3cut.net).mp3"></audio>
+                                </div><!----productbtn-container---->
+                            </div><!----card-overlay---->
+                        </div><!----card-inner---->
+                    </div><!---productcard--->
+                </div><!-- col-xl-3 -->
+
+                <div class="col-6 col-md-4" id="product-column">
+                    <div class="glass-figma-2" id="product-card">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <img src="imgs/CD-IMG/Duvet.png" alt="janedoe" loading="lazy">
+                                <div class="front-content">
+                                    <div id="front-name">
+                                        <h6>Duvet</h6>
+                                        <p>Boa</p>
+                                    </div><!----front-name---->
+                                    <h5>$120</h5>
+                                </div><!----front-content---->
+                            </div><!----card-front---->
+                            <div class="card-overlay">
+                                <div class="cd-rotate">
+                                    <img src="imgs/02. Compact Disks/04 Compact Disk.png" alt="cd" loading="lazy">
+                                </div><!---cd-rotate--->
+                                <div class="productbtn-container">
+                                    <div class="product-btn heart-btn glass-figma-pink">
+                                        <img src="imgs/icon/Heart-white.svg" alt="heart" loading="lazy">
+                                    </div><!----product-btn---->
+                                    <div class="preview-btn glass-figma">
+                                        <img class="preview-icon" src="imgs/icon/play-music2.svg" loading="lazy"
+                                            alt="play">
+                                    </div><!-----preview-btn----->
+                                    <div class="product-btn glass-figma-pink">
+                                        <img src="imgs/icon/Plus-white.svg" loading="lazy" alt="plus">
+                                    </div><!----addcart-btn---->
+
+                                    <audio id="preview-audio" src="audio/Duvet (Sped Up) (mp3cut.net).mp3"></audio>
+                                </div><!----productbtn-container---->
+                            </div><!----card-overlay---->
+                        </div><!----card-inner---->
+                    </div><!---productcard--->
+                </div><!-- col-xl-3 -->
+
+                <div class="col-6 col-md-4" id="product-column">
+                    <div class="glass-figma-2" id="product-card">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <img src="imgs/CD-IMG/renai-circulation.png" alt="janedoe" loading="lazy">
+                                <div class="front-content">
+                                    <div id="front-name">
+                                        <h6>Renai Circulate</h6>
+                                        <p>*Namirin</p>
+                                    </div><!----front-name---->
+                                    <h5>$120</h5>
+                                </div><!----front-content---->
+                            </div><!----card-front---->
+                            <div class="card-overlay">
+                                <div class="cd-rotate">
+                                    <img src="imgs/02. Compact Disks/02 Compact Disk.png" alt="cd" loading="lazy">
+                                </div><!---cd-rotate--->
+                                <div class="productbtn-container">
+                                    <div class="product-btn heart-btn glass-figma-pink">
+                                        <img src="imgs/icon/Heart-white.svg" alt="heart" loading="lazy">
+                                    </div><!----product-btn---->
+                                    <div class="preview-btn glass-figma">
+                                        <img class="preview-icon" src="imgs/icon/play-music2.svg" loading="lazy"
+                                            alt="play">
+                                    </div><!-----preview-btn----->
+                                    <div class="product-btn glass-figma-pink">
+                                        <img src="imgs/icon/Plus-white.svg" loading="lazy" alt="plus">
+                                    </div><!----addcart-btn---->
+
+                                    <audio id="preview-audio"
+                                        src="audio/Renai Circulation恋愛サーキュレーション歌ってみたなみりん (mp3cut.net).mp3"></audio>
+                                </div><!----productbtn-container---->
+                            </div><!----card-overlay---->
+                        </div><!----card-inner---->
+                    </div><!---productcard--->
+                </div><!-- col-xl-3 -->
+
+                <div class="col-6 col-md-4" id="product-column">
+                    <div class="glass-figma-2" id="product-card">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <img src="imgs/CD-IMG/kutegomen.png" alt="janedoe" loading="lazy">
+                                <div class="front-content">
+                                    <div id="front-name">
+                                        <h6>Kawaii Gomen</h6>
+                                        <p>Yoasobi</p>
+                                    </div><!----front-name---->
+                                    <h5>$120</h5>
+                                </div><!----front-content---->
+                            </div><!----card-front---->
+                            <div class="card-overlay">
+                                <div class="cd-rotate">
+                                    <img src="imgs/02. Compact Disks/07 Compact Disk.png" alt="cd" loading="lazy">
+                                </div><!---cd-rotate--->
+                                <div class="productbtn-container">
+                                    <div class="product-btn heart-btn glass-figma-pink">
+                                        <img src="imgs/icon/Heart-white.svg" alt="heart" loading="lazy">
+                                    </div><!----product-btn---->
+                                    <div class="preview-btn glass-figma">
+                                        <img class="preview-icon" src="imgs/icon/play-music2.svg" loading="lazy"
+                                            alt="play">
+                                    </div><!-----preview-btn----->
+                                    <div class="product-btn glass-figma-pink">
+                                        <img src="imgs/icon/Plus-white.svg" loading="lazy" alt="plus">
+                                    </div><!----addcart-btn---->
+
+                                    <audio id="preview-audio"
+                                        src="audio/可愛くてごめん feat. ちゅーたんCV早見沙織HoneyWorks (mp3cut.net).mp3"></audio>
+                                </div><!----productbtn-container---->
+                            </div><!----card-overlay---->
+                        </div><!----card-inner---->
+                    </div><!---productcard--->
+                </div><!-- col-xl-3 -->
+            </div><!---row---->
+
+            <!-- FILTER SM XS (START) -->
+            <div class="offcanvas-filter" id="offcanvasFilter">
+                <div class="offcanvas-content glass-figmafilterxs">
+                    <div class="offcanvas-header">
+                        <h3>Filter</h3>
+                    </div>
+                    <div class="offcanvas-body">
+                        <!-- nội dung filter -->
+                        <div class="filter-inner">
+                            <div class="filtercontent">
+                                <p>Label</p>
+                                <label class="checkbox-container">
+                                    <input type="checkbox" />
+                                    <span class="checkmark"></span>
+                                    <span class="label-text">Lantis</span>
+                                </label>
+                                <label class="checkbox-container"><input type="checkbox" />
+                                    <span class="checkmark"></span>
+                                    <span class="label-text">Aniplex</span>
+                                </label>
+                                <label class="checkbox-container">
+                                    <input type="checkbox" />
+                                    <span class="checkmark"></span>
+                                    <span class="label-text">Pony Canyon</span>
+                                </label>
+                                <label class="checkbox-container">
+                                    <input type="checkbox" />
+                                    <span class="checkmark"></span>
+                                    <span class="label-text">Starchild</span>
+                                </label>
+                            </div><!----filtercontent---->
+                        </div><!----filter-inner---->
+                        <div class="filtercontent">
+                            <p>Categories</p>
+                            <label class="checkbox-container"><input type="checkbox" />
+                                <span class="checkmark"></span>
+                                <span class="label-text">J-Pop</span>
+                            </label>
+                            <label class="checkbox-container">
+                                <input type="checkbox" />
+                                <span class="checkmark"></span>
+                                <span class="label-text">Punk Rock</span>
+                            </label>
+                            <label class="checkbox-container">
+                                <input type="checkbox" />
+                                <span class="checkmark"></span>
+                                <span class="label-text">Idol</span>
+                            </label>
+                            <label class="checkbox-container">
+                                <input type="checkbox" />
+                                <span class="checkmark"></span>
+                                <span class="label-text">Visual Key</span>
+                            </label>
+                            <label class="checkbox-container">
+                                <input type="checkbox" />
+                                <span class="checkmark"></span>
+                                <span class="label-text">EDM - Techno</span>
+                            </label>
+                        </div><!----filtercontent---->
+                        <div class="filtercontent">
+                            <p>Availability</p>
+                            <label class="checkbox-container">
+                                <input type="checkbox" />
+                                <span class="checkmark"></span>
+                                <span class="label-text">In-stock</span>
+                            </label>
+                            <label class="checkbox-container">
+                                <input type="checkbox" />
+                                <span class="checkmark"></span>
+                                <span class="label-text">Pre-order</span>
+                            </label>
+                            <label class="checkbox-container">
+                                <input type="checkbox" />
+                                <span class="checkmark"></span>
+                                <span class="label-text">Out-of-stock</span>
+                            </label>
+                        </div><!----filtercontent---->
+                        <div class="filtercontent">
+                            <p>Release Year</p>
+                            <label class="checkbox-container">
+                                <input type="checkbox" />
+                                <span class="checkmark"></span>
+                                <span class="label-text">2020s (2020 - 2025)</span>
+                            </label>
+                            <label class="checkbox-container">
+                                <input type="checkbox" />
+                                <span class="checkmark"></span>
+                                <span class="label-text">2010s (2010 - 2019)</span>
+                            </label>
+                            <label class="checkbox-container">
+                                <input type="checkbox" />
+                                <span class="checkmark"></span>
+                                <span class="label-text">2000s (2000 - 2009)</span>
+                            </label>
+                            <label class="checkbox-container">
+                                <input type="checkbox" />
+                                <span class="checkmark"></span>
+                                <span class="label-text">1990s and earlier</span>
+                            </label>
+                        </div><!----filtercontent---->
+                    </div><!----offcanvas-body---->
+                    <!-- BUTTON (START) -->
+                    <div class="filter-action mt-3">
+                        <button class="clear_btn">
+                            <span>Clear</span>
+                        </button>
+
+                        <button class="apply_btn">
+                            <span>Apply</span>
+                            <img src="imgs/Product/icon/Plus circle.svg" alt="Apply icon">
+                        </button>
+                    </div><!-- filter action -->
+                    <!-- BUTTON (END) -->
+                </div>
+
+            </div>
+        </div><!---container-fluid---->
+
+        <div class="offcanvas-overlay" id="offcanvasOverlay"></div>
+    </div><!---container lon filter---->
+    </div><!---container-fluid lon filter---->
+
+    <!-- FILTER SM XS (END) -->
+
+    <!-- PRODUCT MD SM XS (START) -->
+    <div class="col-12 mt-4 d-block d-md-none">
+        <div class="row g-3">
+
+            <div class="col-6 col-md-4" id="product-column">
+                <div class="glass-figma-2" id="product-card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="imgs/CD-IMG/IRISOUT.png" alt="janedoe" loading="lazy">
+                            <div class="front-content">
+                                <div id="front-name">
+                                    <h6>Iris Out</h6>
+                                    <p>Kenshi Yonezu</p>
+                                </div><!----front-name---->
+                                <h5>$120</h5>
+                            </div><!----front-content---->
+                        </div><!----card-front---->
+                        <div class="card-overlay">
+                            <div class="cd-rotate">
+                                <img src="imgs/02. Compact Disks/08 Compact Disk.png" alt="cd" loading="lazy">
+                            </div><!---cd-rotate--->
+                            <div class="productbtn-container">
+                                <div class="product-btn heart-btn glass-figma-pink">
+                                    <img src="imgs/icon/Heart-white.svg" alt="heart" loading="lazy">
+                                </div><!----product-btn---->
+                                <div class="preview-btn glass-figma">
+                                    <img class="preview-icon" src="imgs/icon/play-music2.svg" loading="lazy" alt="play">
+                                </div><!-----preview-btn----->
+                                <div class="product-btn glass-figma-pink">
+                                    <img src="imgs/icon/Plus-white.svg" loading="lazy" alt="plus">
+                                </div><!----addcart-btn---->
+
+                                <audio id="preview-audio" src="audio/IRIS OUT (mp3cut.net).mp3"></audio>
+                            </div><!----productbtn-container---->
+                        </div><!----card-overlay---->
+                    </div><!----card-inner---->
+                </div><!---productcard--->
+            </div><!-- col-xl-3 -->
+
+            <div class="col-6 col-md-4" id="product-column">
+                <div class="glass-figma-2" id="product-card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="imgs/CD-IMG/JANEDOE.png" alt="janedoe" loading="lazy">
+                            <div class="front-content">
+                                <div id="front-name">
+                                    <h6>Jane Doe</h6>
+                                    <p>Kenshi Yonezu</p>
+                                </div><!----front-name---->
+                                <h5>$120</h5>
+                            </div><!----front-content---->
+                        </div><!----card-front---->
+                        <div class="card-overlay">
+                            <div class="cd-rotate">
+                                <img src="imgs/02. Compact Disks/09 Compact Disk.png" alt="cd" loading="lazy">
+                            </div><!---cd-rotate--->
+                            <div class="productbtn-container">
+                                <div class="product-btn heart-btn glass-figma-pink">
+                                    <img src="imgs/icon/Heart-white.svg" alt="heart" loading="lazy">
+                                </div><!----product-btn---->
+                                <div class="preview-btn glass-figma">
+                                    <img class="preview-icon" src="imgs/icon/play-music2.svg" loading="lazy" alt="play">
+                                </div><!-----preview-btn----->
+                                <div class="product-btn glass-figma-pink">
+                                    <img src="imgs/icon/Plus-white.svg" loading="lazy" alt="plus">
+                                </div><!----addcart-btn---->
+
+                                <audio id="preview-audio" src="audio/JANE DOE (mp3cut.net).mp3"></audio>
+                            </div><!----productbtn-container---->
+                        </div><!----card-overlay---->
+                    </div><!----card-inner---->
+                </div><!---productcard--->
+            </div><!-- col-xl-3 -->
+
+            <div class="col-6 col-md-4" id="product-column">
+                <div class="glass-figma-2" id="product-card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="imgs/CD-IMG/Forget It.png" alt="janedoe" loading="lazy">
+                            <div class="front-content">
+                                <div id="front-name">
+                                    <h6>Forget It</h6>
+                                    <p>Yorushika</p>
+                                </div><!----front-name---->
+                                <h5>$120</h5>
+                            </div><!----front-content---->
+                        </div><!----card-front---->
+                        <div class="card-overlay">
+                            <div class="cd-rotate">
+                                <img src="imgs/02. Compact Disks/03 Compact Disk.png" alt="cd" loading="lazy">
+                            </div><!---cd-rotate--->
+                            <div class="productbtn-container">
+                                <div class="product-btn heart-btn glass-figma-pink">
+                                    <img src="imgs/icon/Heart-white.svg" alt="heart" loading="lazy">
+                                </div><!----product-btn---->
+                                <div class="preview-btn glass-figma">
+                                    <img class="preview-icon" src="imgs/icon/play-music2.svg" loading="lazy" alt="play">
+                                </div><!-----preview-btn----->
+                                <div class="product-btn glass-figma-pink">
+                                    <img src="imgs/icon/Plus-white.svg" loading="lazy" alt="plus">
+                                </div><!----addcart-btn---->
+
+                                <audio id="preview-audio" src="audio/Forget It (mp3cut.net).mp3"></audio>
+                            </div><!----productbtn-container---->
+                        </div><!----card-overlay---->
+                    </div><!----card-inner---->
+                </div><!---productcard--->
+            </div><!-- col-xl-3 -->
+
+            <div class="col-6 col-md-4" id="product-column">
+                <div class="glass-figma-2" id="product-card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="imgs/CD-IMG/Idol.png" alt="janedoe" loading="lazy">
+                            <div class="front-content">
+                                <div id="front-name">
+                                    <h6>Idol</h6>
+                                    <p>Yoasobi</p>
+                                </div><!----front-name---->
+                                <h5>$120</h5>
+                            </div><!----front-content---->
+                        </div><!----card-front---->
+                        <div class="card-overlay">
+                            <div class="cd-rotate">
+                                <img src="imgs/02. Compact Disks/05 Compact Disk.png" alt="cd" loading="lazy">
+                            </div><!---cd-rotate--->
+                            <div class="productbtn-container">
+                                <div class="product-btn heart-btn glass-figma-pink">
+                                    <img src="imgs/icon/Heart-white.svg" alt="heart" loading="lazy">
+                                </div><!----product-btn---->
+                                <div class="preview-btn glass-figma">
+                                    <img class="preview-icon" src="imgs/icon/play-music2.svg" loading="lazy" alt="play">
+                                </div><!-----preview-btn----->
+                                <div class="product-btn glass-figma-pink">
+                                    <img src="imgs/icon/Plus-white.svg" loading="lazy" alt="plus">
+                                </div><!----addcart-btn---->
+
+                                <audio id="preview-audio" src="audio/Idol _ アイドル (mp3cut.net).mp3"></audio>
+                            </div><!----productbtn-container---->
+                        </div><!----card-overlay---->
+                    </div><!----card-inner---->
+                </div><!---productcard--->
+            </div><!-- col-xl-3 -->
+
+            <div class="col-6 col-md-4" id="product-column">
+                <div class="glass-figma-2" id="product-card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="imgs/CD-IMG/Otonoke.png" alt="janedoe" loading="lazy">
+                            <div class="front-content">
+                                <div id="front-name">
+                                    <h6>Otonoke</h6>
+                                    <p>Creepy Nuts</p>
+                                </div><!----front-name---->
+                                <h5>$120</h5>
+                            </div><!----front-content---->
+                        </div><!----card-front---->
+                        <div class="card-overlay">
+                            <div class="cd-rotate">
+                                <img src="imgs/02. Compact Disks/06 Compact Disk.png" alt="cd" loading="lazy">
+                            </div><!---cd-rotate--->
+                            <div class="productbtn-container">
+                                <div class="product-btn heart-btn glass-figma-pink">
+                                    <img src="imgs/icon/Heart-white.svg" alt="heart" loading="lazy">
+                                </div><!----product-btn---->
+                                <div class="preview-btn glass-figma">
+                                    <img class="preview-icon" src="imgs/icon/play-music2.svg" loading="lazy" alt="play">
+                                </div><!-----preview-btn----->
+                                <div class="product-btn glass-figma-pink">
+                                    <img src="imgs/icon/Plus-white.svg" loading="lazy" alt="plus">
+                                </div><!----addcart-btn---->
+
+                                <audio id="preview-audio" src="audio/Otonoke (mp3cut.net).mp3"></audio>
+                            </div><!----productbtn-container---->
+                        </div><!----card-overlay---->
+                    </div><!----card-inner---->
+                </div><!---productcard--->
+            </div><!-- col-xl-3 -->
+
+            <div class="col-6 col-md-4" id="product-column">
+                <div class="glass-figma-2" id="product-card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="imgs/CD-IMG/kawaiied2.png" alt="janedoe" loading="lazy">
+                            <div class="front-content">
+                                <div id="front-name">
+                                    <h6>Kawaii Kawai</h6>
+                                    <p>PiKi</p>
+                                </div><!----front-name---->
+                                <h5>$120</h5>
+                            </div><!----front-content---->
+                        </div><!----card-front---->
+                        <div class="card-overlay">
+                            <div class="cd-rotate">
+                                <img src="imgs/02. Compact Disks/08 Compact Disk.png" alt="cd" loading="lazy">
+                            </div><!---cd-rotate--->
+                            <div class="productbtn-container">
+                                <div class="product-btn heart-btn glass-figma-pink">
+                                    <img src="imgs/icon/Heart-white.svg" alt="heart" loading="lazy">
+                                </div><!----product-btn---->
+                                <div class="preview-btn glass-figma">
+                                    <img class="preview-icon" src="imgs/icon/play-music2.svg" loading="lazy" alt="play">
+                                </div><!-----preview-btn----->
+                                <div class="product-btn glass-figma-pink">
+                                    <img src="imgs/icon/Plus-white.svg" loading="lazy" alt="plus">
+                                </div><!----addcart-btn---->
+
+                                <audio id="preview-audio" src="audio/Kawaii Kaiwai (mp3cut.net).mp3"></audio>
+                            </div><!----productbtn-container---->
+                        </div><!----card-overlay---->
+                    </div><!----card-inner---->
+                </div><!---productcard--->
+            </div><!-- col-xl-3 -->
+
+            <div class="col-6 col-md-4" id="product-column">
+                <div class="glass-figma-2" id="product-card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="imgs/CD-IMG/TheBook1.png" alt="janedoe" loading="lazy">
+                            <div class="front-content">
+                                <div id="front-name">
+                                    <h6>Encore</h6>
+                                    <p>Yoasobi</p>
+                                </div><!----front-name---->
+                                <h5>$120</h5>
+                            </div><!----front-content---->
+                        </div><!----card-front---->
+                        <div class="card-overlay">
+                            <div class="cd-rotate">
+                                <img src="imgs/02. Compact Disks/07 Compact Disk.png" alt="cd" loading="lazy">
+                            </div><!---cd-rotate--->
+                            <div class="productbtn-container">
+                                <div class="product-btn heart-btn glass-figma-pink">
+                                    <img src="imgs/icon/Heart-white.svg" alt="heart" loading="lazy">
+                                </div><!----product-btn---->
+                                <div class="preview-btn glass-figma">
+                                    <img class="preview-icon" src="imgs/icon/play-music2.svg" loading="lazy" alt="play">
+                                </div><!-----preview-btn----->
+                                <div class="product-btn glass-figma-pink">
+                                    <img src="imgs/icon/Plus-white.svg" loading="lazy" alt="plus">
+                                </div><!----addcart-btn---->
+
+                                <audio id="preview-audio" src="audio/Encore _ アンコール (mp3cut.net).mp3"></audio>
+                            </div><!----productbtn-container---->
+                        </div><!----card-overlay---->
+                    </div><!----card-inner---->
+                </div><!---productcard--->
+            </div><!-- col-xl-3 -->
+
+            <div class="col-6 col-md-4" id="product-column">
+                <div class="glass-figma-2" id="product-card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="imgs/CD-IMG/TheBook3.png" alt="janedoe" loading="lazy">
+                            <div class="front-content">
+                                <div id="front-name">
+                                    <h6>A Little More</h6>
+                                    <p>Yoasobi</p>
+                                </div><!----front-name---->
+                                <h5>$120</h5>
+                            </div><!----front-content---->
+                        </div><!----card-front---->
+                        <div class="card-overlay">
+                            <div class="cd-rotate">
+                                <img src="imgs/02. Compact Disks/03 Compact Disk.png" alt="cd" loading="lazy">
+                            </div><!---cd-rotate--->
+                            <div class="productbtn-container">
+                                <div class="product-btn heart-btn glass-figma-pink">
+                                    <img src="imgs/icon/Heart-white.svg" alt="heart" loading="lazy">
+                                </div><!----product-btn---->
+                                <div class="preview-btn glass-figma">
+                                    <img class="preview-icon" src="imgs/icon/play-music2.svg" loading="lazy" alt="play">
+                                </div><!-----preview-btn----->
+                                <div class="product-btn glass-figma-pink">
+                                    <img src="imgs/icon/Plus-white.svg" loading="lazy" alt="plus">
+                                </div><!----addcart-btn---->
+
+                                <audio id="preview-audio" src="audio/Encore _ アンコール (mp3cut.net).mp3"></audio>
+                            </div><!----productbtn-container---->
+                        </div><!----card-overlay---->
+                    </div><!----card-inner---->
+                </div><!---productcard--->
+            </div><!-- col-xl-3 -->
+
+            <div class="col-6 col-md-4" id="product-column">
+                <div class="glass-figma-2" id="product-card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="imgs/CD-IMG/Ur Name.png" alt="janedoe" loading="lazy">
+                            <div class="front-content">
+                                <div id="front-name">
+                                    <h6>Sparkle</h6>
+                                    <p>Radwimps</p>
+                                </div><!----front-name---->
+                                <h5>$120</h5>
+                            </div><!----front-content---->
+                        </div><!----card-front---->
+                        <div class="card-overlay">
+                            <div class="cd-rotate">
+                                <img src="imgs/02. Compact Disks/08 Compact Disk.png" alt="cd" loading="lazy">
+                            </div><!---cd-rotate--->
+                            <div class="productbtn-container">
+                                <div class="product-btn heart-btn glass-figma-pink">
+                                    <img src="imgs/icon/Heart-white.svg" alt="heart" loading="lazy">
+                                </div><!----product-btn---->
+                                <div class="preview-btn glass-figma">
+                                    <img class="preview-icon" src="imgs/icon/play-music2.svg" loading="lazy" alt="play">
+                                </div><!-----preview-btn----->
+                                <div class="product-btn glass-figma-pink">
+                                    <img src="imgs/icon/Plus-white.svg" loading="lazy" alt="plus">
+                                </div><!----addcart-btn---->
+
+                                <audio id="preview-audio" src="audio/Sparkle (Movie Version) (mp3cut.net).mp3"></audio>
+                            </div><!----productbtn-container---->
+                        </div><!----card-overlay---->
+                    </div><!----card-inner---->
+                </div><!---productcard--->
+            </div><!-- col-xl-3 -->
+
+            <div class="col-6 col-md-4" id="product-column">
+                <div class="glass-figma-2" id="product-card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="imgs/CD-IMG/Duvet.png" alt="janedoe" loading="lazy">
+                            <div class="front-content">
+                                <div id="front-name">
+                                    <h6>Duvet</h6>
+                                    <p>Boa</p>
+                                </div><!----front-name---->
+                                <h5>$120</h5>
+                            </div><!----front-content---->
+                        </div><!----card-front---->
+                        <div class="card-overlay">
+                            <div class="cd-rotate">
+                                <img src="imgs/02. Compact Disks/01 Compact Disk.png" alt="cd" loading="lazy">
+                            </div><!---cd-rotate--->
+                            <div class="productbtn-container">
+                                <div class="product-btn heart-btn glass-figma-pink">
+                                    <img src="imgs/icon/Heart-white.svg" alt="heart" loading="lazy">
+                                </div><!----product-btn---->
+                                <div class="preview-btn glass-figma">
+                                    <img class="preview-icon" src="imgs/icon/play-music2.svg" loading="lazy" alt="play">
+                                </div><!-----preview-btn----->
+                                <div class="product-btn glass-figma-pink">
+                                    <img src="imgs/icon/Plus-white.svg" loading="lazy" alt="plus">
+                                </div><!----addcart-btn---->
+
+                                <audio id="preview-audio" src="audio/Duvet (Sped Up) (mp3cut.net).mp3"></audio>
+                            </div><!----productbtn-container---->
+                        </div><!----card-overlay---->
+                    </div><!----card-inner---->
+                </div><!---productcard--->
+            </div><!-- col-xl-3 -->
+
+            <div class="col-6 col-md-4" id="product-column">
+                <div class="glass-figma-2" id="product-card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="imgs/CD-IMG/renai-circulation.png" alt="janedoe" loading="lazy">
+                            <div class="front-content">
+                                <div id="front-name">
+                                    <h6>Renai Circulate</h6>
+                                    <p>*Namirin</p>
+                                </div><!----front-name---->
+                                <h5>$120</h5>
+                            </div><!----front-content---->
+                        </div><!----card-front---->
+                        <div class="card-overlay">
+                            <div class="cd-rotate">
+                                <img src="imgs/02. Compact Disks/09 Compact Disk.png" alt="cd" loading="lazy">
+                            </div><!---cd-rotate--->
+                            <div class="productbtn-container">
+                                <div class="product-btn heart-btn glass-figma-pink">
+                                    <img src="imgs/icon/Heart-white.svg" alt="heart" loading="lazy">
+                                </div><!----product-btn---->
+                                <div class="preview-btn glass-figma">
+                                    <img class="preview-icon" src="imgs/icon/play-music2.svg" loading="lazy" alt="play">
+                                </div><!-----preview-btn----->
+                                <div class="product-btn glass-figma-pink">
+                                    <img src="imgs/icon/Plus-white.svg" loading="lazy" alt="plus">
+                                </div><!----addcart-btn---->
+
+                                <audio id="preview-audio"
+                                    src="audio/Renai Circulation恋愛サーキュレーション歌ってみたなみりん (mp3cut.net).mp3"></audio>
+                            </div><!----productbtn-container---->
+                        </div><!----card-overlay---->
+                    </div><!----card-inner---->
+                </div><!---productcard--->
+            </div><!-- col-xl-3 -->
+
+            <div class="col-6 col-md-4" id="product-column">
+                <div class="glass-figma-2" id="product-card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="imgs/CD-IMG/kutegomen.png" alt="janedoe" loading="lazy">
+                            <div class="front-content">
+                                <div id="front-name">
+                                    <h6>Kawaii Gomen</h6>
+                                    <p>Kohanaramu</p>
+                                </div><!----front-name---->
+                                <h5>$120</h5>
+                            </div><!----front-content---->
+                        </div><!----card-front---->
+                        <div class="card-overlay">
+                            <div class="cd-rotate">
+                                <img src="imgs/02. Compact Disks/06 Compact Disk.png" alt="cd" loading="lazy">
+                            </div><!---cd-rotate--->
+                            <div class="productbtn-container">
+                                <div class="product-btn heart-btn glass-figma-pink">
+                                    <img src="imgs/icon/Heart-white.svg" alt="heart" loading="lazy">
+                                </div><!----product-btn---->
+                                <div class="preview-btn glass-figma">
+                                    <img class="preview-icon" src="imgs/icon/play-music2.svg" loading="lazy" alt="play">
+                                </div><!-----preview-btn----->
+                                <div class="product-btn glass-figma-pink">
+                                    <img src="imgs/icon/Plus-white.svg" loading="lazy" alt="plus">
+                                </div><!----addcart-btn---->
+
+                                <audio id="preview-audio"
+                                    src="audio/可愛くてごめん feat. ちゅーたんCV早見沙織HoneyWorks (mp3cut.net).mp3"></audio>
+                            </div><!----productbtn-container---->
+                        </div><!----card-overlay---->
+                    </div><!----card-inner---->
+                </div><!---productcard--->
+            </div><!-- col-xl-3 -->
+
+
+        </div><!----ROW---->
+    </div><!------col-12----->
+    <!-- PRODUCT MD SM XS (END) -->
+    <!-------- FILTER + PRODUCT (END) -------->
+
+    <!-- PAGINATION (START)-->
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-4
+            col-lg-4
+            col-md-12
+            col-sm-12
+            col-12 pagipagi">
+                <div class="pagination-glass">
+                    <button class="page-btn1"><img src="imgs/icon/Chevron left-white.svg">
+                        <button class="page-btn">1</button>
+                        <button class="page-btn active">2</button>
+                        <button class="page-btn">3</button>
+                        <button class="page-btn">4</button>
+                        <button class="page-btn1"><img src="imgs/icon/Chevron right-white.svg">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- PAGINATION (END)-->
+
+
+    <!-----BESTSELLER (START)----->
+    <div class="container-fluid" id="bestseller_bg">
+        <!-- Thêm hai đĩa CD bên ngoài container -->
+        <img src="imgs/02. Compact Disks/04 Compact Disk.png" alt="CD Left" class="cd-left">
+        <img src="imgs/02. Compact Disks/07 Compact Disk.png" alt="CD Right" class="cd-right">
+
+        <div class="container">
+            <div class="row justify-content-center align-items-center bestseller_box glass-figma">
+
+                <!-- Cột text -->
+                <div class="col-xl-5
+	  			  col-lg-6 
+				  col-md-6
+				  d-none d-md-block text-right">
+                    <h1>Best Seller</h1>
+                    <h2>Iris Out</h2>
+                    <p>Kenshi Yonezu</p>
+                    <div class="btn-containerbs">
+                        <button id="bs-btn">
+                            <p>Buy Now</p>
+                        </button><!----bs-btn---->
+                    </div>
+
+                </div>
+
+                <!-- Cột ảnh -->
+                <div class="col-xl-7
+	  			  col-lg-6
+				  col-md-6
+				  col-sm-12
+				  col-12 text-center album-wrapper">
+                    <img src="imgs/CD-IMG/IRISOUT.png" alt="Album Cover" class="album-img">
+                    <img src="imgs/02. Compact Disks/06 Compact Disk.png" alt="Vinyl Disc" class="vinyl">
+                </div>
+                <div class="d-block d-md-none
+	  			  col-sm-12
+	  			  col-12 text-center">
+                    <h1>Best Seller</h1>
+                    <h2>Iris Out</h2>
+                    <p>Kenshi Yonezu</p>
+                    <div class="btn-containerbs">
+                        <button id="bs-btn">
+                            <p>Buy Now</p>
+                        </button><!----bs-btn---->
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-----FOOTER (START)----->
+    <div class="container-fluid" id="footer-bg">
+        <div class="container">
+            <div class="row" id="footer-row">
+                <div class="col-lg-3 col-md-4 col-12" id="footer-logo-section">
+                    <img src="imgs/logo/logo-white-pink.svg" alt="logo" loading="lazy">
+                    <p>Where Anime Lives in Sound</p>
+                    <div class="social-med-row">
+                        <a href="#"><img src="imgs/icon/Facebook-pink.svg" alt="facebook" loading="lazy"></a>
+                        <a href="#"><img src="imgs/icon/Insta-pink.svg" alt="instagram" loading="lazy"></a>
+                        <a href="#"><img src="imgs/icon/Tiktok-pink.svg" alt="tiktok" loading="lazy"></a>
+                    </div><!------social-med-row----->
+                </div><!----footer-logo-section----->
+                <div class="col-12 d-md-none" id="footer-product-mobile">
+                    <button data-toggle="collapse" data-target="#product-content">
+                        <h3>Products</h3> <img class="arrow-icon" src="imgs/icon/Chevron down.svg" alt="chevron-down">
+                    </button><!----product-mobile-button---->
+                    <div id="product-content" class="collapse">
+                        <a href="Tran Ngoc Bao Tran_Product.html">Collections</a>
+                        <a href="Tran Ngoc Bao Tran_Product.html">Best Seller</a>
+                        <a href="Tran Ngoc Bao Tran_Product.html">J-Pop</a>
+                        <a href="Tran Ngoc Bao Tran_Product.html">Pop Rock</a>
+                        <a href="Tran Ngoc Bao Tran_Product.html">Idol-Dance</a>
+                        <a href="Tran Ngoc Bao Tran_Product.html">Metal</a>
+                    </div><!---product-section-child----->
+                </div><!-----footer-product-mobil----->
+                <div class="col-lg-2 col-md-4 d-none d-md-flex" id="footer-product-section">
+                    <h3>Products</h3>
+                    <div id="product-section-child">
+                        <a href="Tran Ngoc Bao Tran_Product.html">Collections</a>
+                        <a href="Tran Ngoc Bao Tran_Product.html">Best Seller</a>
+                        <a href="Tran Ngoc Bao Tran_Product.html">J-Pop</a>
+                        <a href="Tran Ngoc Bao Tran_Product.html">Pop Rock</a>
+                        <a href="Tran Ngoc Bao Tran_Product.html">Idol-Dance</a>
+                        <a href="Tran Ngoc Bao Tran_Product.html">Metal</a>
+                    </div><!---product-section-child----->
+                </div><!-----footer-product-section---->
+                <div class="col-12 d-md-none" id="footer-info-mobile">
+                    <button data-toggle="collapse" data-target="#info-content">
+                        <h3>Information</h3> <img class="arrow-icon" src="imgs/icon/Chevron down.svg" alt="chevron-down">
+                    </button><!----product-mobile-button---->
+                    <div id="info-content" class="collapse">
+                        <a href="Tran Ngoc Bao Tran_Contact.html">Contact</a>
+                        <a href="Nguyen Hoang Vinh Phu_AboutUs.html">About Us</a>
+                        <a href="#">Product Updates</a>
+                        <a href="#">News</a>
+                        <a href="#">Return Policy</a>
+                        <a href="#">Terms of Service</a>
+                    </div><!---product-section-child----->
+                </div><!----footer-info-mobile----->
+                <div class="col-lg-3 col-md-4 d-none d-md-flex" id="footer-info-section">
+                    <h3>Information</h3>
+                    <div id="info-child">
+                        <a href="Tran Ngoc Bao Tran_Contact.html">Contact</a>
+                        <a href="Nguyen Hoang Vinh Phu_AboutUs.html">About Us</a>
+                        <a href="#">Product Updates</a>
+                        <a href="#">News</a>
+                        <a href="#">Return Policy</a>
+                        <a href="#">Terms of Service</a>
+                    </div><!---info-child---->
+                </div><!----footer-info-section---->
+                <div class="col-lg-4 col-md-12" id="footer-news-section">
+                    <h3>Newsletter</h3>
+                    <p>Stay up to date with pre-orders, releases, and product drops!</p>
+                    <form action="#">
+                        <input type="email" placeholder="Email Address" class="glass-figma-2">
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div><!-----footer-newsletter-section---->
+            </div><!-----footer-row----->
+            <div class="row" id="footer-inline-row">
+                <div class="inline-footer">
+                    <p>© 2025 EKOH. All rights reserved. &nbsp; </p>
+                    <a href="#">Terms</a>
+                    <p>,</p> &nbsp;
+                    <a href="#">Privacy</a> &nbsp;
+                    <p> & </p> &nbsp;
+                    <a href="#">Accessibility</a>
+                </div><!----inline-footer----->
+                <div class="inline-footer">
+                    <p>Do not sell our personal information</p>
+                </div><!----inline-footer----->
+            </div><!----footer-inline-row----->
+        </div><!----container---->
+    </div><!----container-fluid----->
+    <!-----FOOTER (END)----->
+
+    <!-----BESTSELLER (END)----->
+     <!----link page(start)----->
+     <script>
+		document.addEventListener("click", (event) => {
+			// Handle clicks on bestseller CTA or album image
+			if (event.target.closest("#bs-btn") || event.target.closest(".album-img")) {
+				window.location.href = "Nguyen Dao Khanh Linh_Detail.html";
+				return;
+			}
+
+			// Handle click on card-front img
+			const cardFrontImg = event.target.closest(".card-front img");
+			if (cardFrontImg) {
+				window.location.href = "Nguyen Dao Khanh Linh_Detail.html";
+				return;
+			}
+            
+			// Handle click on card-overlay
+			const overlay = event.target.closest(".card-overlay");
+			if (!overlay) return;
+
+			// Ignore clicks on interactive buttons so their own handlers run
+			const actionBtn = event.target.closest(".heart-btn, .preview-btn, .product-btn");
+			if (actionBtn) return;
+
+			window.location.href = "Nguyen Dao Khanh Linh_Detail.html";
+		});
+	</script>
+     <!----link page(end)----->
+
+    <script src="js/index.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const btn = document.querySelector(".md-sort-dropdown .dropdown-btn");
+            const menu = document.querySelector(".md-sort-dropdown .dropdown-content");
+
+            btn.addEventListener("click", function (e) {
+                e.stopPropagation();
+                menu.style.display = menu.style.display === "block" ? "none" : "block";
+            });
+
+            document.addEventListener("click", function () {
+                menu.style.display = "none";
+            });
+        });
+    </script>
+    <script>
+        // JS cho Offcanvas ở XS/SM
+        const filterBtn = document.getElementById("filterBtn");
+        const offcanvas = document.getElementById("offcanvasFilter");
+        const overlay = document.getElementById("offcanvasOverlay");
+        const collapseDiv = document.getElementById("myDiv");
+
+        function closeFilter() {
+            offcanvas.classList.remove("show");
+            overlay.classList.remove("show");
+        }
+
+        filterBtn.addEventListener("click", function (e) {
+            // nếu là màn nhỏ thì mở offcanvas
+            if (window.innerWidth < 768) {
+                e.preventDefault();
+                offcanvas.classList.add("show");
+                overlay.classList.add("show");
+            } else if (window.innerWidth >= 768 && window.innerWidth < 992) {
+                // nếu là màn md, toggle collapse Bootstrap
+                const isOpen = collapseDiv.classList.contains("show");
+                collapseDiv.classList.toggle("show", !isOpen);
+            }
+        });
+
+        overlay.addEventListener("click", closeFilter);
+
+        document
+            .querySelectorAll(".offcanvas-filter .apply, .offcanvas-filter .clear")
+            .forEach((btn) => {
+                btn.addEventListener("click", closeFilter);
+            });
+    </script>
+    <script>
+        const dropdown = document.querySelector('.custom-dropdown');
+        const button = dropdown.querySelector('.dropdown-btn');
+
+        button.addEventListener('click', () => {
+            dropdown.classList.toggle('active');
+        });
+
+        document.addEventListener('click', (e) => {
+            if (!dropdown.contains(e.target)) {
+                dropdown.classList.remove('active');
+            }
+        });
+    </script>
+</body>
+<script>
+    document.querySelectorAll('.filter-toggle').forEach(button => {
+        button.addEventListener('click', () => {
+            const group = button.closest('.filter-group');
+            group.classList.toggle('collapsed');
+        });
+    });
+</script>
+
+</html>

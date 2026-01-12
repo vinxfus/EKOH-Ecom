@@ -1,0 +1,647 @@
+@charset "UTF-8";
+
+/* CSS Document */
+html{
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+/*****BANNER (START)****/
+#contact_banner {
+  position: relative;
+  padding: 0 !important;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin-bottom: 60px;
+}
+
+.hero-section {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.hero-bg {
+  width: 100%;
+  display: block;
+}
+
+.hero-section {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.hero-bg {
+  width: 100%;
+  display: block;
+}
+
+/* --- TEXT LAYOUT DESKTOP --- */
+.hero-text {
+  position: absolute;
+  top: 40%;
+  left: 8%;
+  color: var(--white-color);
+  font-family: heading-font;
+  font-weight: 500;
+}
+
+.hero-text h1 {
+  font-size: 55px;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+.hero-text .orange {
+  color: var(--secondary-color);
+}
+
+/* --- MENU TEXT --- */
+.hero-menu {
+  margin-top: 40px;
+  display: flex;
+  gap: 70px;
+}
+
+.hero-menu span {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+/*****BANNER (END)****/
+
+
+/*****Contact (START)****/
+#contact-section {
+  position: relative;
+  padding: 30px 0;
+  overflow-y: visible;
+  background: url("../../imgs/Contact/background/pink_blur.png") center/cover no-repeat;
+}
+.contact-container{
+  overflow-y: visible;
+}
+.contact-row{
+  z-index: 10;
+  overflow-y: visible;
+}
+.contact-card img {
+  height: 40px;
+  /* đổi size ở đây */
+  width: auto;
+}
+
+.contact-card {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 15px;
+  text-align: center;
+  padding: 20px 20px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+  overflow-y: visible;
+  z-index: 10;
+}
+#soul_blur {
+  overflow-y: visible;
+}
+.sound-section {
+  overflow-y: visible;
+}
+#soul_blur img {
+  pointer-events: none;
+  overflow-y: visible;
+  z-index: 0;
+  
+}
+
+
+.contact-card p {
+  margin: 0;
+  opacity: 0.85;
+  color: var(--white-color);
+  font-family: heading-font;
+  font-size: 16px;
+  margin-top: 15px;
+  font-weight: 300;
+}
+
+.contact-row {
+  margin-left: -10px;
+  margin-right: -10px;
+}
+
+.contact-row>[class*="col-"] {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+/*****BLUR (START)****/
+.sound-section {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  /* tùy chỉnh độ cao bạn muốn */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: visible;
+}
+
+.sound-section img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 160%;
+  max-width: none;
+  z-index: 0;
+  opacity: 0.9;
+}
+
+.sound-section h2 {
+  position: relative;
+  color: var(--white-color);
+  font-weight: 700;
+  font-size: clamp(24px, 4vw, 40px);
+  /* tự động co giãn chữ */
+  z-index: 2;
+  text-align: center;
+}
+
+/*****BLUR (END)****/
+
+@media (max-width: 768px) {
+  .contact-card {
+    padding: 30px 15px;
+  }
+
+  .contact-card i {
+    font-size: 32px;
+  }
+
+  /*****Contact (END)**/
+}
+
+/*****FORM (START)**/
+.allform {
+  margin-top: 90px;
+}
+
+.form_contact {
+  border-radius: 25px;
+  padding-left: 50px;
+  overflow: hidden;
+}
+
+.form-container {
+  width: 85%;
+  max-width: 1100px;
+  padding: 40px;
+  border-radius: 25px;
+  background: rgba(20, 20, 20, 0.7);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+}
+
+.form-control {
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(7.2px);
+  -webkit-backdrop-filter: blur(7.2px);
+  border: 1px solid rgba(255, 255, 255, 0.22);
+}
+
+
+textarea {
+  resize: none;
+}
+
+.text-white {
+  font-family: heading-font;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+/* Label */
+form label {
+  font-family: heading-font;
+  font-size: 22px;
+  font-weight: 500;
+}
+.form-control{
+  border-radius: 10px;
+}
+/* Input & textarea text */
+form .form-control {
+  font-family: heading-font;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+/* Placeholder */
+input.form-control,
+textarea.form-control {
+  color: var(--white-color) !important;
+  /* chữ nhập vào */
+}
+
+/* màu placeholder (nếu muốn nhạt hơn) */
+input.form-control::placeholder,
+textarea.form-control::placeholder {
+  color: #8a8a8a;
+  font-weight: 400;
+  font-family: heading-font;
+  letter-spacing: 0.02em;
+}
+
+.form-control:focus {
+  outline: none;
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(7.2px);
+  -webkit-backdrop-filter: blur(7.2px);
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  color: var(--white-color);
+}
+
+.anime-img {
+  width: 330px;
+  margin-left: 20px;
+}
+
+/*****BUTTON FORM (START)**/
+.btn-formcontact {
+  padding: 8px 24px;
+  border-radius: 5px;
+  color: var(--black-color);
+  background-color: var(--main-color);
+  font-family: heading-font;
+  font-size: 16px;
+  font-weight: 500;
+  transition: ease-in .3s;
+  text-align: center;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-formcontact:focus {
+  outline: none;
+}
+
+/*****BUTTON FORM (START)**/
+/*****FORM (END)**/
+
+.map-box {
+  width: 100%;
+  height: 500px;
+  /* bạn muốn cao bao nhiêu sửa ở đây */
+  border-radius: 20px;
+  overflow: hidden;
+  margin-top: 50px;
+}
+
+.map-box iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  display: block;
+}
+
+/*-------------------------------XL--------------------------------*/
+@media (min-width: 1200px) {
+
+  /*-------------------------------BANNER (START)--------------------------------*/
+  #contact_banner {
+    height: 824px;
+    background-image: url("../../imgs/Contact/banner/contact_banner.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .hero-text h1 {
+    font-size: 70px;
+  }
+
+  /*-------------------------------BANNER(END)--------------------------------*/
+  .breadcrumb a:hover {
+    color: var(--main-color);
+  }
+
+  /*-------------------------------CONTACT(START)--------------------------------*/
+  .contact-card {
+    height: 191px;
+  }
+
+  .contact-card:hover {
+    transform: translateY(-5px);
+    border-color: rgba(255, 255, 255, 0.3);
+  }
+
+  .contact-card {
+    position: relative;
+    cursor: pointer;
+    padding-top: 55px;
+  }
+
+  .contact-card img {
+    transition: transform 0.25s ease;
+  }
+
+  .contact-card p {
+    transition: opacity 0.25s ease;
+  }
+
+  /* Khi hover */
+  .contact-card:hover img {
+    transform: scale(1.4);
+    margin-top: 10px;
+    /* icon to lên */
+  }
+
+  .contact-card:hover p {
+    opacity: 0;
+    /* chữ biến mất */
+  }
+
+  .right-img {
+    margin-left: 96px;
+  }
+
+  .form-box {
+    margin-top: 90px;
+  }
+
+  .form-group {
+    margin-bottom: 30px;
+  }
+
+  .btn-formcontact:hover {
+    background-color: var(--white-color);
+    transition: ease-in .3s;
+    box-shadow: 0 4px 6px rgba(253, 177, 250, .5);
+  }
+
+  .btn-formcontact:focus {
+    outline: none;
+    background-color: var(--white-color) !important;
+    color: var(--main-color) !important;
+  }
+
+  .btn-formcontact:focus p {
+    color: var(--main-color) !important;
+  }
+
+  .form-control:focus {
+    color: var(--white-color);
+    position: relative;
+    background: rgba(255, 255, 255, 0.05);
+    /* lớp nền trong suốt */
+    backdrop-filter: blur(5px) saturate(120%);
+    -webkit-backdrop-filter: blur(12px) saturate(180%);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow:
+      inset 1px 1px 2px rgba(255, 255, 255, 0.15),
+      /* ánh sáng phản xạ */
+      0 8px 32px rgba(0, 0, 0, 0.4);
+    /* chiều sâu */
+
+    /* hiệu ứng ánh sáng theo góc */
+    background-image: linear-gradient(135deg,
+        rgba(255, 255, 255, 0.1) 0%,
+        rgba(255, 255, 255, 0.0) 100%);
+  }
+}
+
+/*----------------------------LG--------------------------*/
+@media (max-width: 1200px) and (min-width: 992px) {
+  #contact_banner {
+    background-image: url("../../imgs/Contact/banner/contact_banner.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 700px;
+  }
+
+  .hero-text h1 {
+    font-size: 60px;
+
+
+  }
+
+  .breadcrumb a:hover {
+    color: var(--main-color);
+  }
+
+  /*-------------------------------CONTACT(START)--------------------------------*/
+  .contact-card {
+    height: 191px;
+  }
+
+  .contact-card:hover {
+    transform: translateY(-5px);
+    border-color: rgba(255, 255, 255, 0.3);
+  }
+
+  .contact-card {
+    position: relative;
+    cursor: pointer;
+    padding-top: 55px;
+  }
+
+  .contact-card img {
+    transition: transform 0.25s ease;
+  }
+
+  .contact-card p {
+    transition: opacity 0.25s ease;
+  }
+
+  /* Khi hover */
+  .contact-card:hover img {
+    transform: scale(1.4);
+    margin-top: 10px;
+    /* icon to lên */
+  }
+
+  .contact-card:hover p {
+    opacity: 0;
+    /* chữ biến mất */
+  }
+
+  .right-img {
+    margin-left: 96px;
+  }
+
+  .form-box {
+    margin-top: 90px;
+  }
+
+  .form-group {
+    margin-bottom: 30px;
+  }
+
+  .btn-formcontact:hover {
+    background-color: var(--white-color);
+    transition: ease-in .3s;
+  }
+
+  .btn-formcontact:focus {
+    outline: none;
+    background-color: var(--white-color) !important;
+    color: var(--main-color) !important;
+  }
+
+  .btn-formcontact:focus p {
+    color: var(--main-color) !important;
+  }
+
+  .form-control:focus {
+    color: var(--white-color);
+    position: relative;
+    background: rgba(255, 255, 255, 0.05);
+    /* lớp nền trong suốt */
+    backdrop-filter: blur(5px) saturate(120%);
+    -webkit-backdrop-filter: blur(12px) saturate(180%);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow:
+      inset 1px 1px 2px rgba(255, 255, 255, 0.15),
+      /* ánh sáng phản xạ */
+      0 8px 32px rgba(0, 0, 0, 0.4);
+    /* chiều sâu */
+
+    /* hiệu ứng ánh sáng theo góc */
+    background-image: linear-gradient(135deg,
+        rgba(255, 255, 255, 0.1) 0%,
+        rgba(255, 255, 255, 0.0) 100%);
+  }
+}
+
+
+/*----------------------------MD--------------------------*/
+@media (max-width: 992px) and (min-width: 768px) {
+  #contact_banner {
+    background-image: url("../../imgs/Contact/banner/contact_bannermd.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 439px;
+  }
+
+  .anime-img {
+    display: none;
+  }
+
+  .contact-wrapper {
+    margin-top: 40px;
+  }
+
+  .form-box {
+    margin-left: -30px;
+  }
+
+}
+
+/*----------------------------SM--------------------------*/
+@media (max-width: 768px) and (min-width: 576px) {
+
+  /*----------------------------BANNER (START)--------------------------*/
+  #contact_banner {
+    background-image: url("../../imgs/Contact/banner/contact_bannermdsmxs.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 430px;
+  }
+
+  .hero-text {
+    left: 50%;
+    top: 50%;
+    /* bạn chỉnh được */
+    transform: translateX(-50%);
+    text-align: center;
+    width: 90%;
+  }
+
+  .hero-text h1 {
+    font-size: 32px;
+    /* thu nhỏ chữ mobile */
+  }
+
+  .hero-menu {
+    justify-content: center;
+    gap: 30px;
+    /* thu nhỏ khoảng cách */
+  }
+
+  .hero-menu span {
+    font-size: 14px;
+  }
+
+  /*----------------------------BANNER (END)--------------------------*/
+  /*----------------------------FORM (START)--------------------------*/
+  .form-box {
+    margin-left: -30px;
+  }
+
+  .contact-wrapper {
+    margin-top: 40px;
+  }
+
+  /*----------------------------FORM (END)--------------------------*/
+}
+
+/*----------------------------Xs--------------------------*/
+@media (max-width: 576px) {
+
+  /*----------------------------BANNER (START)--------------------------*/
+  #contact_banner {
+    background-image: url("../../imgs/Contact/banner/contact_bannermdsmxs.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 430px;
+  }
+
+  .hero-text {
+    left: 50%;
+    top: 45%;
+    /* bạn chỉnh được */
+    transform: translateX(-50%);
+    text-align: center;
+    width: 90%;
+  }
+
+  .hero-text h1 {
+    font-size: 32px;
+    /* thu nhỏ chữ mobile */
+  }
+
+  .hero-menu {
+    justify-content: center;
+    gap: 30px;
+    /* thu nhỏ khoảng cách */
+  }
+
+  .hero-menu span {
+    font-size: 14px;
+  }
+
+  /*----------------------------BANNER (END)--------------------------*/
+  /*----------------------------FORM (START)--------------------------*/
+  .form-box {
+    margin-left: -30px;
+  }
+
+  .contact-wrapper {
+    margin-top: 20px;
+  }
+
+  /*----------------------------FORM (END)--------------------------*/
+}

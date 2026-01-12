@@ -1,0 +1,860 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>DETAIL PAGE</title>
+    <!--CSS-->
+	<link href="css/bootstrap-4.4.1.css" rel="stylesheet">
+	  <!--link owl-->
+	<link href="css/style.css" rel="stylesheet" type="text/css"> 
+	<link href="css/Khanh Linh/style_Detail.css" rel="stylesheet" type="text/css">  
+	<link href="fontawesome/css/all.min.css" rel="stylesheet" type="text/css">
+	<link href="fontawesome/css/all.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="js/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css" type="text/css">
+    <link rel="stylesheet" href="js/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css" type="text/css"> 
+	  
+	<!--Bootstrap-->
+	<script src="js/jquery-3.4.1.min.js" defer></script>
+	<script src="js/popper.min.js" defer></script> 
+	<script src="js/bootstrap-4.4.1.js" defer></script>
+	<script src="js/OwlCarousel2-2.3.4/dist/owl.carousel.min.js" defer></script>
+	  
+	  
+  </head>
+  <body>
+	  
+	  <div class="benner">
+		  <img src="imgs/Khanh Linh/banner_product2.png" alt="Snow" style="width:100%;">
+		  <div class="bottom-right">Buy One, Get One  </div>
+		  <div class="bottom-right1">No Extra Cost, Double The Reward!  </div>
+		</div> 
+		
+
+		 
+		  
+	<!----------------- Header (Start) ----------------->
+	<div class="col-12 header d-none"></div>				
+	<!----------------- Header (End) ----------------->
+
+		<!----------------- NAVIGATIONS (Start) ----------------->
+		<div class="container glass-figma" id="nav-bg">
+            <div class="row">
+                
+                <div class="col-xl-3 d-none d-xl-flex nav-logo">
+                    <a href="Nguyen Hoang Vinh Phu_Home.html"><img src="imgs/logo/logo-white-pink.svg" alt="logo"></a>
+                </div>
+                <div class="col-xl-6 d-none d-xl-block nav-content">
+                    <ul>
+                        <li><a href="Nguyen Hoang Vinh Phu_Home.html">HOME</a></li>
+                    
+                        <li class="dropdown">
+                            <a id="store-btn-drop" href="#">STORE <img src="imgs/icon/Chevron down.svg"></a>
+                            <ul class="dropdown-menu">
+                              <li><a href="Tran Ngoc Bao Tran_Product.html">Jpop</a></li>
+                              <li><a href="Tran Ngoc Bao Tran_Product.html">Pop Rock</a></li>
+                              <li><a href="Tran Ngoc Bao Tran_Product.html">Alternative Rock</a></li>
+                              <li><a href="Tran Ngoc Bao Tran_Product.html">Punk Rock</a></li>
+                              <li><a href="Tran Ngoc Bao Tran_Product.html">Idol-Dance Pop</a></li>
+                              <li><a href="Tran Ngoc Bao Tran_Product.html">Metal</a></li>
+                              <li><a href="Tran Ngoc Bao Tran_Product.html">EDM-Electro-Techno</a></li>
+    
+    
+                            </ul>
+                          </li>
+                        <li><a href="Nguyen Hoang Vinh Phu_AboutUs.html">ABOUT US</a></li>
+                        <li><a href="Tran Ngoc Bao Tran_Contact.html">CONTACT</a></li>
+                    </ul>
+                </div><!-- nav-content -->
+                <div class="col-xl-3 d-none d-xl-block nav-icon">
+                    <ul>
+                        <li><a href="#" data-toggle="collapse" data-target="#search-dropdown"><img src="imgs/icon/Search.svg" alt="search"></a></li>
+                        <li><a href="#"><img src="imgs/icon/User.svg" alt="user" loading=></a></li>
+                        <li><a href="Nguyen Dao Khanh Linh_Cart.html"><img src="imgs/icon/Shopping cart.svg" alt="cart"></a></li>
+                    </ul>
+                    <div id="search-dropdown" class="collapse">
+                        <div class="search-flex glass-figma-pink">
+                        <input type="text" placeholder="Search...">
+                        <button type="submit"><img src="imgs/icon/Search.svg" alt="search"></button>
+                        </div><!-- search-flex -->
+                    </div><!-- search-dropdown -->
+                </div><!-- nav-icon -->
+                <div class="col-3 col-sm-3 col-md-2 col-lg-2 d-xl-none" id="mobile-menu">
+                    <a id="menubtn"><img src="imgs/icon/Menu.svg" alt="menu"></a>
+                </div>
+                <div class="offset-1 offset-md-2 col-4 d-xl-none" id="mobile-logo">
+                    <a href="Nguyen Hoang Vinh Phu_Home.html"><img src="imgs/logo/logo-white-pink.svg" alt="logo"></a>
+                </div><!-- mobile-logo -->
+                <div class="col-3 col-md-2 offset-1 offset-md-2 d-xl-none" id="mobile-cart">
+                    <a href="Nguyen Dao Khanh Linh_Cart.html"><img src="imgs/icon/Shopping cart-mobile.svg" alt="cart-mobile"></a>
+                </div><!-- mobile-cart -->
+            </div><!-- .row -->
+        </div><!-- .container -->
+        <!-----Thanh trượt MENU Mobile----->
+        <nav id="menu">
+            <a id="closebtn"><img src="imgs/icon/X-pink.svg" alt="X"></a>
+            <a id="user-btn" class="glass-figma-pink"><img src="imgs/icon/User.svg" alt="user"></a>
+            <form class="form-mobile-menu glass-figma-pink">
+                <input type="text" placeholder="Search...">
+                <button type="submit"><img src="imgs/icon/Search.svg" alt="search"></button>
+            </form>
+            <ul>
+                <li><a href="Nguyen Hoang Vinh Phu_Home.html">HOME</a></li>
+                <li><a href="Tran Ngoc Bao Tran_Product.html" data-toggle="collapse" data-target="#product-mobile-content">STORE <img class="arrow-icon" src="imgs/icon/Chevron down-pink.svg"></a></li>
+                <div id="product-mobile-content" class="collapse">
+                    <ul id="product-mobile-sublist">
+                        <li><a href="Tran Ngoc Bao Tran_Product.html">JPOP</a></li>
+                        <li><a href="Tran Ngoc Bao Tran_Product.html">POP ROCK</a></li>
+                        <li><a href="Tran Ngoc Bao Tran_Product.html">ALTERNATIVE ROCK</a></li>
+                        <li><a href="Tran Ngoc Bao Tran_Product.html">PUNK ROCK</a></li>
+                        <li><a href="Tran Ngoc Bao Tran_Product.html">IDOL-DANCE POP</a></li>
+                        <li><a href="Tran Ngoc Bao Tran_Product.html">METAL</a></li>
+                        <li><a href="Tran Ngoc Bao Tran_Product.html">EDM-ELECTRO-TECHNO</a></li>
+                    </ul><!----product-mobile-sublist----->
+                </div><!-- product-mobile-content -->
+                <li><a href="Nguyen Hoang Vinh Phu_AboutUs.html">ABOUT US</a></li>
+                <li><a href="Tran Ngoc Bao Tran_Contact.html">CONTACT</a></li>
+                <li><a href="#">NEWS</a></li>
+                <li><a href="Tran Ngoc Bao Tran_Contact.html">FAQ</a></li>
+            </ul>
+        </nav><!-- #menu -->
+	<!----------------- NAVIGATIONS (END) ----------------->
+	
+	<!----Bắt đầu code từ đây, LƯU Ý là code phần nào thì Note lại START-END để dễ nhìn nha mấy đứa, CSS cũng thế nhe----->
+		  
+		  
+		  
+	
+		
+	  
+	<!-----BREADCRUMB (START)----->
+	<div class="container" id="breadcrumb-container">
+        <div class="row" id="breadcrumb-row">
+            <a class="breadcrumb-home" href="Nguyen Hoang Vinh Phu_Home.html">Home</a>
+            <a href="#"><img src="imgs/icon/Chevron right-pink.svg" alt="chevron-right"></a>
+			<a class="breadcrumb-home" href="Tran Ngoc Bao Tran_Product.html">Products</a>
+            <a href="#"><img src="imgs/icon/Chevron right-pink.svg" alt="chevron-right"></a>
+            <a href="#">Iris Out</a>
+        </div><!------row------>
+    </div><!---breadcrumb-container--->
+    <!-----BREADCRUMB (END)----->
+	
+
+		  
+		  <!----------------------card detail------------------->
+	<div class="container-fluid detail-card-wrapper glass-figma-2" id="glass-figma">  
+		
+			<!----------------------card detail------------------->
+				<div class="container py-5">
+				  <div class="row g-5 justify-content-center align-items-start">
+
+					<!-- Image Section -->
+					<div class="col-xl-7
+								col-lg-6
+								col-md-6
+								col-sm-12
+								col-12">
+								  <div class="main-image">
+									<img id="mainImage" src="imgs/Khanh Linh/Group 463.png" alt="PC Product" class="img-fluid rounded" >
+								  </div>
+								  <div class="d-flex">
+									<img src="imgs/Khanh Linh/Group 463.png" class="thumb-img active" onclick="changeImage(this)" alt="Detail 1" id="active" loading="lazy">
+									<img src="imgs/Khanh Linh/IRISOUT 4.png" class="thumb-img" onclick="changeImage(this)" alt="Detail 2" loading="lazy">
+									<img src="imgs/Khanh Linh/Frontnvdi.png" class="thumb-img" onclick="changeImage(this)" alt="Detail 3" loading="lazy">
+
+								  </div><br>
+					</div>
+
+							<!-- Cột nội dung -->
+							<div class="col-xl-5
+										col-lg-6
+										col-md-6
+										col-sm-12
+										col-12" id="content">
+									<div id="yeuthich">
+										<ul class="wrapper" id="heart">
+											<li class="iconheart">
+												<i class="fa-slab-press fa-regular fa-heart"></i>
+											</li>
+										</ul>
+										<h1 class="name" style="margin-bottom: 0px;">Iris Out</h1>
+										
+									</div>
+										<a href="#" class="Kenshi">Kenshi Yonezu</a>
+								   
+										  <h1 class="gia">$120</h1>
+
+										  <div class="row">
+											  <h3 class="Category" style="padding-left: 15px;">Category:</h3>
+											  <p style="padding-top: 7px;padding-left: 20px;">Pop Rock</p>
+										  </div>
+
+											<div class="row">
+											  <h3 class="anime" style="padding-left: 15px;">Anime:</h3>
+											  <p style="padding-top: 7px;">Chainsaw Man Movie - Reze Arc</p></div>
+								
+										<div class="row" id="quantity-row" style="display: flex; justify-content: start;
+										align-items: center; gap: 40px;">
+											  <h3 class="solong" style="padding-left: 15px; padding-top: 10px;">Quantity:</h3>
+											
+											  <div class="quantity" style="display: flex; justify-content: center; align-items: center; gap: 20px; padding: 0 20px;">
+												<button class="minus" aria-label="Decrease">&minus;</button>
+												<input type="number" class="input-box" value="1" min="1" max="10">
+												<button class="plus" aria-label="Increase">&plus;</button>
+											  </div>
+											
+										</div>
+								        
+								 		<div class="row" id="btn-row">
+											  
+											  <a href="Nguyen Dao Khanh Linh_Cart.html" class="button second-button2">Add To Cart</a>
+											  <a href="#" class="button second-button1">Buy Now</a>
+											  
+										</div>
+								
+										  <div class="chiase">
+											<ul class="nav">
+											  
+											</ul>
+										  </div>
+								</div>
+						  </div>
+				</div>  
+			</div>		  
+		
+	 <!----------------------chinh sach gia hang------------------->	  
+			<div class="container lazy-section">
+				<div class="row" id="chinhsach">
+					<div class="col-lg-4
+								col-md-6
+								col-12 COD2">
+						<div class=" COD">
+						<img src="imgs/Khanh Linh/thanh toan.png" loading="lazy">
+						 <p style="margin-bottom: 0px;padding-top: 7px;">Payment upon delivery (COD).</p>
+						 <P>Nationwide Delivery.</P>
+						</div>
+					</div>	
+					
+					<div class="col-lg-4
+								col-md-6 
+								col-12 COD2">
+						<div class=" COD">
+							<img src="imgs/Khanh Linh/van chuyen.png" loading="lazy">
+						 <p style="margin-bottom: 0px;padding-top: 7px;">Free ship.</p>
+						 <P>For orders over 599,000 VND.</P>
+						</div>
+					</div>
+					
+					<div class="col-lg-4 d-lg-block
+								col-md-12 d-md-none
+								col-12">
+						<div class=" COD">
+							<img src="imgs/Khanh Linh/doi tra.png" loading="lazy">
+						 <p style="margin-bottom: 0px;" class="COD1">Free exchange.</p>
+						 <P>Within 30 days from date of purchase.</P>
+						</div>
+					</div>
+						
+				</div>
+		  	</div>	  		
+						
+	<!----------------------Describe------------------->	
+		  
+		  <div class="container-fluid lazy-section" id="nen1">
+			  <div class="container">
+				  <div class="row">
+					  <div class="col-12 mota">
+						  <h1 class="margin-top">Describe</h1>
+						  <button class="accordion" ><h5 class="IRIS">Song title:</h5> <h4 style="padding-left: 10px;" class="IRIS">IRIS OUT</h4></button>
+							<div class="panel">
+						  <img src="imgs/Khanh Linh/images.jpg" class="d-lg-block
+																	   d-none" style="margin-top: 15px;" loading="lazy">
+						 
+						  <div class="noidung">
+							 <p style="margin-top: 15px;"> <strong style="padding-right: 10px;">Artist / Composer:</strong>  Kenshi Yonezu (wrote, composed, and produced the track)</p>
+						  </div>
+						  
+						  <div class="noidung">
+							<p> <strong style="padding-right: 10px;"> Digital release:</strong> Kenshi Yonezu (wrote, composed, and produced the track)</p>
+						  </div>
+						  
+						  <div class="noidung">
+							  <p> <strong style="padding-right: 10px;">Physical CD release: </strong> September 24, 2025 (double A-side single with “JANE DOE”)</p>
+						  </div>
+						  
+						  <div class="noidung">
+							  <p> <strong style="padding-right: 10px;">Used as: </strong>  Opening theme for Chainsaw Man: The Movie – Reze Arc</p>
+						  </div>
+						  
+						  <div class="noidung">
+							  <p> <strong style="padding-right: 10px;">Dimensions: </strong> a diameter of 120 mm (12 cm) and a thickness of about 1.2 mm.
+							  </p>
+						  </div>
+						  
+						  <div class="noidung">
+							  <p> <strong style="padding-right: 10px;">Genre: </strong> The song carries a strong pop and rock influence, with captivating melodies and the distinctive musical style that defines Kenshi Yonezu.
+							  </p>
+						  </div>
+						  
+						  <div class="noidung">
+							  <p style="padding-top: 3px;"> <strong style="padding-right: 10px;">Lyrics: </strong> The lyrics express the complex emotions of a person in a relationship, portraying inner conflict, pain, and unspoken feelings that cannot easily be put into words.
+							  </p>
+						  </div>
+						  
+						  <div class="noidung"> 
+							  <p> <strong style="padding-right: 10px;">Musica lStyle: </strong> Kenshi Yonezu is known for blending different genres such as pop, rock, and electronic elements, creating uniquely arranged tracks. “Iris Out” is no exception — it features a modern, dynamic sound while still preserving Yonezu’s unmistakable personal touch.
+							  </p> 
+						  </div>
+						  
+						  <div class="noidung">
+							  <p> <strong style="padding-right: 10px;">Music Video: </strong> The MV stands out for its high artistic quality, visually exploring the complexity and strangeness of human relationships through powerful, symbolic imagery.
+							  </p>
+						  </div>
+					    
+						  </div>
+						 
+						      <h4 style="margin-top: 30px;margin-bottom: 15px;" class="the">The CD is compatible with various devices:</h4>
+			
+							  
+						  	<button class="accordion"><h5 class="cd">1. CD Player </h5></button>
+						    <div class="panel">
+							  <p style="margin-top: 15px;">+ Designed specifically for playing music CDs.</p>
+						      <p>+ Includes home players, mini systems, and portable players (Discman).</p>
+						 	</div>
+						  
+						  <button class="accordion" style="margin-top: 15px;"><h5 class="cd">2. Desktop or Laptop Computers with<br class="d-md-none"> a CD/DVD Drive </h5></button>
+						  <div class="panel">
+						      <p style="margin-top: 15px;">+ Can play music, read data, or install software from a CD.</p>
+						      <p>+ Some newer computers don’t have a built-in drive, so you need an external CD drive via USB. (Discman).</p>
+						  </div>
+						  
+						   <button class="accordion" style="margin-top: 15px;"><h5 class="cd">3. DVD / Blu-ray Players </h5></button>
+						   <div class="panel">
+						      <p style="margin-top: 15px;">+ All DVD or Blu-ray players can read both audio and data CDs.</p>
+						   </div>
+						  
+						  <button class="accordion" style="margin-top: 15px;"><h5 class="cd">4. Car CD Players </h5></button>
+						  <div class="panel">
+						      <p style="margin-top: 15px;">+ Used for playing music CDs in cars.</p>
+						      <p>+ Many modern cars no longer include CD drives, supporting only USB or Bluetooth.</p>
+						  </div>
+						  
+						  <button class="accordion" style="margin-top: 15px;"><h5 class="cd">5. Some Older Game Consoles</h5></button>
+						  <div class="panel">
+						      <p style="margin-top: 15px;">+ For example, the PlayStation 1 can read both game discs and audio CDs.</p>
+						   </div>	
+						  
+						  <button class="accordion" style="margin-top: 15px;"><h5 class="cd">6. In summary:</h5></button>
+						  <div class="panel">
+						      <p style="margin-top: 15px;">+ A CD can be used with any device that has a CD, DVD, or Blu-ray drive.</p>
+						   </div>
+						  
+						  
+					  </div>
+				  </div>
+			  </div>
+		  </div>
+						
+						
+	<!----------------------Product reviews------------------->	
+		  <div class="container-fluid lazy-section" id="nen2">
+			  <div class="container">
+					<h1 class="pr">Product reviews</h1>
+			  </div>
+		 </div>
+	
+		<div class="container lazy-section" id="nenduoi">
+			<div class="row" id="Productreviews">
+			  
+				
+				<hr>
+				<div class="col-12 box" id="sao">
+					<div class="row">
+						<div class="col-lg-4
+									col-md-12
+									col-12 bd">
+							<h2 class="out">4.7 out of 5</h2>
+							<ul class="sao">
+						        <i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-regular fa-star"></i>
+						    </ul>
+							
+							
+						</div>
+						
+						<div class="col-lg-8
+									col-md-12 
+									col-12">
+							<div class="row" id="star">
+								<h4 class="star3">5 Star (31,1k)</h4>
+								<h4 class="star3">4 Star (3k)</h4>
+								<h4 class="star3">3 Star (1,5k)</h4>
+							</div>
+							
+						</div>
+						
+						
+						
+						
+					</div>
+				</div>
+			</div>
+		</div>
+	
+		  
+	<div class="container">
+			<div class="row">
+					<div class="
+								col-lg-1
+								col-md-2
+								col-3 bl">
+						<img src="imgs/Khanh Linh/Ellipse 51.png" loading="lazy">
+					</div>
+				<div class="
+							col-lg-11
+							col-md-10
+							col-9 liza">
+					<h4>Liza</h4>
+					<div class="row Category ">
+						<h6 style="padding-left: 15px;">Category:</h6><p style="padding-left: 10px;" class="pop">Pop  </p>
+						<h6 style="padding-left: 15px;">Classify:</h6><p style="padding-left: 10px;">Full  </p>
+					</div>
+					<p style="padding-left: 0px;">The CD plays smoothly with no skips or noise. Very satisfied.</p>
+				</div>
+			 </div>	
+		
+		<div class="row">
+					<div class="
+								col-lg-1
+								col-md-2
+								col-3 bl">
+						<img src="imgs/Khanh Linh/Ellipse 39.png" loading="lazy">
+					</div>
+				<div class="
+							col-lg-11
+							col-md-10
+							col-9 liza">
+					<h4>Joan</h4>
+					<div class="row Category ">
+						<h6 style="padding-left: 15px;">Category:</h6><p style="padding-left: 10px;" class="pop">Rock  </p>
+						<h6 style="padding-left: 15px;">Classify:</h6><p style="padding-left: 10px;">Full  </p>
+					</div>
+					<p style="padding-left: 0px;">The sound quality is very clear and crisp—definitely different from digital versions.</p>
+				</div>
+			 </div>	
+		</div>	
+	
+	   <!-- PAGINATION (START)-->
+    <div class="container">
+        <div class="row">
+            <div class="col-12 pagipagi">
+                <div class="pagination-glass">
+                    <button class="page-btn1"><img src="imgs/icon/Chevron left-white.svg"></button>
+                        <button class="page-btn">1</button>
+                        <button class="page-btn active1">2</button>
+                        <button class="page-btn">3</button>
+                        <button class="page-btn">4</button>
+                        <button class="page-btn1"><img src="imgs/icon/Chevron right-white.svg"></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- PAGINATION (END)-->	  
+	  
+		  
+	<!----------------------Proposal------------------->
+		  
+		  <div class="container-fluid lazy-section" id="nen3">
+			<div class="container" id="best-seller">
+				<h1 class="pr2">Proposal</h1>
+				<div id="j-pop">
+					<div class="row d-none d-lg-flex"></div><!-- .row -->
+				</div>
+				<div class="owl-carousel owl-theme col-12 d-lg-none" id="linh-carousel"></div>
+				</div>	<!----------------------container------------------->  
+		</div><!---------------------------------OWL CAROUSEL--------------------------------->
+		  
+		  
+		  
+		  <!----------------------Artist Collections------------------->
+		  <div class="container-fluid" id="nen4">
+			<div class="container">
+				<h1 class="d-md-block
+							 d-none
+							 Artist">Artist Collections</h1>	
+			
+			  
+			  <ul class="d-md-block
+							 d-none container1">
+					  <div class="container2">
+						  <!----------------------hinh1------------------->
+						<li>
+						  <img src="imgs/Khanh Linh/kenshi-yonezu.png" alt="">
+						  <div class="content">
+							  <span>
+								  <div style="margin-bottom: 10px;">
+									  <a href="#"><h4 class="Yoasobi">Yoasobi</h4></a>	  
+								 </div>
+							  </span>
+						  </div>
+					  	</li>
+					   <div class="clear"></div>
+						<!----------------------hinh2------------------->
+					  <li>
+						  <img src="imgs/Khanh Linh/yoasobi.png" alt="">
+						  <div class="content">
+							  <span>
+								  <div style="margin-bottom: 10px;">
+									  
+									  <a href="#"><h4 class="Yoasobi">Kenshi Yonezu</h4></a>	  
+								</div>
+							  </span>
+						  </div>
+					  </li>
+					  <div class="clear"></div>
+						<!----------------------hinh3------------------->
+					  <li>
+						  <img src="imgs/Khanh Linh/band.png" alt="">
+						  <div class="content">
+							  <span>
+								  <div class="dia2" style="margin-bottom: 10px;">
+									  
+									  <a href="#"><h4 class="Yoasobi">Creepy Nuts</h4></a>	  
+								</div>
+							  </span>
+						  </div>
+					  </li>
+					  <div class="clear"></div>
+						<!----------------------hinh4------------------->
+					  <li>
+						  <img src="imgs/Khanh Linh/Hiroyuki Sawano.png" alt="">
+						  <div class="content">
+							  <span>
+								  <div style="margin-bottom: 10px;">
+									  
+									  <a href="#"><h4 class="Yoasobi">Hiroyuki Sawano</h4></a>	  
+								</div>
+							  </span>
+						  </div>
+					  </li>
+				  	  <div class="clear"></div>
+						<!----------------------hinh5------------------->  
+					  <li>
+						  <img src="imgs/Khanh Linh/Eri Sasaki.png" alt="">
+						  <div class="content">
+							  <span>
+								  <div style="margin-bottom: 10px;">
+									  
+									  <a href="#"><h4 class="Yoasobi">Eri Sasaki</h4></a>	  
+								</div>
+							  </span>
+						  </div>
+					  </li>
+				  	  <div class="clear"></div>
+						<!----------------------hinh6-------------------> 
+					<li>
+						  <img src="imgs/Khanh Linh/Namirin.png" alt="">
+						  <div class="content">
+							  <span>
+								  <div style="margin-bottom: 10px;">
+									  
+									  <a href="#"><h4 class="Yoasobi">*Namirin</h4></a>	  
+								</div>
+							  </span>
+						  </div>
+					  </li>
+				  	  <div class="clear"></div>
+						<!----------------------hinh7-------------------> 
+					<li>
+						  <img src="imgs/Khanh Linh/HoneyWorks.png" alt="">
+						  <div class="content">
+							  <span>
+								  <div style="margin-bottom: 10px;">
+									  
+									  <a href="#"><h4 class="Yoasobi">HoneyWorks</h4></a>	  
+								</div>
+							  </span>
+						  </div>
+					  </li>
+				  	  <div class="clear"></div>	  
+						<!----------------------hinh8------------------->   
+					  <li class="d-lg-block
+							    d-none"> 
+						  <img src="imgs/Khanh Linh/Kessoku Band.png" alt="">
+						  <div class="content">
+							  <span>
+								  <div style="margin-bottom: 10px;">
+									  
+									  <a href="#"><h4 class="Yoasobi">Kessoku Band</h4></a>	  
+								</div>
+							  </span>
+						  </div>
+					  </li>
+				  	  <div class="clear"></div>
+						<!----------------------hinh9------------------->   
+					 <li class="d-lg-block
+							    d-none">
+						  <img src="imgs/Khanh Linh/Yorushika.png" alt="">
+						  <div class="content">
+							  <span>
+								  <div style="margin-bottom: 10px;">
+									  
+									  <a href="#"><h4 class="Yoasobi">Yorushika</h4></a>	  
+								</div>
+							  </span>
+						  </div>
+					  </li>
+				  	  <div class="clear"></div> 
+						 <!----------------------hinh10------------------->  
+						<li class="d-lg-block
+							    d-none">
+						  <img src="imgs/Khanh Linh/Zwei.png" alt="">
+						  <div class="content">
+							  <span>
+								  <div style="margin-bottom: 10px;">
+									  
+									  <a href="#"><h4 class="Yoasobi">Zwei</h4></a>	  
+								</div>
+							  </span>
+						  </div>
+					  </li>
+				  	  <div class="clear"></div> 
+					<!----------------------hinh11-------------------> 
+					 <li class="d-xl-block
+							       d-none">
+						  <img src="imgs/Khanh Linh/Aimer.png" alt="">
+						  <div class="content">
+							  <span>
+								  <div style="margin-bottom: 10px;">
+									  
+									  <a href="#"><h4 class="Yoasobi">Aimer</h4></a>	  
+								</div>
+							  </span>
+						  </div>
+					  </li>
+				  	  <div class="clear"></div>
+						<!----------------------hinh12-------------------> 
+					 <li class="d-xl-block
+							       d-none">
+						  <img src="imgs/Khanh Linh/Eir Aoi.png" alt="">
+						  <div class="content">
+							  <span>
+								  <div style="margin-bottom: 10px;">
+									  
+									  <a href="#"><h4 class="Yoasobi">Eir Aoi</h4></a>	  
+								</div>
+							  </span>
+						  </div>
+					  </li>
+				  	  <div class="clear"></div>  
+						<!----------------------hinh13-------------------> 
+					<li class="d-xl-block
+							       d-none">
+						  <img src="imgs/Khanh Linh/ClariS.png" alt="">
+						  <div class="content">
+							  <span>
+								  <div style="margin-bottom: 10px;">
+									  
+									  <a href="#"><h4 class="Yoasobi">ClariS</h4></a>	  
+								</div>
+							  </span>
+						  </div>
+					  </li>
+				  	  <div class="clear"></div>  
+						  
+					  </div>
+				  
+				  
+				  
+				 
+			  </ul>
+			</div>  
+		</div>	 
+			  
+			  
+			  
+		
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+	
+		  <!-----FOOTER (START)----->
+		  <div class="container-fluid" id="footer-bg">
+			<div class="container">
+				<div class="row" id="footer-row">
+					<div class="col-lg-3 col-md-4 col-12" id="footer-logo-section">
+						<img src="imgs/logo/logo-white-pink.svg" alt="logo" loading="lazy">
+						<p>Where Anime Lives in Sound</p>
+						<div class="social-med-row">
+							<a href="#"><img src="imgs/icon/Facebook-pink.svg" alt="facebook" loading="lazy"></a>
+							<a href="#"><img src="imgs/icon/Insta-pink.svg" alt="instagram" loading="lazy"></a>
+							<a href="#"><img src="imgs/icon/Tiktok-pink.svg" alt="tiktok" loading="lazy"></a>
+						</div><!------social-med-row----->
+					</div><!----footer-logo-section----->
+					<div class="col-12 d-md-none" id="footer-product-mobile">
+						<button data-toggle="collapse" data-target="#product-content">
+							<h3>Products</h3> <img class="arrow-icon" src="imgs/icon/Chevron down.svg" alt="chevron-down">
+						</button><!----product-mobile-button---->
+						<div id="product-content" class="collapse">
+							<a href="Tran Ngoc Bao Tran_Product.html">Collections</a>
+							<a href="Tran Ngoc Bao Tran_Product.html">Best Seller</a>
+							<a href="Tran Ngoc Bao Tran_Product.html">J-Pop</a>
+							<a href="Tran Ngoc Bao Tran_Product.html">Pop Rock</a>
+							<a href="Tran Ngoc Bao Tran_Product.html">Idol-Dance</a>
+							<a href="Tran Ngoc Bao Tran_Product.html">Metal</a>
+						</div><!---product-section-child----->
+					</div><!-----footer-product-mobil----->
+					<div class="col-lg-2 col-md-4 d-none d-md-flex" id="footer-product-section">
+						<h3>Products</h3>
+						<div id="product-section-child">
+							<a href="Tran Ngoc Bao Tran_Product.html">Collections</a>
+							<a href="Tran Ngoc Bao Tran_Product.html">Best Seller</a>
+							<a href="Tran Ngoc Bao Tran_Product.html">J-Pop</a>
+							<a href="Tran Ngoc Bao Tran_Product.html">Pop Rock</a>
+							<a href="Tran Ngoc Bao Tran_Product.html">Idol-Dance</a>
+							<a href="Tran Ngoc Bao Tran_Product.html">Metal</a>
+						</div><!---product-section-child----->
+					</div><!-----footer-product-section---->
+					<div class="col-12 d-md-none" id="footer-info-mobile">
+						<button data-toggle="collapse" data-target="#info-content">
+							<h3>Information</h3> <img class="arrow-icon" src="imgs/icon/Chevron down.svg" alt="chevron-down">
+						</button><!----product-mobile-button---->
+						<div id="info-content" class="collapse">
+							<a href="Tran Ngoc Bao Tran_Contact.html">Contact</a>
+							<a href="Nguyen Hoang Vinh Phu_AboutUs.html">About Us</a>
+							<a href="#">Product Updates</a>
+							<a href="#">News</a>
+							<a href="#">Return Policy</a>
+							<a href="#">Terms of Service</a>
+						</div><!---product-section-child----->
+					</div><!----footer-info-mobile----->
+					<div class="col-lg-3 col-md-4 d-none d-md-flex" id="footer-info-section">
+						<h3>Information</h3>
+						<div id="info-child">
+							<a href="Tran Ngoc Bao Tran_Contact.html">Contact</a>
+							<a href="Nguyen Hoang Vinh Phu_AboutUs.html">About Us</a>
+							<a href="#">Product Updates</a>
+							<a href="#">News</a>
+							<a href="#">Return Policy</a>
+							<a href="#">Terms of Service</a>
+						</div><!---info-child---->
+					</div><!----footer-info-section---->
+					<div class="col-lg-4 col-md-12" id="footer-news-section">
+						<h3>Newsletter</h3>
+						<p>Stay up to date with pre-orders, releases, and product drops!</p>
+						<form action="#">
+							<input type="email" placeholder="Email Address" class="glass-figma-2">
+							<button type="submit">Subscribe</button>
+						</form>
+					</div><!-----footer-newsletter-section---->
+				</div><!-----footer-row----->
+				<div class="row" id="footer-inline-row">
+					<div class="inline-footer">
+						<p>© 2025 EKOH. All rights reserved. &nbsp; </p>
+						<a href="#">Terms</a>
+						<p>,</p> &nbsp;
+						<a href="#">Privacy</a> &nbsp;
+						<p> & </p> &nbsp;
+						<a href="#">Accessibility</a>
+					</div><!----inline-footer----->
+					<div class="inline-footer">
+						<p>Do not sell our personal information</p>
+					</div><!----inline-footer----->
+				</div><!----footer-inline-row----->
+			</div><!----container---->
+		</div><!----container-fluid----->
+		<!-----FOOTER (END)----->
+		  
+		  
+		  
+		  
+		  
+		  		
+	
+	  
+	<script src="js/product-card-component.js"></script>
+	<script src="js/product-data.js"></script>
+	<script src="js/init-products.js"></script>
+	<script src="js/index.js"></script>
+	
+	<script>
+		document.getElementById("heart").addEventListener("click", function() {
+        this.classList.toggle("active");
+		});
+	</script>
+	  
+	<script>
+		document.addEventListener("DOMContentLoaded", function () {
+			window.changeImage = function (el) {
+				const mainImage = document.getElementById("mainImage");
+				if (!mainImage || !el) return;
+				mainImage.src = el.src;
+				document.querySelectorAll(".thumb-img").forEach((img) => img.classList.remove("active"));
+				el.classList.add("active");
+			};
+
+			const quantityContainer = document.querySelector(".quantity");
+			if (quantityContainer) {
+				const minusBtn = quantityContainer.querySelector(".minus");
+				const plusBtn = quantityContainer.querySelector(".plus");
+				const inputBox = quantityContainer.querySelector(".input-box");
+
+				const updateButtonStates = () => {
+					const value = parseInt(inputBox.value, 10);
+					const max = parseInt(inputBox.max, 10);
+					if (minusBtn) minusBtn.disabled = value <= 1;
+					if (plusBtn) plusBtn.disabled = value >= max;
+				};
+
+				const clampValue = (value) => {
+					const min = parseInt(inputBox.min, 10) || 1;
+					const max = parseInt(inputBox.max, 10);
+					if (isNaN(value)) return min;
+					return Math.min(Math.max(value, min), isNaN(max) ? value : max);
+				};
+
+				quantityContainer.addEventListener("click", (event) => {
+					if (event.target.classList.contains("minus")) {
+						inputBox.value = clampValue(parseInt(inputBox.value, 10) - 1);
+						updateButtonStates();
+					} else if (event.target.classList.contains("plus")) {
+						inputBox.value = clampValue(parseInt(inputBox.value, 10) + 1);
+						updateButtonStates();
+					}
+				});
+
+				inputBox.addEventListener("input", () => {
+					inputBox.value = clampValue(parseInt(inputBox.value, 10));
+					updateButtonStates();
+				});
+
+				updateButtonStates();
+			}
+
+			const accordions = document.getElementsByClassName("accordion");
+			Array.from(accordions).forEach((acc) => {
+				acc.addEventListener("click", function () {
+					this.classList.toggle("active");
+					const panel = this.nextElementSibling;
+					if (panel.style.maxHeight) {
+						panel.style.maxHeight = null;
+					} else {
+						panel.style.maxHeight = panel.scrollHeight + "px";
+					}
+				});
+			});
+		});
+	</script>
+  </body>
+</html>
